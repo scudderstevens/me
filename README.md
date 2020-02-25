@@ -2,9 +2,9 @@
 
 Solutions architect and full-stack developer
 
-* (GitHub - Personal Projects)[https://github.com/scudderstevens]
-* (LinkedIn)[https://www.linkedin.com/in/scudder-stevens/]
-* (twitter)[https://twitter.com/scudderstevens]
+* [GitHub](https://github.com/scudderstevens)
+* [LinkedIn](https://www.linkedin.com/in/scudder-stevens/)
+* [twitter](https://twitter.com/scudderstevens)
 
 ## About me
 
@@ -12,7 +12,7 @@ Hello. I work for [Universal Health Services, inc.](https://www.uhsinc.com/) in 
 
 When I am not banging on the keyboard for UHS, I am relaxing with my wife and our dog in Wayne, PA. *lil' Wayne,* is a small town with a big personality, due west of Philadelphia. I get outside as much as possible, riding the 45 minute commute to work by bicycle. Weekends, I take a more leasurly route through the surrounding country side. Occasonaly, I get the chance to play music on the modular synth or listen to tracks from my collection of 45's. Mostly Dub Reggae, my favorite!
 
-Thank you for your interest and check out my [resume](https://scudderstevens.me/resume.md) for additional details.
+Thank you for your interest and check out my [resume](https://scudderstevens.me/resume/index.md) for additional details.
 
 ## <a id="current"></a>Projects I am currently working on
 
@@ -28,7 +28,7 @@ Thank you for your interest and check out my [resume](https://scudderstevens.me/
 * **Technology Stack | Front-End**:
   * Javascript, [Nunjucks](https://mozilla.github.io/nunjucks/), HTML, [UHS Design Standards](#uhstandards "project link"), CSS
 
-### Blog Builder Platform (github)[https://github.com/scudderuhsinc/blog-bldr] | UHS,inc. [www](https://www.uhsinc.com/ "Universal Health Services, Inc.")
+### Blog Builder Platform [github](https://github.com/scudderuhsinc/blog-bldr) | UHS,inc. [www](https://www.uhsinc.com/ "Universal Health Services, Inc.")
 * **Project**: here
 * **Desciption** - here
 * **Technology Stack | Back-End**:
@@ -71,9 +71,9 @@ Thank you for your interest and check out my [resume](https://scudderstevens.me/
 
 ## Connect
 
-* (GitHub - Personal Projects)[https://github.com/scudderstevens]
-* (LinkedIn)[https://www.linkedin.com/in/scudder-stevens/]
-* (twitter)[https://twitter.com/scudderstevens]
+* [GitHub](https://github.com/scudderstevens)
+* [LinkedIn](https://www.linkedin.com/in/scudder-stevens/)
+* [twitter](https://twitter.com/scudderstevens)
 
 ## Built With
 
