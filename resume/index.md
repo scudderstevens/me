@@ -1,3 +1,0 @@
-# Scudder' Resume
-
-resume here
