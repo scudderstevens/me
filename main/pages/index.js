@@ -13,12 +13,12 @@ export default class Home extends Component {
           <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
           <title>Scudder Stevens - Digital Product Owner &amp; JAM Stack Developer</title>
           <meta name="description" content="Scudder Stevens - Design, Code, JAM Stack Developer &amp; Digital Product Owner" />
-          <link rel="canonical" href="http://scudderstevens.me/" />
+          <link rel="canonical" href="https://scudderstevens.me/" />
           <meta property="og:locale" content="en_US" />
           <meta property="og:type" content="website" />
           <meta property="og:title" content="Scudder Stevens - Digital Product Owner &amp; JAM Stack Developer" />
           <meta property="og:description" content="Design, Code, JAM Stack Developer &amp; Digital Product Owner" />
-          <meta property="og:url" content="http://scudderstevens.me/" />
+          <meta property="og:url" content="https://scudderstevens.me/" />
           <meta property="og:site_name" content="Scudder Stevens (dot) me" />
           <meta name="twitter:card" content="summary" />
           <meta name="twitter:description" content="Design, Code, JAM Stack Developer &amp; Digital Product Owner" />
