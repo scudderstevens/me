@@ -90,7 +90,7 @@ export default class Home extends Component {
                   <h1>Scudder Stevens</h1>
                   <p className="micro">Digital Product Owner <br/> <em>&</em> JAM Stack Developer</p>
               </div>
-              <p><strong>Hello</strong>. I work for <a href="https://www.uhsinc.com" target="_blank" alt="Universal Health Services, Inc." className="icon-link">Universal Health Services,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" stroke="currentColor" fill="none"><path className="svg-elem" d="M8.17,10.92a4.58,4.58,0,0,0,6.4.92,4.18,4.18,0,0,0,.5-.43l2.75-2.75a4.58,4.58,0,0,0-6.47-6.47L9.77,3.76" transform="translate(-0.07 -0.08)" /><path className="svg-elem" d="M11.83,9.08a4.58,4.58,0,0,0-6.4-.92,4.18,4.18,0,0,0-.5.43L2.18,11.34a4.58,4.58,0,0,0,6.47,6.47l1.57-1.57" transform="translate(-0.07 -0.08)" /></svg></a> in the <em>Digital Marketing Department</em>. We are a small, talented and well integrated team working out of Nashville, Tennessee and King of Prussia, Pennsylvania. 
+              <p><strong>Hello</strong>. I work for <a href="https://www.uhsinc.com" target="_blank" alt="Universal Health Services, Inc." className="icon-link">Universal Health Services (UHS),<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" stroke="currentColor" fill="none"><path className="svg-elem" d="M8.17,10.92a4.58,4.58,0,0,0,6.4.92,4.18,4.18,0,0,0,.5-.43l2.75-2.75a4.58,4.58,0,0,0-6.47-6.47L9.77,3.76" transform="translate(-0.07 -0.08)" /><path className="svg-elem" d="M11.83,9.08a4.58,4.58,0,0,0-6.4-.92,4.18,4.18,0,0,0-.5.43L2.18,11.34a4.58,4.58,0,0,0,6.47,6.47l1.57-1.57" transform="translate(-0.07 -0.08)" /></svg></a> in the <em>Digital Marketing Department</em>. We are a small, talented and well integrated team working out of Nashville, Tennessee and King of Prussia, Pennsylvania. 
               The latter is where I am based.</p>
               <p>On a good day, I split my time between my <em>to do</em> list and making future efforts more efficient. I am always on the hunt for the 
               perfectly optimized work flow or more efficient tooling. For exisiting platforms I work in collaboration with the larger UHS teams to keep solutions up to date and running 
@@ -107,9 +107,9 @@ export default class Home extends Component {
             </div>
           </div>
 
-          <div id="overview" className="grid-container-col mono_s090">
+          <div id="career-highlights" className="grid-container-col mono_s090">
             <div className="grid-container-row grid__fixed-width">
-              <h2>Overview</h2>
+              <h2>Career Highlights</h2>
             </div>
           </div>
 

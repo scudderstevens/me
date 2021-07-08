@@ -58,7 +58,7 @@ current:
         description: 'Extend the core Drupal experience with 47,369 + 1 Universal Directory module.'
       - name: 'Netlify'
         link: { href: 'https://www.netlify.com', alt: 'site deployment and managment platform' } description:  'Front and back-ends built from code repositories and deployed to a global CDN network.'
-    fullDescription: "The Universal Directory provides a single source of truth for multiple web solutions; this allows us to maintain consistent data across Universal Health Services' suite of digital products, thereby reducing code redundancy and preventing software bugs. All healthcare verticals, locations, general medical education consortiums, healthcare provider profiles and service integrations are managed from one universal resource. This massive project evolved from a single Proof-of-Concept; a Sanity solution defined to be a limited use case and test bed. The current, more comprehensive version, continues to be refined as it is integrated into new projects. The platform now powers web sites across all healthcare verticals with a custom WordPress plugin and Drupal module. An application programming interface (API) allows the Uni-Dir to manage internal (UHS corporate) and external service integrations."
+    fullDescription: "The Universal Directory provides a single source of truth for multiple web solutions; this allows us to maintain consistent data across Universal Health Services' suite of digital products, thereby reducing code redundancy and preventing software bugs. All healthcare verticals, locations, general medical education consortiums, healthcare provider profiles and service integrations are managed from one universal resource. This massive project evolved from a single Proof-of-Concept; a Sanity solution defined to be a limited use case and test bed. The current, more comprehensive version continues to be refined as it is integrated into new projects. The platform now powers web sites across all healthcare verticals with a custom WordPress plugin and Drupal module. An application programming interface (API) allows the Uni-Dir to manage internal (UHS corporate) and external service integrations."
   - project: 'Campaign Landing Page Platform'
     id: 'clpp'
     projectLink: { link: 'github', href: 'https://github.com/scudderstevens', alt: 'GitHub Project Repo' }
@@ -72,7 +72,7 @@ current:
       - term: 'cta'
     owner: 'Universal Health Services, Inc.'
     ownerLink: { href: 'https://www.uhs.com', alt: 'Universal Health Services, Inc.' }
-    shortDescription: "A static site generator, pulling content from Sanity, to create campaign micro-sites. Each micro-site is a single page with campaign specific information and a contact form. After a form is submitted, a user is forwarded to a thank you page with supplimental call-to-actions such as FAQs or instructional videos. The platform supports Acute Care, IPM, Behavior Health and Corporate marketing campaigns, all while maintianing HIPAA compliance."
+    shortDescription: "A static site generator, pulling content from Sanity, to create campaign micro-sites. Each micro-site is a single page with campaign specific information and a contact form. After a form is submitted, a user is forwarded to a thank you page with supplemental call-to-actions, such as FAQs or instructional videos. The platform supports Acute Care, IPM, Behavior Health and Corporate marketing campaigns, all while maintaining HIPAA compliance."
     tech:
     - name: 'Sanity'
       link: { href: 'https://www.sanity.io', alt: 'back-end content delivery platform' }
@@ -92,8 +92,8 @@ current:
     - name: 'Netlify'
       link: { href: 'https://www.netlify.com', alt: 'site deployment and managment platform' }
       description: 'Campaign micro-sites built from code repositories and deployed to a global CDN network.'
-    fullDescription: "The campaign landing page platform (CLPP) provides a robust and automated platform to build static <html> file pages. The platform can spin up Landing/Thank You page pairs; for paid radio, pay-per-cick or television advertisements. The CLPP supports campaigns for healthcare systems to individual healthcare locations, across all healthcare verticals.
-    The platform is built to handle roughly 300 unique campaigns per year and up to 10,000 submissions per month. Form submissions are handled by the Universal Health Services Referral Registration Team. Name/email addresses are automatically migrated into ActiveCampaign, a customer relationship management system, for subsequent email newsletters. This whole process maintains end-to-end HIPAA compliance; to protect sensitive patient information, while providing actionable marketing data and a clear return on investment."
+    fullDescription: "The campaign landing page platform (CLPP) provides a robust and automated platform to build static <html> file pages. The platform can spin up Landing/Thank You page pairs for paid radio, pay-per-click or television advertisements. The CLPP supports campaigns from healthcare systems to individual healthcare locations, across all healthcare verticals.
+    The platform is built to handle roughly 300 unique campaigns per year and up to 10,000 submissions per month. Form submissions are handled by the Universal Health Services Referral Registration Team. Name and email addresses are automatically migrated into ActiveCampaign, a customer relationship management system, for subsequent email newsletters. This whole process maintains end-to-end HIPAA compliance to protect sensitive patient information while providing actionable marketing data and a clear return on investment."
 archived:
   - project: 'Blog Builder Platform'
     id: 'bbp'
