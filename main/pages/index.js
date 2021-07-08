@@ -107,9 +107,9 @@ export default class Home extends Component {
             </div>
           </div>
 
-          <div id="timeline" className="grid-container-col mono_s090">
+          <div id="overview" className="grid-container-col mono_s090">
             <div className="grid-container-row grid__fixed-width">
-              <h2>Timeline</h2>
+              <h2>Overview</h2>
             </div>
           </div>
 
