@@ -1,10 +1,10 @@
 [build]
 command = "next build && next export"
-publish = "main/out"
+publish = "main/out/"
 ignore = "if [ $CACHED_COMMIT_REF == $COMMIT_REF ]; then (exit 1); else git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF ../..; fi;"
 
-[build.environment]
-NETLIFY_NEXT_PLUGIN_SKIP = "true"
+# [build.environment]
+# NETLIFY_NEXT_PLUGIN_SKIP = "true"
 
 [[plugins]]
 package = "@netlify/plugin-nextjs"
