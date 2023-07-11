@@ -34,7 +34,7 @@ current:
     tech:
       - name: 'O Series, Edge'
         link: { href: 'https://www.vertexinc.com/solutions/products/vertex-o-series-edge', alt: 'Calculate tax at the point of transaction using edge computing.' }
-        description: 'A tax calculation tool ensuring organizational tax compliance for existing markets. An integrated software as a service solution for providing key tax insights, determining all applicable laws, navigating complex product categories and jurisdictional tax obligations. Additionally, the Software as a Solution platform enables organizations to research cost/benefit analysis, determining attractive new markets through timely jurisdictional or product categories tax exemptions.'
+        description: 'Calculate tax at the point of transaction using edge computing.'
     fullDescription: "As pioneers in tax automation, customers have relied on Vertex to deliver trusted tax solutions for decades. Tax compliance and research has evolved since the pre-digital days when Vertex first started. During the existence of an Innovation department at Vertex, I have been fortunate to have been involved in many projects. To date, there have only been two (2) projects to have successfully progressed through the stage gate process. My work producing prototypes, conducting interviews and supporting internal peer reviews, I have contributed to a Team effort ensuring a solution’s technical viability and strategy validity. Currently, one project is in the MVP stage and the second is approaching the General Availability release phase."
   - project: 'Universal Directory'
     id: 'uni-dir'
@@ -58,12 +58,14 @@ current:
         link: { href: 'https://nextjs.org/docs/api-routes/introduction', alt: 'API routes provide a solution to build your API with Next.js' }
         description: 'Dynamic API routing for service integrations.'
       - name: 'WordPress Plugin'
-        link: { href: 'https://wordpress.com/install-plugins/', alt: 'Use Plugins to customize WordPress for specific needs or anything you can imagine' }description: 'Extend the core WordPress experience with 58,859 + 1 Universal Directory plugin.'
+        link: { href: 'https://wordpress.com/install-plugins/', alt: 'Use Plugins to customize WordPress for specific needs or anything you can imagine' }
+        description: 'Extend the core WordPress experience with 58,859 + 1 Universal Directory plugin.'
       - name: 'Drupal Module'
         link: { href: 'https://www.drupal.org/project/project_module', alt: 'Add functionality and customization options with thousands of modules contributed by the Drupal community' }
         description: 'Extend the core Drupal experience with 47,369 + 1 Universal Directory module.'
       - name: 'Netlify'
-        link: { href: 'https://www.netlify.com', alt: 'site deployment and managment platform' } description:  'Front and back-ends built from code repositories and deployed to a global CDN network.'
+        link: { href: 'https://www.netlify.com', alt: 'site deployment and managment platform' }
+        description: 'Front and back-ends built from code repositories and deployed to a global CDN network.'
     fullDescription: "The Universal Directory provides a single source of truth for multiple web solutions; this allows us to maintain consistent data across Universal Health Services' suite of digital products, thereby reducing code redundancy and preventing software bugs. All healthcare verticals, locations, general medical education consortiums, healthcare provider profiles and service integrations are managed from one universal resource. This massive project evolved from a single Proof-of-Concept; a Sanity solution defined to be a limited use case and test bed. The current, more comprehensive version continues to be refined as it is integrated into new projects. The platform now powers web sites across all healthcare verticals with a custom WordPress plugin and Drupal module. An application programming interface (API) allows the Uni-Dir to manage internal (UHS corporate) and external service integrations."
   - project: 'Campaign Landing Page Platform'
     id: 'clpp'
@@ -110,8 +112,8 @@ archived:
       - term: 'multi-channel marketing'
     owner: 'Universal Health Services, Inc.'
     ownerLink: { href: 'https://www.uhs.com', alt: 'Universal Health Services, Inc.' }
-    shortDescription: 'A multi-level blogging platform, pulling content from Sanity and Baldwin Publishing, to create all Acutecare, IPM, Behavior Health and Corporate blogs.'
-    fullDescription: 'A multi-level blogging platform, pulling content from Sanity and Baldwin Publishing, to create all Acutecare, IPM, Behavior Health and Corporate blogs.'
+    shortDescription: "A multi-level blogging platform, pulling content from Sanity and Baldwin Publishing, to create all Acutecare, IPM, Behavior Health and Corporate blogs."
+    fullDescription: "A multi-level blogging platform, pulling content from Sanity and Baldwin Publishing, to create all Acutecare, IPM, Behavior Health and Corporate blogs."
     tech:
       - name: 'Sanity'
         link: { href: 'https://www.sanity.io', alt: 'back-end content delivery platform' }
