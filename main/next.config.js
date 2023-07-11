@@ -1,5 +1,12 @@
 module.exports = {
-  // Configurable site features we support:
-  // distDir: 'build',
-  generateBuildId: () => 'build-id',
+    webpack: (cfg) => {
+        cfg.module.rules.push(
+            {
+                test: /\.md$/,
+                loader: 'frontmatter-markdown-loader',
+                options: { mode: ['react-component'] }
+            }
+        )
+        return cfg;
+    }
 }
