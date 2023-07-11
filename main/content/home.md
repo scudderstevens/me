@@ -1,35 +1,41 @@
 ---
 date: 2021-01-01T19:31:20.591Z
-updated: 2021-06-16T19:31:20.591Z
+updated: 2023-07-11T19:31:20.591Z
 timeline:
   - title: 'Foundation in Visual Arts'
     id: 'foundation-visual-arts'
-    teaser: 'Background in visual arts (photography, new media)'
-  - title: 'Web Design'
+    teaser: 'Design, illustration, photography, new media'
+  - title: 'Freelance Web Design'
     id: 'web-design'
-    teaser: 'Worked on websites for small and medium-sized businesses'
-  - title: 'MS CompSci'
+    teaser: 'Small and medium-sized businesses'
+  - title: 'MS Computer Science'
     id: 'ms-compsci'
-    teaser: 'Returned to school to pursue Masters in Computer Science'
+    teaser: 'Continued education, Masters in Computer Science'
   - title: 'Healthcare Tech'
     id: 'healthcare-tech'
-    teaser: 'Hired as Senior UX/UI Designer at Universal Health Services, Inc. (UHS)'
-  - title: 'Seek and Improve'
-    id: 'seek-improve'
-    teaser: 'Identified bottlenecks in production and maintenance workflows'
-  - title: 'Problem Solving'
+    teaser: 'Senior UX/UI Designer&nbsp;Senior Digital Product Developer'
+  - title: 'Strategic Problem Solver'
     id: 'problem-solving'
-    teaser: 'Researched technologies and techniques to address problem areas'
-  - title: 'Collaboration'
-    id: 'collaboration'
-    teaser: 'Produced working solution examples with a goal of empowering my teammates at UHS Marketing Department and mitigate siloed resources'
-  - title: 'Resource Sharing'
-    id: 'resource-sharing'
-    teaser: 'Selected core solutions to develop, providing shared resources across multiple healthcare verticals'
-  - title: 'Continued Efforts'
-    id: 'continued-efforts'
-    teaser: 'migrate to technologies that are more reliable, maintainable and collaborative code bases'
+    teaser: 'Design Technologist, Innovation within SaaS'
 current:
+  - project: 'Tax Calculation, Compliance &amp; Research'
+    id: 'tax'
+    projectLink: { link: 'github', href: 'https://github.com/scudderstevens', alt: 'GitHub Project Repo' }
+    tags:
+      - term: 'SaaS'
+      - term: 'tax compliance'
+      - term: 'tax research'
+      - term: 'emerging markets'
+      - term: 'market cost/benefit analysis'
+      - term: 'digital product suite'
+    owner: 'Vertex, Inc.'
+    ownerLink: { href: 'https://www.vertexinc.com', alt: 'Vertex, Inc.' }
+    shortDescription: "A tax calculation tool ensuring organizational tax compliance for existing markets. An integrated software as a service solution for providing key tax insights, determining all applicable laws, navigating complex product categories and jurisdictional tax obligations. Additionally, the Software as a Solution platform enables organizations to research cost/benefit analysis, determining attractive new markets through timely jurisdictional or product categories tax exemptions."
+    tech:
+      - name: 'O Series, Edge'
+        link: { href: 'https://www.vertexinc.com/solutions/products/vertex-o-series-edge', alt: 'Calculate tax at the point of transaction using edge computing.' }
+        description: 'A tax calculation tool ensuring organizational tax compliance for existing markets. An integrated software as a service solution for providing key tax insights, determining all applicable laws, navigating complex product categories and jurisdictional tax obligations. Additionally, the Software as a Solution platform enables organizations to research cost/benefit analysis, determining attractive new markets through timely jurisdictional or product categories tax exemptions.'
+    fullDescription: "As pioneers in tax automation, customers have relied on Vertex to deliver trusted tax solutions for decades. Tax compliance and research has evolved since the pre-digital days when Vertex first started. During the existence of an Innovation department at Vertex, I have been fortunate to have been involved in many projects. To date, there have only been two (2) projects to have successfully progressed through the stage gate process. My work producing prototypes, conducting interviews and supporting internal peer reviews, I have contributed to a Team effort ensuring a solution’s technical viability and strategy validity. Currently, one project is in the MVP stage and the second is approaching the General Availability release phase."
   - project: 'Universal Directory'
     id: 'uni-dir'
     projectLink: { link: 'github', href: 'https://github.com/scudderstevens', alt: 'GitHub Project Repo' }
