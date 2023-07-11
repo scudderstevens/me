@@ -11,20 +11,20 @@ export default class Home extends Component {
 
         <Head>
           <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-          <title>Scudder Stevens - Digital Product Owner &amp; JAM Stack Developer</title>
-          <meta name="description" content="Scudder Stevens - Design, Code, JAM Stack Developer &amp; Digital Product Owner" />
+          <title>Scudder Stevens - Digital Product Owner, Product Innovation, Design, JAM Stack Developer &amp; Technologist</title>
+          <meta name="description" content="Scudder Stevens - Digital Product Owner, Product Innovation, Design, JAM Stack Developer &amp; Technologist" />
           <link rel="canonical" href="https://scudderstevens.me/" />
           <meta property="og:locale" content="en_US" />
           <meta property="og:type" content="website" />
-          <meta property="og:title" content="Scudder Stevens - Digital Product Owner &amp; JAM Stack Developer" />
-          <meta property="og:description" content="Design, Code, JAM Stack Developer &amp; Digital Product Owner" />
+          <meta property="og:title" content="Scudder Stevens - Digital Product Owner, Product Innovation, Design, JAM Stack Developer &amp; Technologist" />
+          <meta property="og:description" content="Digital Product Owner, Product Innovation, Design, JAM Stack Developer &amp; Technologist" />
           <meta property="og:url" content="https://scudderstevens.me/" />
           <meta property="og:site_name" content="Scudder Stevens (dot) me" />
           <meta name="twitter:card" content="summary" />
-          <meta name="twitter:description" content="Design, Code, JAM Stack Developer &amp; Digital Product Owner" />
-          <meta name="twitter:title" content="Scudder Stevens - Design, Code &amp; Front-End Development" />
-          <link rel="stylesheet" type="text/css" href="https://latest.cdn-sty.link/css/main.css" />
-          <link rel="stylesheet" type="text/css" href="https://latest.cdn-sty.link/css/themes/me.css" />
+          <meta name="twitter:description" content="Digital Product Owner, Product Innovation, Design, JAM Stack Developer &amp; Technologist" />
+          <meta name="twitter:title" content="Scudder Stevens - Digital Product Owner, Product Innovation, Design, JAM Stack Developer &amp; Technologist" />
+          <link rel="stylesheet" type="text/css" href="css/main.css" />
+          <link rel="stylesheet" type="text/css" href="css/themes/me.css" />
           <meta name="msapplication-TileImage" content="https://ssme.s3.filebase.com/theme/assets/Angular-S-Stroke-Logo-270x270.png" />
           <link rel="icon" type="image/png" sizes="192x192" href="https://ssme.s3.filebase.com/theme/assets/Angular-S-Stroke-Logo-192x192.png" />
           <link rel="apple-touch-icon-precomposed" href="https://ssme.s3.filebase.com/theme/assets/Angular-S-Stroke-Logo-180x180.png" />
