@@ -1,4 +1,3 @@
 # https://scudderstevens.me
 
-HTML, CSS & JS written by hand
-Hosted with GitHub pages
+HTML, CSS & JS written by hand and hosted via GitHub Pages
