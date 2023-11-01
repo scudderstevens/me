@@ -655,29 +655,29 @@ a.micro {
 }
 
 .me .iso-background__repeating-grid {
-  background-image: url("https://ssme.s3.filebase.com/theme/assets/iso__grid-repeating-background.png");
+  background-image: url("https://ik.imagekit.io/mp2mjn7fgdt/ss/me/v1/theme/assets/iso__grid-repeating-background_vIiTOKaUMk.png");
   background-repeat: repeat;
 }
 
 .me .iso-background__repeating-grid.primary {
-  background-image: url("https://ssme.s3.filebase.com/theme/assets/iso__grid-repeating-background_primary.png");
+  background-image: url("https://ik.imagekit.io/mp2mjn7fgdt/ss/me/v1/theme/assets/iso__grid-repeating-background_primary_MEcn6ue0n.png");
   background-repeat: repeat;
 }
 
 .me .iso-background__repeating-grid.mono {
-  background-image: url("https://ssme.s3.filebase.com/theme/assets/iso__grid-repeating-background_mono.png");
+  background-image: url("https://ik.imagekit.io/mp2mjn7fgdt/ss/me/v1/theme/assets/iso__grid-repeating-background_mono_iZ486KQ7pX.png");
   background-repeat: repeat;
 }
 
 .me .iso-background__photo {
-  background-image: url("https://ssme.s3.filebase.com/theme/assets/iso__grid-pattern-photo-detail-1500w.jpg");
+  background-image: url("https://ik.imagekit.io/mp2mjn7fgdt/ss/me/v1/theme/assets/iso__grid-pattern-photo-detail-1500w_Fcf1bgboB.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .me .iso-background__mitsubishis {
-  background-image: url("https://ssme.s3.filebase.com/theme/assets/iso__grid-Mitsubishis-1500w.jpg");
+  background-image: url("https://ik.imagekit.io/mp2mjn7fgdt/ss/me/v1/theme/assets/iso__grid-Mitsubishis-1500w_kg9m_z3hf.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -732,7 +732,7 @@ a.micro {
     margin-bottom: 0;
   }
   .me .intro-duo__profile .profile-img {
-    background-image: url("https://ik.imagekit.io/mp2mjn7fgdt/ssme/tr:w-550/content/Scudder-Trixie_profile-550w367h.jpg");
+    background-image: url("https://ik.imagekit.io/mp2mjn7fgdt/ss/tr:w-750/me/v1/content/Scudder-Trixie_profile-1000w668h_vH0LFPYDJ.jpg");
     height: 250px;
     width: 250px;
   }
@@ -761,7 +761,7 @@ a.micro {
     height: 500px;
   }
   .me .intro-duo__profile .profile-img {
-    background-image: url("https://ik.imagekit.io/mp2mjn7fgdt/ssme/tr:w-550/content/Scudder-Trixie_profile-550w367h.jpg");
+    background-image: url("https://ik.imagekit.io/mp2mjn7fgdt/ss/tr:h-500/me/v1/content/Scudder-Trixie_profile-750w501h_VvQN7oRtj4.jpg");
     background-position-x: center;
     height: 500px;
     width: 100%;
@@ -790,7 +790,7 @@ a.micro {
     height: 300px;
   }
   .me .intro-duo__profile .profile-img {
-    background-image: url("https://ik.imagekit.io/mp2mjn7fgdt/ssme/tr:w-250/content/Scudder-Trixie_profile-250w167h.jpg");
+    background-image: url("https://ik.imagekit.io/mp2mjn7fgdt/ss/tr:h-300/me/v1/content/Scudder-Trixie_profile-550w367h_Wc6Uusp7U.jpg");
     background-position-x: center;
     height: 300px;
     width: 100%;
@@ -818,7 +818,7 @@ a.micro {
     height: 250px;
   }
   .me .intro-duo__profile .profile-img {
-    background-image: url("https://ik.imagekit.io/mp2mjn7fgdt/ssme/tr:w-250/content/Scudder-Trixie_profile-250w167h.jpg");
+    background-image: url("https://ik.imagekit.io/mp2mjn7fgdt/ss/tr:h-250/me/v1/content/Scudder-Trixie_profile-550w367h_Wc6Uusp7U.jpg");
     background-position-x: center;
     height: 250px;
     width: 100%;
