@@ -1,0 +1,30 @@
+/*
+ * Variables
+ * =================
+ * abstracts/variables
+ */
+
+// Breakpoints
+$XS-width: 376px;
+$SM-width: 576px;
+$MD-width: 768px;
+$LG-width: 992px;
+$XL-width: 1200px;
+$XXL-width: 1400px;
+
+// Colors
+$red: red;
+
+/* Monochromic */
+$white: #ffffff;
+$black: #000000;
+// mono - Neutral Density Grey
+$mono: #808080;
+// dirt - a Monochromic alternative
+$dirt: #887c70;
+// squid - a cooler Monochromic alternative
+$squid: #726580; //#656e80
+// sepia - a warmer Monochromic alternative
+$sepia: #806b61;
+
+$padding: 1em;

@@ -1,0 +1,2292 @@
+/*
+ * Mixins
+ * =================
+ * abstracts/mixins
+ */
+/* Responsive breakpoint manager
+ * @access public
+ * @param {String} $breakpoint - Breakpoint
+ * @requires $breakpoints
+ */
+/*
+ * Mixin for clearfix
+ * @include clearfix;
+*/
+/*
+ * Mixin for Responsive Retina Image
+ * @include image-2x;
+*/
+/*
+ * @font-face mixin
+ * Bulletproof font-face via Font Squirrel
+ * @include fontface('family', 'assets/fonts/', 'myfontname');
+ */
+/* @mixin fontface($font-family, $font-url, $font-name) {
+	@font-face {
+		font: {
+			family: $font-family;
+			style: normal;
+			weight: normal;
+		}
+		src: url($font-url + '/' + $font-name + '.eot');
+		src: url($font-url + '/' + $font-name + '.eot#iefix') format('embedded-opentype'),
+			 url($font-url + '/' + $font-name + '.woff') format('woff'),
+			 url($font-url + '/' + $font-name + '.ttf')  format('truetype'),
+			 url($font-url + '/' + $font-name + '.svg#' + $font-name) format('svg');
+	}
+} */
+/*
+ * Variables
+ * =================
+ * abstracts/variables
+ */
+/* Monochromic */
+.me.project .tabbed-header {
+  margin: 0 auto 0 0;
+  padding: 0 2rem;
+  position: relative;
+  top: -0.75rem;
+}
+.me.project .tabbed-header p {
+  margin: 0;
+  padding: 0.35rem 0;
+  font-style: italic;
+  font-size: 1rem;
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  .me.project .tabbed-header {
+    padding: 0 2rem 0 4rem;
+  }
+}
+@media (min-width: 1201px) {
+  .me.project .tabbed-header {
+    padding: 0 2rem 0 6rem;
+  }
+}
+.me.project .approach {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.me.project .approach .stages-key {
+  margin-bottom: 1rem;
+}
+.me.project .approach .stages-key img.stages-key_step {
+  width: 25%;
+  height: auto;
+}
+@media (min-width: 0px) and (max-width: 376px) {
+  .me.project .approach .stages-key {
+    display: none;
+  }
+}
+@media (min-width: 377px) and (max-width: 576px) {
+  .me.project .approach .stages-key {
+    display: none;
+  }
+}
+.me.project .learning-goals__objectives-key-results {
+  padding: 0 0 1.5rem 0;
+}
+.me.project .learning-goals__objectives-key-results h3, .me.project .learning-goals__objectives-key-results h4 {
+  margin: 0;
+  padding: 1.5rem 0;
+}
+.me.project .learning-goals__objectives-key-results ol.deliverables,
+.me.project .learning-goals__objectives-key-results ul.deliverables {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  list-style: none;
+}
+.me.project .learning-goals__objectives-key-results ol.deliverables li.deliverable,
+.me.project .learning-goals__objectives-key-results ul.deliverables li.deliverable {
+  display: flex;
+  width: 100%;
+}
+.me.project .learning-goals__objectives-key-results ol.deliverables li.deliverable .description,
+.me.project .learning-goals__objectives-key-results ul.deliverables li.deliverable .description {
+  display: flex;
+}
+.me.project .learning-goals__objectives-key-results ol.deliverables li.deliverable ol.tags,
+.me.project .learning-goals__objectives-key-results ol.deliverables li.deliverable ul.tags,
+.me.project .learning-goals__objectives-key-results ul.deliverables li.deliverable ol.tags,
+.me.project .learning-goals__objectives-key-results ul.deliverables li.deliverable ul.tags {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.me.project .learning-goals__objectives-key-results ol.deliverables li.deliverable ol.tags li.del-tag,
+.me.project .learning-goals__objectives-key-results ol.deliverables li.deliverable ul.tags li.del-tag,
+.me.project .learning-goals__objectives-key-results ul.deliverables li.deliverable ol.tags li.del-tag,
+.me.project .learning-goals__objectives-key-results ul.deliverables li.deliverable ul.tags li.del-tag {
+  margin: 1.5rem 0;
+  width: calc(100% - 3rem);
+  height: 100%;
+}
+@media (min-width: 0px) and (max-width: 376px) {
+  .me.project .learning-goals__objectives-key-results ol.deliverables li.deliverable,
+  .me.project .learning-goals__objectives-key-results ul.deliverables li.deliverable {
+    flex-direction: column;
+  }
+  .me.project .learning-goals__objectives-key-results ol.deliverables li.deliverable .description,
+  .me.project .learning-goals__objectives-key-results ul.deliverables li.deliverable .description {
+    margin: 0;
+    padding: 1rem 2rem;
+    width: calc(100% - 4rem);
+  }
+  .me.project .learning-goals__objectives-key-results ol.deliverables li.deliverable ol.tags,
+  .me.project .learning-goals__objectives-key-results ol.deliverables li.deliverable ul.tags,
+  .me.project .learning-goals__objectives-key-results ul.deliverables li.deliverable ol.tags,
+  .me.project .learning-goals__objectives-key-results ul.deliverables li.deliverable ul.tags {
+    flex-direction: column;
+    width: 100%;
+  }
+  .me.project .learning-goals__objectives-key-results ol.deliverables li.deliverable ol.tags li.del-tag,
+  .me.project .learning-goals__objectives-key-results ol.deliverables li.deliverable ul.tags li.del-tag,
+  .me.project .learning-goals__objectives-key-results ul.deliverables li.deliverable ol.tags li.del-tag,
+  .me.project .learning-goals__objectives-key-results ul.deliverables li.deliverable ul.tags li.del-tag {
+    width: calc(100% - 4rem);
+    margin: 0;
+    padding: 1rem 2rem;
+  }
+}
+@media (min-width: 377px) and (max-width: 576px) {
+  .me.project .learning-goals__objectives-key-results ol.deliverables li.deliverable,
+  .me.project .learning-goals__objectives-key-results ul.deliverables li.deliverable {
+    flex-direction: column;
+  }
+  .me.project .learning-goals__objectives-key-results ol.deliverables li.deliverable .description,
+  .me.project .learning-goals__objectives-key-results ul.deliverables li.deliverable .description {
+    margin: 0;
+    padding: 1rem 2rem;
+    width: calc(100% - 4rem);
+  }
+  .me.project .learning-goals__objectives-key-results ol.deliverables li.deliverable ol.tags,
+  .me.project .learning-goals__objectives-key-results ol.deliverables li.deliverable ul.tags,
+  .me.project .learning-goals__objectives-key-results ul.deliverables li.deliverable ol.tags,
+  .me.project .learning-goals__objectives-key-results ul.deliverables li.deliverable ul.tags {
+    flex-direction: column;
+    width: 100%;
+  }
+  .me.project .learning-goals__objectives-key-results ol.deliverables li.deliverable ol.tags li.del-tag,
+  .me.project .learning-goals__objectives-key-results ol.deliverables li.deliverable ul.tags li.del-tag,
+  .me.project .learning-goals__objectives-key-results ul.deliverables li.deliverable ol.tags li.del-tag,
+  .me.project .learning-goals__objectives-key-results ul.deliverables li.deliverable ul.tags li.del-tag {
+    width: calc(100% - 4rem);
+    margin: 0;
+    padding: 1rem 2rem;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  .me.project .learning-goals__objectives-key-results ol.deliverables li.deliverable,
+  .me.project .learning-goals__objectives-key-results ul.deliverables li.deliverable {
+    flex-direction: column;
+  }
+  .me.project .learning-goals__objectives-key-results ol.deliverables li.deliverable .description,
+  .me.project .learning-goals__objectives-key-results ul.deliverables li.deliverable .description {
+    margin: 0;
+    padding: 1rem 2rem;
+    width: calc(100% - 4rem);
+  }
+  .me.project .learning-goals__objectives-key-results ol.deliverables li.deliverable ol.tags,
+  .me.project .learning-goals__objectives-key-results ol.deliverables li.deliverable ul.tags,
+  .me.project .learning-goals__objectives-key-results ul.deliverables li.deliverable ol.tags,
+  .me.project .learning-goals__objectives-key-results ul.deliverables li.deliverable ul.tags {
+    flex-direction: column;
+    width: 100%;
+  }
+  .me.project .learning-goals__objectives-key-results ol.deliverables li.deliverable ol.tags li.del-tag,
+  .me.project .learning-goals__objectives-key-results ol.deliverables li.deliverable ul.tags li.del-tag,
+  .me.project .learning-goals__objectives-key-results ul.deliverables li.deliverable ol.tags li.del-tag,
+  .me.project .learning-goals__objectives-key-results ul.deliverables li.deliverable ul.tags li.del-tag {
+    width: calc(100% - 4rem);
+    margin: 0;
+    padding: 1rem 2rem;
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  .me.project .learning-goals__objectives-key-results ol.deliverables li.deliverable,
+  .me.project .learning-goals__objectives-key-results ul.deliverables li.deliverable {
+    flex-direction: row;
+  }
+  .me.project .learning-goals__objectives-key-results ol.deliverables li.deliverable .description,
+  .me.project .learning-goals__objectives-key-results ul.deliverables li.deliverable .description {
+    margin: 0;
+    padding: 1rem 1.5rem 1rem 2rem;
+    width: 66.666%;
+  }
+  .me.project .learning-goals__objectives-key-results ol.deliverables li.deliverable ol.tags,
+  .me.project .learning-goals__objectives-key-results ol.deliverables li.deliverable ul.tags,
+  .me.project .learning-goals__objectives-key-results ul.deliverables li.deliverable ol.tags,
+  .me.project .learning-goals__objectives-key-results ul.deliverables li.deliverable ul.tags {
+    flex-direction: column;
+    width: 33.333%;
+  }
+  .me.project .learning-goals__objectives-key-results ol.deliverables li.deliverable ol.tags li.del-tag,
+  .me.project .learning-goals__objectives-key-results ol.deliverables li.deliverable ul.tags li.del-tag,
+  .me.project .learning-goals__objectives-key-results ul.deliverables li.deliverable ol.tags li.del-tag,
+  .me.project .learning-goals__objectives-key-results ul.deliverables li.deliverable ul.tags li.del-tag {
+    margin: 0;
+    padding: 1rem 1.5rem;
+  }
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  .me.project .learning-goals__objectives-key-results ol.deliverables li.deliverable,
+  .me.project .learning-goals__objectives-key-results ul.deliverables li.deliverable {
+    flex-direction: row;
+  }
+  .me.project .learning-goals__objectives-key-results ol.deliverables li.deliverable .description,
+  .me.project .learning-goals__objectives-key-results ul.deliverables li.deliverable .description {
+    margin: 0;
+    padding: 1rem 1.5rem 1rem 2rem;
+    width: 66.666%;
+  }
+  .me.project .learning-goals__objectives-key-results ol.deliverables li.deliverable ol.tags,
+  .me.project .learning-goals__objectives-key-results ol.deliverables li.deliverable ul.tags,
+  .me.project .learning-goals__objectives-key-results ul.deliverables li.deliverable ol.tags,
+  .me.project .learning-goals__objectives-key-results ul.deliverables li.deliverable ul.tags {
+    flex-direction: column;
+    width: 33.333%;
+  }
+  .me.project .learning-goals__objectives-key-results ol.deliverables li.deliverable ol.tags li.del-tag,
+  .me.project .learning-goals__objectives-key-results ol.deliverables li.deliverable ul.tags li.del-tag,
+  .me.project .learning-goals__objectives-key-results ul.deliverables li.deliverable ol.tags li.del-tag,
+  .me.project .learning-goals__objectives-key-results ul.deliverables li.deliverable ul.tags li.del-tag {
+    margin: 0;
+    padding: 1rem 1.5rem;
+  }
+}
+@media (min-width: 1201px) {
+  .me.project .learning-goals__objectives-key-results ol.deliverables li.deliverable,
+  .me.project .learning-goals__objectives-key-results ul.deliverables li.deliverable {
+    flex-direction: row;
+  }
+  .me.project .learning-goals__objectives-key-results ol.deliverables li.deliverable .description,
+  .me.project .learning-goals__objectives-key-results ul.deliverables li.deliverable .description {
+    margin: 0;
+    padding: 1rem 1.5rem 1cap 3rem;
+    width: 75%;
+  }
+  .me.project .learning-goals__objectives-key-results ol.deliverables li.deliverable ol.tags,
+  .me.project .learning-goals__objectives-key-results ol.deliverables li.deliverable ul.tags,
+  .me.project .learning-goals__objectives-key-results ul.deliverables li.deliverable ol.tags,
+  .me.project .learning-goals__objectives-key-results ul.deliverables li.deliverable ul.tags {
+    flex-direction: column;
+    width: 25%;
+  }
+  .me.project .learning-goals__objectives-key-results ol.deliverables li.deliverable ol.tags li.del-tag,
+  .me.project .learning-goals__objectives-key-results ol.deliverables li.deliverable ul.tags li.del-tag,
+  .me.project .learning-goals__objectives-key-results ul.deliverables li.deliverable ol.tags li.del-tag,
+  .me.project .learning-goals__objectives-key-results ul.deliverables li.deliverable ul.tags li.del-tag {
+    margin: 0;
+    padding: 1rem 1.5rem;
+  }
+}
+.me.project .learning-goals__success-metrics {
+  margin: 0;
+  padding: 0 0 1.5rem 0;
+}
+.me.project .learning-goals__success-metrics h3 {
+  margin: 0;
+  padding: 1.5rem 0;
+}
+.me.project .learning-goals__success-metrics h4 {
+  margin: 0;
+  padding: 1.5rem 0 0.5rem 2rem;
+}
+.me.project .learning-goals__success-metrics ol.metrics,
+.me.project .learning-goals__success-metrics ul.metrics {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+.me.project .learning-goals__success-metrics ol.metrics li.success-item,
+.me.project .learning-goals__success-metrics ul.metrics li.success-item {
+  display: flex;
+}
+.me.project .learning-goals__success-metrics ol.metrics li.success-item .quantitative-tag,
+.me.project .learning-goals__success-metrics ol.metrics li.success-item .quantitative-unit,
+.me.project .learning-goals__success-metrics ol.metrics li.success-item .qualitative-tag,
+.me.project .learning-goals__success-metrics ol.metrics li.success-item .qualitative-unit,
+.me.project .learning-goals__success-metrics ul.metrics li.success-item .quantitative-tag,
+.me.project .learning-goals__success-metrics ul.metrics li.success-item .quantitative-unit,
+.me.project .learning-goals__success-metrics ul.metrics li.success-item .qualitative-tag,
+.me.project .learning-goals__success-metrics ul.metrics li.success-item .qualitative-unit {
+  display: flex;
+}
+.me.project .learning-goals__success-metrics ol.metrics li.success-item .quantitative-unit.na,
+.me.project .learning-goals__success-metrics ol.metrics li.success-item .qualitative-unit.na,
+.me.project .learning-goals__success-metrics ul.metrics li.success-item .quantitative-unit.na,
+.me.project .learning-goals__success-metrics ul.metrics li.success-item .qualitative-unit.na {
+  font-weight: 300;
+  text-transform: uppercase;
+  font-style: italic;
+  font-size: 1rem;
+  color: #bdbdbd;
+}
+@media (min-width: 0px) and (max-width: 376px) {
+  .me.project .learning-goals__success-metrics h4 {
+    margin: 0;
+    padding: 0 0 0.5rem 0;
+  }
+  .me.project .learning-goals__success-metrics ol.metrics,
+  .me.project .learning-goals__success-metrics ul.metrics {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .me.project .learning-goals__success-metrics ol.metrics li.success-item .quantitative-tag,
+  .me.project .learning-goals__success-metrics ol.metrics li.success-item .qualitative-tag,
+  .me.project .learning-goals__success-metrics ul.metrics li.success-item .quantitative-tag,
+  .me.project .learning-goals__success-metrics ul.metrics li.success-item .qualitative-tag {
+    flex-direction: row;
+    margin: 0 auto 0 0;
+    padding: 1rem 1.5rem;
+  }
+  .me.project .learning-goals__success-metrics ol.metrics li.success-item .quantitative-unit,
+  .me.project .learning-goals__success-metrics ol.metrics li.success-item .qualitative-unit,
+  .me.project .learning-goals__success-metrics ul.metrics li.success-item .quantitative-unit,
+  .me.project .learning-goals__success-metrics ul.metrics li.success-item .qualitative-unit {
+    flex-direction: row;
+    margin: 0;
+    padding: 1rem 1.5rem;
+  }
+}
+@media (min-width: 377px) and (max-width: 576px) {
+  .me.project .learning-goals__success-metrics h4 {
+    margin: 0;
+    padding: 0 0 0.5rem 0;
+  }
+  .me.project .learning-goals__success-metrics ol.metrics,
+  .me.project .learning-goals__success-metrics ul.metrics {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .me.project .learning-goals__success-metrics ol.metrics li.success-item .quantitative-tag,
+  .me.project .learning-goals__success-metrics ol.metrics li.success-item .qualitative-tag,
+  .me.project .learning-goals__success-metrics ul.metrics li.success-item .quantitative-tag,
+  .me.project .learning-goals__success-metrics ul.metrics li.success-item .qualitative-tag {
+    flex-direction: row;
+    margin: 0 auto 0 0;
+    padding: 1rem 1.5rem;
+  }
+  .me.project .learning-goals__success-metrics ol.metrics li.success-item .quantitative-unit,
+  .me.project .learning-goals__success-metrics ol.metrics li.success-item .qualitative-unit,
+  .me.project .learning-goals__success-metrics ul.metrics li.success-item .quantitative-unit,
+  .me.project .learning-goals__success-metrics ul.metrics li.success-item .qualitative-unit {
+    flex-direction: row;
+    margin: 0;
+    padding: 1rem 1.5rem;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  .me.project .learning-goals__success-metrics ol.metrics,
+  .me.project .learning-goals__success-metrics ul.metrics {
+    flex-direction: column;
+    margin: 0;
+    padding: 0 2rem;
+    width: calc(100% - 4rem);
+  }
+  .me.project .learning-goals__success-metrics ol.metrics li.success-item .quantitative-tag,
+  .me.project .learning-goals__success-metrics ol.metrics li.success-item .qualitative-tag,
+  .me.project .learning-goals__success-metrics ul.metrics li.success-item .quantitative-tag,
+  .me.project .learning-goals__success-metrics ul.metrics li.success-item .qualitative-tag {
+    flex-direction: row;
+    margin: 0 auto 0 0;
+    padding: 1rem 1.5rem;
+  }
+  .me.project .learning-goals__success-metrics ol.metrics li.success-item .quantitative-unit,
+  .me.project .learning-goals__success-metrics ol.metrics li.success-item .qualitative-unit,
+  .me.project .learning-goals__success-metrics ul.metrics li.success-item .quantitative-unit,
+  .me.project .learning-goals__success-metrics ul.metrics li.success-item .qualitative-unit {
+    flex-direction: row;
+    margin: 0;
+    padding: 1rem 1.5rem;
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  .me.project .learning-goals__success-metrics ol.metrics,
+  .me.project .learning-goals__success-metrics ul.metrics {
+    flex-direction: column;
+    margin: 0;
+    padding: 0 2rem;
+    width: calc(66.666% - 4rem);
+  }
+  .me.project .learning-goals__success-metrics ol.metrics li.success-item .quantitative-tag,
+  .me.project .learning-goals__success-metrics ol.metrics li.success-item .qualitative-tag,
+  .me.project .learning-goals__success-metrics ul.metrics li.success-item .quantitative-tag,
+  .me.project .learning-goals__success-metrics ul.metrics li.success-item .qualitative-tag {
+    flex-direction: row;
+    margin: 0 auto 0 0;
+    padding: 1rem 1.5rem;
+  }
+  .me.project .learning-goals__success-metrics ol.metrics li.success-item .quantitative-unit,
+  .me.project .learning-goals__success-metrics ol.metrics li.success-item .qualitative-unit,
+  .me.project .learning-goals__success-metrics ul.metrics li.success-item .quantitative-unit,
+  .me.project .learning-goals__success-metrics ul.metrics li.success-item .qualitative-unit {
+    flex-direction: row;
+    margin: 0;
+    padding: 1rem 1.5rem;
+  }
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  .me.project .learning-goals__success-metrics ol.metrics,
+  .me.project .learning-goals__success-metrics ul.metrics {
+    flex-direction: column;
+    margin: 0;
+    padding: 0 2rem;
+    width: calc(50% - 4rem);
+  }
+  .me.project .learning-goals__success-metrics ol.metrics li.success-item .quantitative-tag,
+  .me.project .learning-goals__success-metrics ol.metrics li.success-item .qualitative-tag,
+  .me.project .learning-goals__success-metrics ul.metrics li.success-item .quantitative-tag,
+  .me.project .learning-goals__success-metrics ul.metrics li.success-item .qualitative-tag {
+    flex-direction: row;
+    margin: 0 auto 0 0;
+    padding: 1rem 1.5rem;
+  }
+  .me.project .learning-goals__success-metrics ol.metrics li.success-item .quantitative-unit,
+  .me.project .learning-goals__success-metrics ol.metrics li.success-item .qualitative-unit,
+  .me.project .learning-goals__success-metrics ul.metrics li.success-item .quantitative-unit,
+  .me.project .learning-goals__success-metrics ul.metrics li.success-item .qualitative-unit {
+    flex-direction: row;
+    margin: 0;
+    padding: 1rem 1.5rem;
+  }
+}
+@media (min-width: 1201px) {
+  .me.project .learning-goals__success-metrics ol.metrics,
+  .me.project .learning-goals__success-metrics ul.metrics {
+    flex-direction: column;
+    margin: 0;
+    padding: 0 2rem;
+    width: calc(50% - 4rem);
+  }
+  .me.project .learning-goals__success-metrics ol.metrics li.success-item .quantitative-tag,
+  .me.project .learning-goals__success-metrics ol.metrics li.success-item .qualitative-tag,
+  .me.project .learning-goals__success-metrics ul.metrics li.success-item .quantitative-tag,
+  .me.project .learning-goals__success-metrics ul.metrics li.success-item .qualitative-tag {
+    flex-direction: row;
+    margin: 0 auto 0 0;
+    padding: 1rem 1.5rem;
+  }
+  .me.project .learning-goals__success-metrics ol.metrics li.success-item .quantitative-unit,
+  .me.project .learning-goals__success-metrics ol.metrics li.success-item .qualitative-unit,
+  .me.project .learning-goals__success-metrics ul.metrics li.success-item .quantitative-unit,
+  .me.project .learning-goals__success-metrics ul.metrics li.success-item .qualitative-unit {
+    flex-direction: row;
+    margin: 0;
+    padding: 1rem 1.5rem;
+  }
+}
+.me.project img.center-scaled {
+  width: 100%;
+  height: auto;
+  margin: 1.5rem auto;
+}
+.me.project a.chev-button_bar {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+  font-weight: 250;
+  font-size: 2rem;
+  background-color: #b8fff5;
+  background-image: url("https://ik.imagekit.io/mp2mjn7fgdt/me/v2/theme/assets/chevron-button__background.png");
+  background-repeat: repeat-x;
+  background-position: center center;
+}
+.me.project a.chev-button_bar .chev-button {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 1.5rem 2.5rem;
+  background: linear-gradient(135deg, #ffa600 40%, #07ffde);
+}
+.me.project a.chev-button_bar:hover {
+  font-weight: 350;
+  background-color: #07ffde;
+}
+.me.project a.chev-button_bar:hover .chev-button {
+  background: linear-gradient(135deg, #ffa600 10%, #07ffde);
+}
+.me.project ol.deck,
+.me.project ul.deck {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.me.project ol.deck .copy,
+.me.project ul.deck .copy {
+  display: flex;
+  flex-direction: column;
+}
+.me.project ol.deck .copy .header,
+.me.project ul.deck .copy .header {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0.5rem 0;
+}
+.me.project ol.deck .copy .header .title,
+.me.project ul.deck .copy .header .title {
+  display: flex;
+  font-weight: 350;
+  font-size: 1.35rem;
+}
+.me.project ol.deck .copy .header .subtitle,
+.me.project ul.deck .copy .header .subtitle {
+  display: flex;
+  font-weight: 200;
+  font-size: 0.85rem;
+}
+.me.project ol.deck .copy .body,
+.me.project ul.deck .copy .body {
+  display: flex;
+}
+.me.project ol.deck .copy .body p,
+.me.project ul.deck .copy .body p {
+  font-size: 1.15rem;
+}
+.me.project ol.deck__process-summary li.card .image img.zoom,
+.me.project ol.deck__process-summary li.card .image img.square,
+.me.project ol.deck__process-summary li.card .image img.rectangle,
+.me.project ul.deck__process-summary li.card .image img.zoom,
+.me.project ul.deck__process-summary li.card .image img.square,
+.me.project ul.deck__process-summary li.card .image img.rectangle {
+  display: none;
+}
+.me.project ol.deck__process-summary li.card .copy .header .subtitle,
+.me.project ul.deck__process-summary li.card .copy .header .subtitle {
+  display: none;
+}
+.me.project ol.deck__process-summary li.card .copy .body,
+.me.project ul.deck__process-summary li.card .copy .body {
+  padding: 0 0 auto 0;
+  margin: 0.5rem 0 0 0;
+}
+.me.project ol.deck__process-summary li.card .copy .body p,
+.me.project ul.deck__process-summary li.card .copy .body p {
+  margin: 0 0 auto 0;
+}
+@media (min-width: 0px) and (max-width: 376px) {
+  .me.project ol.deck__process-summary li.card,
+  .me.project ul.deck__process-summary li.card {
+    width: 100%;
+    flex-direction: column;
+  }
+  .me.project ol.deck__process-summary li.card .copy,
+  .me.project ul.deck__process-summary li.card .copy {
+    margin: 0.5rem 0;
+    padding: 0.25rem 0;
+    height: calc(100% - 1.5rem);
+  }
+  .me.project ol.deck__process-summary li.card .copy .header,
+  .me.project ol.deck__process-summary li.card .copy .body,
+  .me.project ul.deck__process-summary li.card .copy .header,
+  .me.project ul.deck__process-summary li.card .copy .body {
+    margin: 1rem 0;
+    padding: 0 1rem;
+  }
+}
+@media (min-width: 377px) and (max-width: 576px) {
+  .me.project ol.deck__process-summary li.card,
+  .me.project ul.deck__process-summary li.card {
+    width: 100%;
+    flex-direction: column;
+  }
+  .me.project ol.deck__process-summary li.card .copy,
+  .me.project ul.deck__process-summary li.card .copy {
+    margin: 0.5rem 0;
+    padding: 0.25rem 0;
+    height: calc(100% - 1.5rem);
+  }
+  .me.project ol.deck__process-summary li.card .copy .header,
+  .me.project ol.deck__process-summary li.card .copy .body,
+  .me.project ul.deck__process-summary li.card .copy .header,
+  .me.project ul.deck__process-summary li.card .copy .body {
+    margin: 1rem 0;
+    padding: 0 1rem;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  .me.project ol.deck__process-summary li.card,
+  .me.project ul.deck__process-summary li.card {
+    width: 100%;
+    flex-direction: column;
+  }
+  .me.project ol.deck__process-summary li.card .copy,
+  .me.project ul.deck__process-summary li.card .copy {
+    margin: 0.5rem 0;
+    padding: 0.25rem 0;
+    height: calc(100% - 1.5rem);
+  }
+  .me.project ol.deck__process-summary li.card .copy .header,
+  .me.project ol.deck__process-summary li.card .copy .body,
+  .me.project ul.deck__process-summary li.card .copy .header,
+  .me.project ul.deck__process-summary li.card .copy .body {
+    margin: 1rem 0;
+    padding: 0 1rem;
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  .me.project ol.deck__process-summary li.card,
+  .me.project ul.deck__process-summary li.card {
+    width: 50%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .me.project ol.deck__process-summary li.card .copy,
+  .me.project ul.deck__process-summary li.card .copy {
+    margin: 0.5rem 0;
+    padding: 0.25rem 0;
+    height: calc(100% - 1.5rem);
+  }
+  .me.project ol.deck__process-summary li.card .copy .header,
+  .me.project ol.deck__process-summary li.card .copy .body,
+  .me.project ul.deck__process-summary li.card .copy .header,
+  .me.project ul.deck__process-summary li.card .copy .body {
+    margin: 1rem 0;
+    padding: 0 1rem;
+  }
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  .me.project ol.deck__process-summary li.card,
+  .me.project ul.deck__process-summary li.card {
+    width: 25%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .me.project ol.deck__process-summary li.card:first-child .copy,
+  .me.project ul.deck__process-summary li.card:first-child .copy {
+    padding: 0.25rem 1rem 0.25rem 0;
+  }
+  .me.project ol.deck__process-summary li.card .copy,
+  .me.project ul.deck__process-summary li.card .copy {
+    margin: 0.5rem 0;
+    padding: 0.25rem 0;
+    height: calc(100% - 1.5rem);
+  }
+  .me.project ol.deck__process-summary li.card .copy .header,
+  .me.project ol.deck__process-summary li.card .copy .body,
+  .me.project ul.deck__process-summary li.card .copy .header,
+  .me.project ul.deck__process-summary li.card .copy .body {
+    margin: 1rem 0;
+    padding: 0 1rem;
+  }
+  .me.project ol.deck__process-summary li.card:last-child .copy,
+  .me.project ul.deck__process-summary li.card:last-child .copy {
+    padding: 0.25rem 0 0.25rem 1rem;
+  }
+}
+@media (min-width: 1201px) {
+  .me.project ol.deck__process-summary li.card,
+  .me.project ul.deck__process-summary li.card {
+    width: 25%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .me.project ol.deck__process-summary li.card:first-child .copy,
+  .me.project ul.deck__process-summary li.card:first-child .copy {
+    padding: 0.25rem 1rem 0.25rem 0;
+  }
+  .me.project ol.deck__process-summary li.card .copy,
+  .me.project ul.deck__process-summary li.card .copy {
+    margin: 0.5rem 0;
+    padding: 0.25rem 0;
+    height: calc(100% - 1.5rem);
+  }
+  .me.project ol.deck__process-summary li.card .copy .header,
+  .me.project ol.deck__process-summary li.card .copy .body,
+  .me.project ul.deck__process-summary li.card .copy .header,
+  .me.project ul.deck__process-summary li.card .copy .body {
+    margin: 1rem 0;
+    padding: 0 1rem;
+  }
+  .me.project ol.deck__process-summary li.card:last-child .copy,
+  .me.project ul.deck__process-summary li.card:last-child .copy {
+    padding: 0.25rem 0 0.25rem 1rem;
+  }
+}
+@media (min-width: 0px) and (max-width: 376px) {
+  .me.project ol.deck__process-summary,
+  .me.project ul.deck__process-summary {
+    flex-direction: column;
+  }
+}
+@media (min-width: 377px) and (max-width: 576px) {
+  .me.project ol.deck__process-summary,
+  .me.project ul.deck__process-summary {
+    flex-direction: column;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  .me.project ol.deck__process-summary,
+  .me.project ul.deck__process-summary {
+    flex-direction: column;
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  .me.project ol.deck__process-summary,
+  .me.project ul.deck__process-summary {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  .me.project ol.deck__process-summary,
+  .me.project ul.deck__process-summary {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 1201px) {
+  .me.project ol.deck__process-summary,
+  .me.project ul.deck__process-summary {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+.me.project ol.deck__jobs-to-be-done li.card, .me.project ol.deck__how-might-we li.card,
+.me.project ul.deck__jobs-to-be-done li.card,
+.me.project ul.deck__how-might-we li.card {
+  display: flex;
+  list-style: none;
+}
+.me.project ol.deck__jobs-to-be-done li.card .image, .me.project ol.deck__how-might-we li.card .image,
+.me.project ul.deck__jobs-to-be-done li.card .image,
+.me.project ul.deck__how-might-we li.card .image {
+  display: none;
+}
+.me.project ol.deck__jobs-to-be-done li.card .image img,
+.me.project ol.deck__jobs-to-be-done li.card .image img.zoom,
+.me.project ol.deck__jobs-to-be-done li.card .image img.square,
+.me.project ol.deck__jobs-to-be-done li.card .image img.rectangle, .me.project ol.deck__how-might-we li.card .image img,
+.me.project ol.deck__how-might-we li.card .image img.zoom,
+.me.project ol.deck__how-might-we li.card .image img.square,
+.me.project ol.deck__how-might-we li.card .image img.rectangle,
+.me.project ul.deck__jobs-to-be-done li.card .image img,
+.me.project ul.deck__jobs-to-be-done li.card .image img.zoom,
+.me.project ul.deck__jobs-to-be-done li.card .image img.square,
+.me.project ul.deck__jobs-to-be-done li.card .image img.rectangle,
+.me.project ul.deck__how-might-we li.card .image img,
+.me.project ul.deck__how-might-we li.card .image img.zoom,
+.me.project ul.deck__how-might-we li.card .image img.square,
+.me.project ul.deck__how-might-we li.card .image img.rectangle {
+  display: none;
+}
+.me.project ol.deck__jobs-to-be-done li.card .copy .header, .me.project ol.deck__how-might-we li.card .copy .header,
+.me.project ul.deck__jobs-to-be-done li.card .copy .header,
+.me.project ul.deck__how-might-we li.card .copy .header {
+  display: flex;
+  flex-direction: column;
+}
+.me.project ol.deck__jobs-to-be-done li.card .copy .header .title, .me.project ol.deck__how-might-we li.card .copy .header .title,
+.me.project ul.deck__jobs-to-be-done li.card .copy .header .title,
+.me.project ul.deck__how-might-we li.card .copy .header .title {
+  display: flex;
+  font-weight: 350;
+  font-size: 1.35rem;
+}
+.me.project ol.deck__jobs-to-be-done li.card .copy .header ol.tags,
+.me.project ol.deck__jobs-to-be-done li.card .copy .header ul.tags, .me.project ol.deck__how-might-we li.card .copy .header ol.tags,
+.me.project ol.deck__how-might-we li.card .copy .header ul.tags,
+.me.project ul.deck__jobs-to-be-done li.card .copy .header ol.tags,
+.me.project ul.deck__jobs-to-be-done li.card .copy .header ul.tags,
+.me.project ul.deck__how-might-we li.card .copy .header ol.tags,
+.me.project ul.deck__how-might-we li.card .copy .header ul.tags {
+  padding: 0;
+}
+.me.project ol.deck__jobs-to-be-done li.card .copy .header ol.tags li.tag,
+.me.project ol.deck__jobs-to-be-done li.card .copy .header ul.tags li.tag, .me.project ol.deck__how-might-we li.card .copy .header ol.tags li.tag,
+.me.project ol.deck__how-might-we li.card .copy .header ul.tags li.tag,
+.me.project ul.deck__jobs-to-be-done li.card .copy .header ol.tags li.tag,
+.me.project ul.deck__jobs-to-be-done li.card .copy .header ul.tags li.tag,
+.me.project ul.deck__how-might-we li.card .copy .header ol.tags li.tag,
+.me.project ul.deck__how-might-we li.card .copy .header ul.tags li.tag {
+  display: inline-flex;
+  font-size: 1rem;
+  font-weight: 400;
+}
+@media (min-width: 0px) and (max-width: 376px) {
+  .me.project ol.deck__jobs-to-be-done li.card, .me.project ol.deck__how-might-we li.card,
+  .me.project ul.deck__jobs-to-be-done li.card,
+  .me.project ul.deck__how-might-we li.card {
+    width: 100%;
+    flex-direction: column;
+  }
+  .me.project ol.deck__jobs-to-be-done li.card .copy, .me.project ol.deck__how-might-we li.card .copy,
+  .me.project ul.deck__jobs-to-be-done li.card .copy,
+  .me.project ul.deck__how-might-we li.card .copy {
+    margin: 0 0 3rem 0;
+    padding: 0;
+  }
+}
+@media (min-width: 377px) and (max-width: 576px) {
+  .me.project ol.deck__jobs-to-be-done li.card, .me.project ol.deck__how-might-we li.card,
+  .me.project ul.deck__jobs-to-be-done li.card,
+  .me.project ul.deck__how-might-we li.card {
+    width: 100%;
+    flex-direction: column;
+  }
+  .me.project ol.deck__jobs-to-be-done li.card .copy, .me.project ol.deck__how-might-we li.card .copy,
+  .me.project ul.deck__jobs-to-be-done li.card .copy,
+  .me.project ul.deck__how-might-we li.card .copy {
+    margin: 0 0 3rem 0;
+    padding: 0;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  .me.project ol.deck__jobs-to-be-done li.card, .me.project ol.deck__how-might-we li.card,
+  .me.project ul.deck__jobs-to-be-done li.card,
+  .me.project ul.deck__how-might-we li.card {
+    width: 100%;
+    flex-direction: column;
+  }
+  .me.project ol.deck__jobs-to-be-done li.card .copy, .me.project ol.deck__how-might-we li.card .copy,
+  .me.project ul.deck__jobs-to-be-done li.card .copy,
+  .me.project ul.deck__how-might-we li.card .copy {
+    margin: 0 0 3rem 0;
+    padding: 0;
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  .me.project ol.deck__jobs-to-be-done li.card, .me.project ol.deck__how-might-we li.card,
+  .me.project ul.deck__jobs-to-be-done li.card,
+  .me.project ul.deck__how-might-we li.card {
+    width: 50%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .me.project ol.deck__jobs-to-be-done li.card:nth-child(odd) .copy, .me.project ol.deck__how-might-we li.card:nth-child(odd) .copy,
+  .me.project ul.deck__jobs-to-be-done li.card:nth-child(odd) .copy,
+  .me.project ul.deck__how-might-we li.card:nth-child(odd) .copy {
+    padding: 0 1rem 0 0;
+  }
+  .me.project ol.deck__jobs-to-be-done li.card .copy, .me.project ol.deck__how-might-we li.card .copy,
+  .me.project ul.deck__jobs-to-be-done li.card .copy,
+  .me.project ul.deck__how-might-we li.card .copy {
+    margin: 0 0 3rem 0;
+    padding: 0 0 0 1rem;
+  }
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  .me.project ol.deck__jobs-to-be-done li.card, .me.project ol.deck__how-might-we li.card,
+  .me.project ul.deck__jobs-to-be-done li.card,
+  .me.project ul.deck__how-might-we li.card {
+    width: 50%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .me.project ol.deck__jobs-to-be-done li.card:nth-child(odd) .copy, .me.project ol.deck__how-might-we li.card:nth-child(odd) .copy,
+  .me.project ul.deck__jobs-to-be-done li.card:nth-child(odd) .copy,
+  .me.project ul.deck__how-might-we li.card:nth-child(odd) .copy {
+    padding: 0 1rem 0 0;
+  }
+  .me.project ol.deck__jobs-to-be-done li.card .copy, .me.project ol.deck__how-might-we li.card .copy,
+  .me.project ul.deck__jobs-to-be-done li.card .copy,
+  .me.project ul.deck__how-might-we li.card .copy {
+    margin: 0 0 3rem 0;
+    padding: 0 0 0 1rem;
+  }
+}
+@media (min-width: 1201px) {
+  .me.project ol.deck__jobs-to-be-done li.card, .me.project ol.deck__how-might-we li.card,
+  .me.project ul.deck__jobs-to-be-done li.card,
+  .me.project ul.deck__how-might-we li.card {
+    width: 50%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .me.project ol.deck__jobs-to-be-done li.card:nth-child(odd) .copy, .me.project ol.deck__how-might-we li.card:nth-child(odd) .copy,
+  .me.project ul.deck__jobs-to-be-done li.card:nth-child(odd) .copy,
+  .me.project ul.deck__how-might-we li.card:nth-child(odd) .copy {
+    padding: 0 1rem 0 0;
+  }
+  .me.project ol.deck__jobs-to-be-done li.card .copy, .me.project ol.deck__how-might-we li.card .copy,
+  .me.project ul.deck__jobs-to-be-done li.card .copy,
+  .me.project ul.deck__how-might-we li.card .copy {
+    margin: 0 0 3rem 0;
+    padding: 0 0 0 1rem;
+  }
+}
+@media (min-width: 0px) and (max-width: 376px) {
+  .me.project ol.deck__jobs-to-be-done, .me.project ol.deck__how-might-we,
+  .me.project ul.deck__jobs-to-be-done,
+  .me.project ul.deck__how-might-we {
+    flex-direction: column;
+  }
+}
+@media (min-width: 377px) and (max-width: 576px) {
+  .me.project ol.deck__jobs-to-be-done, .me.project ol.deck__how-might-we,
+  .me.project ul.deck__jobs-to-be-done,
+  .me.project ul.deck__how-might-we {
+    flex-direction: column;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  .me.project ol.deck__jobs-to-be-done, .me.project ol.deck__how-might-we,
+  .me.project ul.deck__jobs-to-be-done,
+  .me.project ul.deck__how-might-we {
+    flex-direction: column;
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  .me.project ol.deck__jobs-to-be-done, .me.project ol.deck__how-might-we,
+  .me.project ul.deck__jobs-to-be-done,
+  .me.project ul.deck__how-might-we {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  .me.project ol.deck__jobs-to-be-done, .me.project ol.deck__how-might-we,
+  .me.project ul.deck__jobs-to-be-done,
+  .me.project ul.deck__how-might-we {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 1201px) {
+  .me.project ol.deck__jobs-to-be-done, .me.project ol.deck__how-might-we,
+  .me.project ul.deck__jobs-to-be-done,
+  .me.project ul.deck__how-might-we {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+.me.project ol.deck__jobs-to-be-done li.card .copy .header,
+.me.project ul.deck__jobs-to-be-done li.card .copy .header {
+  margin: 0 0 0.5rem 0;
+}
+.me.project ol.deck__jobs-to-be-done li.card .copy .header ol.tags,
+.me.project ol.deck__jobs-to-be-done li.card .copy .header ul.tags,
+.me.project ul.deck__jobs-to-be-done li.card .copy .header ol.tags,
+.me.project ul.deck__jobs-to-be-done li.card .copy .header ul.tags {
+  margin: 0.5rem auto 0 0;
+}
+.me.project ol.deck__jobs-to-be-done li.card .copy .header ol.tags li.tag,
+.me.project ol.deck__jobs-to-be-done li.card .copy .header ul.tags li.tag,
+.me.project ul.deck__jobs-to-be-done li.card .copy .header ol.tags li.tag,
+.me.project ul.deck__jobs-to-be-done li.card .copy .header ul.tags li.tag {
+  margin: 0.25rem auto 0 0;
+  padding: 0.15rem 0.5rem;
+}
+.me.project ol.deck__jobs-to-be-done li.card .copy .body,
+.me.project ul.deck__jobs-to-be-done li.card .copy .body {
+  margin: 0.5rem 0 auto 0;
+}
+.me.project ol.deck__jobs-to-be-done li.card .copy .body p,
+.me.project ul.deck__jobs-to-be-done li.card .copy .body p {
+  margin: 0 0 auto 0;
+}
+.me.project ol.deck__how-might-we li.card .copy .header,
+.me.project ul.deck__how-might-we li.card .copy .header {
+  margin: 0 0 0.5rem 0;
+}
+.me.project ol.deck__how-might-we li.card .copy .header .title,
+.me.project ul.deck__how-might-we li.card .copy .header .title {
+  display: none;
+}
+.me.project ol.deck__how-might-we li.card .copy .header ol.tags,
+.me.project ol.deck__how-might-we li.card .copy .header ul.tags,
+.me.project ul.deck__how-might-we li.card .copy .header ol.tags,
+.me.project ul.deck__how-might-we li.card .copy .header ul.tags {
+  margin: 0 auto 0 0;
+}
+.me.project ol.deck__how-might-we li.card .copy .header ol.tags li.tag,
+.me.project ol.deck__how-might-we li.card .copy .header ul.tags li.tag,
+.me.project ul.deck__how-might-we li.card .copy .header ol.tags li.tag,
+.me.project ul.deck__how-might-we li.card .copy .header ul.tags li.tag {
+  margin: 0 auto 0 0;
+  padding: 0.15rem 0.5rem;
+}
+.me.project ol.deck__how-might-we li.card .copy .body,
+.me.project ul.deck__how-might-we li.card .copy .body {
+  margin: 0.5rem 0 auto 0;
+}
+.me.project ol.deck__how-might-we li.card .copy .body p,
+.me.project ul.deck__how-might-we li.card .copy .body p {
+  margin: 0 0 auto 0;
+}
+.me.project ol.deck__personas,
+.me.project ul.deck__personas {
+  flex-wrap: wrap;
+}
+.me.project ol.deck__personas li.card,
+.me.project ul.deck__personas li.card {
+  display: flex;
+  list-style: none;
+}
+.me.project ol.deck__personas li.card .image,
+.me.project ul.deck__personas li.card .image {
+  display: flex;
+  overflow: clip;
+}
+.me.project ol.deck__personas li.card .image img.zoom,
+.me.project ol.deck__personas li.card .image img.rectangle,
+.me.project ul.deck__personas li.card .image img.zoom,
+.me.project ul.deck__personas li.card .image img.rectangle {
+  display: none;
+}
+.me.project ol.deck__personas li.card .image img,
+.me.project ul.deck__personas li.card .image img {
+  display: flex;
+}
+@media (min-width: 0px) and (max-width: 376px) {
+  .me.project ol.deck__personas li.card,
+  .me.project ul.deck__personas li.card {
+    flex-direction: column;
+    width: 100%;
+  }
+  .me.project ol.deck__personas li.card .image,
+  .me.project ul.deck__personas li.card .image {
+    width: 100%;
+  }
+  .me.project ol.deck__personas li.card .image img.square,
+  .me.project ul.deck__personas li.card .image img.square {
+    width: 100%;
+    height: auto;
+  }
+  .me.project ol.deck__personas li.card .copy,
+  .me.project ul.deck__personas li.card .copy {
+    padding: 1.5rem 1.5rem 3rem 1.5rem;
+  }
+  .me.project ol.deck__personas li.card .copy .title,
+  .me.project ul.deck__personas li.card .copy .title {
+    margin: 0 auto 0.5rem auto;
+  }
+  .me.project ol.deck__personas li.card .copy .body p,
+  .me.project ul.deck__personas li.card .copy .body p {
+    margin: 0.5rem 0 0 0;
+  }
+}
+@media (min-width: 377px) and (max-width: 576px) {
+  .me.project ol.deck__personas li.card,
+  .me.project ul.deck__personas li.card {
+    flex-direction: column;
+    width: 100%;
+  }
+  .me.project ol.deck__personas li.card .image,
+  .me.project ul.deck__personas li.card .image {
+    width: 100%;
+  }
+  .me.project ol.deck__personas li.card .image img,
+  .me.project ul.deck__personas li.card .image img {
+    margin: 0 auto;
+  }
+  .me.project ol.deck__personas li.card .image img.square,
+  .me.project ul.deck__personas li.card .image img.square {
+    width: 375px;
+    height: 375px;
+  }
+  .me.project ol.deck__personas li.card .copy,
+  .me.project ul.deck__personas li.card .copy {
+    width: 375px;
+    padding: 1.5rem 0 3rem 0;
+    margin: 0 auto;
+  }
+  .me.project ol.deck__personas li.card .copy .title,
+  .me.project ul.deck__personas li.card .copy .title {
+    margin: 0 auto 0.5rem auto;
+  }
+  .me.project ol.deck__personas li.card .copy .body p,
+  .me.project ul.deck__personas li.card .copy .body p {
+    margin: 0.5rem 0 0 0;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  .me.project ol.deck__personas li.card,
+  .me.project ul.deck__personas li.card {
+    flex-direction: row;
+    width: 100%;
+  }
+  .me.project ol.deck__personas li.card .image,
+  .me.project ul.deck__personas li.card .image {
+    width: 100%;
+  }
+  .me.project ol.deck__personas li.card .image img,
+  .me.project ul.deck__personas li.card .image img {
+    margin: 0 auto;
+  }
+  .me.project ol.deck__personas li.card .image img.square,
+  .me.project ul.deck__personas li.card .image img.square {
+    width: 250px;
+    height: 250px;
+  }
+  .me.project ol.deck__personas li.card .copy,
+  .me.project ul.deck__personas li.card .copy {
+    margin: auto 1.5rem;
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  .me.project ol.deck__personas li.card,
+  .me.project ul.deck__personas li.card {
+    flex-direction: row;
+    width: 100%;
+  }
+  .me.project ol.deck__personas li.card .image,
+  .me.project ul.deck__personas li.card .image {
+    width: 250px;
+  }
+  .me.project ol.deck__personas li.card img.square,
+  .me.project ul.deck__personas li.card img.square {
+    width: 250px;
+    height: 250px;
+  }
+  .me.project ol.deck__personas li.card .copy,
+  .me.project ul.deck__personas li.card .copy {
+    margin: auto 1.5rem;
+  }
+  .me.project ol.deck__personas li.card .copy p,
+  .me.project ul.deck__personas li.card .copy p {
+    margin: 0.5rem 0 auto 0;
+  }
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  .me.project ol.deck__personas li.card,
+  .me.project ul.deck__personas li.card {
+    flex-direction: row;
+    width: 100%;
+  }
+  .me.project ol.deck__personas li.card .image,
+  .me.project ul.deck__personas li.card .image {
+    width: 300px;
+  }
+  .me.project ol.deck__personas li.card .image img.square,
+  .me.project ul.deck__personas li.card .image img.square {
+    width: 300px;
+    height: 300px;
+  }
+  .me.project ol.deck__personas li.card .copy,
+  .me.project ul.deck__personas li.card .copy {
+    margin: auto 1.5rem;
+  }
+  .me.project ol.deck__personas li.card .copy p,
+  .me.project ul.deck__personas li.card .copy p {
+    margin: 0.5rem 0 auto 0;
+  }
+}
+@media (min-width: 1201px) {
+  .me.project ol.deck__personas li.card,
+  .me.project ul.deck__personas li.card {
+    flex-direction: row;
+    width: 50%;
+  }
+  .me.project ol.deck__personas li.card .image img.square,
+  .me.project ul.deck__personas li.card .image img.square {
+    width: 300px;
+    height: 300px;
+  }
+  .me.project ol.deck__personas li.card .copy,
+  .me.project ul.deck__personas li.card .copy {
+    margin: auto 1.5rem;
+  }
+  .me.project ol.deck__personas li.card .copy p,
+  .me.project ul.deck__personas li.card .copy p {
+    margin: 0.5rem 0 auto 0;
+  }
+}
+.me.project ol.deck__personas li.quote-card,
+.me.project ul.deck__personas li.quote-card {
+  display: flex;
+  list-style: none;
+  position: relative;
+  background-color: rgba(179, 255, 245, 0.5098039216);
+}
+.me.project ol.deck__personas li.quote-card .image,
+.me.project ul.deck__personas li.quote-card .image {
+  display: flex;
+  z-index: 10;
+  overflow: clip;
+}
+.me.project ol.deck__personas li.quote-card .image img.zoom,
+.me.project ol.deck__personas li.quote-card .image img.rectangle,
+.me.project ul.deck__personas li.quote-card .image img.zoom,
+.me.project ul.deck__personas li.quote-card .image img.rectangle {
+  display: none;
+}
+.me.project ol.deck__personas li.quote-card .image img,
+.me.project ul.deck__personas li.quote-card .image img {
+  display: flex;
+}
+.me.project ol.deck__personas li.quote-card .copy,
+.me.project ul.deck__personas li.quote-card .copy {
+  position: absolute;
+  z-index: 20;
+}
+.me.project ol.deck__personas li.quote-card .copy p.quote,
+.me.project ul.deck__personas li.quote-card .copy p.quote {
+  text-shadow: 1px 2px 1px #7be4d5;
+  color: #000;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 65%, rgba(131, 255, 237, 0.5) 65%);
+}
+.me.project ol.deck__personas li.quote-card .copy p.quote svg path.dbl-quote,
+.me.project ul.deck__personas li.quote-card .copy p.quote svg path.dbl-quote {
+  fill: #07ffde;
+}
+.me.project ol.deck__personas li.quote-card .copy p.quote-src,
+.me.project ul.deck__personas li.quote-card .copy p.quote-src {
+  background: linear-gradient(180deg, #07ffde 50%, rgba(255, 255, 255, 0) 50%);
+}
+.me.project ol.deck__personas li.quote-card:nth-child(odd),
+.me.project ul.deck__personas li.quote-card:nth-child(odd) {
+  background-color: rgba(110, 251, 232, 0.5294117647);
+}
+@media (min-width: 0px) and (max-width: 376px) {
+  .me.project ol.deck__personas li.quote-card,
+  .me.project ul.deck__personas li.quote-card {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+  .me.project ol.deck__personas li.quote-card .image,
+  .me.project ul.deck__personas li.quote-card .image {
+    display: none;
+  }
+  .me.project ol.deck__personas li.quote-card .image img,
+  .me.project ol.deck__personas li.quote-card .image img.square,
+  .me.project ul.deck__personas li.quote-card .image img,
+  .me.project ul.deck__personas li.quote-card .image img.square {
+    display: none;
+  }
+  .me.project ol.deck__personas li.quote-card .copy,
+  .me.project ul.deck__personas li.quote-card .copy {
+    position: inherit;
+    z-index: auto;
+  }
+  .me.project ol.deck__personas li.quote-card .copy p.context,
+  .me.project ul.deck__personas li.quote-card .copy p.context {
+    display: none;
+  }
+  .me.project ol.deck__personas li.quote-card .copy .quote-wrapper,
+  .me.project ul.deck__personas li.quote-card .copy .quote-wrapper {
+    margin: auto 0;
+    padding: 1.5rem;
+  }
+  .me.project ol.deck__personas li.quote-card .copy .quote-wrapper p.quote,
+  .me.project ul.deck__personas li.quote-card .copy .quote-wrapper p.quote {
+    margin: 0 1.5rem 0.5rem 1.5rem;
+  }
+  .me.project ol.deck__personas li.quote-card .copy p.quote-src,
+  .me.project ul.deck__personas li.quote-card .copy p.quote-src {
+    padding: 1rem 1.5rem;
+    margin: 0.5rem 0 0 0;
+    background: linear-gradient(180deg, #07ffde 50%, rgba(255, 255, 255, 0) 50%);
+  }
+}
+@media (min-width: 377px) and (max-width: 576px) {
+  .me.project ol.deck__personas li.quote-card,
+  .me.project ul.deck__personas li.quote-card {
+    flex-direction: column;
+    width: 100%;
+  }
+  .me.project ol.deck__personas li.quote-card .image,
+  .me.project ul.deck__personas li.quote-card .image {
+    width: 100%;
+  }
+  .me.project ol.deck__personas li.quote-card .image img,
+  .me.project ul.deck__personas li.quote-card .image img {
+    margin: 0 auto;
+  }
+  .me.project ol.deck__personas li.quote-card .image img.square,
+  .me.project ul.deck__personas li.quote-card .image img.square {
+    width: 375px;
+    height: 375px;
+  }
+  .me.project ol.deck__personas li.quote-card .copy,
+  .me.project ul.deck__personas li.quote-card .copy {
+    bottom: 0;
+  }
+  .me.project ol.deck__personas li.quote-card .copy p.context,
+  .me.project ul.deck__personas li.quote-card .copy p.context {
+    display: none;
+  }
+  .me.project ol.deck__personas li.quote-card .copy .quote-wrapper,
+  .me.project ul.deck__personas li.quote-card .copy .quote-wrapper {
+    padding: 0 1.5rem;
+  }
+  .me.project ol.deck__personas li.quote-card .copy .quote-wrapper p.quote,
+  .me.project ul.deck__personas li.quote-card .copy .quote-wrapper p.quote {
+    margin: 0 1.5rem 0.5rem 1.5rem;
+  }
+  .me.project ol.deck__personas li.quote-card .copy p.quote-src,
+  .me.project ul.deck__personas li.quote-card .copy p.quote-src {
+    padding: 1rem 1.5rem;
+    margin: 0.5rem 0 0 0;
+    background: linear-gradient(180deg, #07ffde 50%, rgba(255, 255, 255, 0.5) 50%);
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  .me.project ol.deck__personas li.quote-card,
+  .me.project ul.deck__personas li.quote-card {
+    flex-direction: row;
+    width: 100%;
+  }
+  .me.project ol.deck__personas li.quote-card .image img.square,
+  .me.project ul.deck__personas li.quote-card .image img.square {
+    width: 250px;
+    height: 250px;
+  }
+  .me.project ol.deck__personas li.quote-card .copy,
+  .me.project ul.deck__personas li.quote-card .copy {
+    bottom: 0;
+    left: 150px;
+  }
+  .me.project ol.deck__personas li.quote-card .copy p.context,
+  .me.project ul.deck__personas li.quote-card .copy p.context {
+    display: none;
+  }
+  .me.project ol.deck__personas li.quote-card .copy .quote-wrapper,
+  .me.project ul.deck__personas li.quote-card .copy .quote-wrapper {
+    padding: 0 1.5rem 0 0;
+  }
+  .me.project ol.deck__personas li.quote-card .copy .quote-wrapper p.quote,
+  .me.project ul.deck__personas li.quote-card .copy .quote-wrapper p.quote {
+    margin: 0 1.5rem 0.5rem 0;
+  }
+  .me.project ol.deck__personas li.quote-card .copy p.quote-src,
+  .me.project ul.deck__personas li.quote-card .copy p.quote-src {
+    padding: 1rem 1.5rem;
+    margin: 0.5rem 0 0 100px;
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  .me.project ol.deck__personas li.quote-card,
+  .me.project ul.deck__personas li.quote-card {
+    flex-direction: row;
+    width: 100%;
+  }
+  .me.project ol.deck__personas li.quote-card .image img.square,
+  .me.project ul.deck__personas li.quote-card .image img.square {
+    width: 300px;
+    height: 300px;
+  }
+  .me.project ol.deck__personas li.quote-card .copy,
+  .me.project ul.deck__personas li.quote-card .copy {
+    bottom: 0;
+    left: 200px;
+  }
+  .me.project ol.deck__personas li.quote-card .copy p.context,
+  .me.project ul.deck__personas li.quote-card .copy p.context {
+    padding: 0 1.5rem;
+    margin: 0 0 0.5rem 100px;
+  }
+  .me.project ol.deck__personas li.quote-card .copy .quote-wrapper,
+  .me.project ul.deck__personas li.quote-card .copy .quote-wrapper {
+    padding: 0 1.5rem 0 0;
+  }
+  .me.project ol.deck__personas li.quote-card .copy .quote-wrapper p.quote,
+  .me.project ul.deck__personas li.quote-card .copy .quote-wrapper p.quote {
+    margin: 0.5rem 1.5rem 0.5rem 0;
+  }
+  .me.project ol.deck__personas li.quote-card .copy p.quote-src,
+  .me.project ul.deck__personas li.quote-card .copy p.quote-src {
+    padding: 1rem 1.5rem;
+    margin: 0.5rem 0 0 100px;
+  }
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  .me.project ol.deck__personas li.quote-card,
+  .me.project ul.deck__personas li.quote-card {
+    flex-direction: row;
+    width: 100%;
+  }
+  .me.project ol.deck__personas li.quote-card .image img.square,
+  .me.project ul.deck__personas li.quote-card .image img.square {
+    width: 300px;
+    height: 300px;
+  }
+  .me.project ol.deck__personas li.quote-card .copy,
+  .me.project ul.deck__personas li.quote-card .copy {
+    bottom: 0;
+    left: 200px;
+  }
+  .me.project ol.deck__personas li.quote-card .copy p.context,
+  .me.project ul.deck__personas li.quote-card .copy p.context {
+    padding: 0 2rem;
+    margin: 0 0 0.5rem 100px;
+  }
+  .me.project ol.deck__personas li.quote-card .copy .quote-wrapper,
+  .me.project ul.deck__personas li.quote-card .copy .quote-wrapper {
+    padding: 0 2rem 0 0;
+  }
+  .me.project ol.deck__personas li.quote-card .copy .quote-wrapper p.quote,
+  .me.project ul.deck__personas li.quote-card .copy .quote-wrapper p.quote {
+    margin: 0.5rem 1.5rem 0.5rem 0;
+  }
+  .me.project ol.deck__personas li.quote-card .copy p.quote-src,
+  .me.project ul.deck__personas li.quote-card .copy p.quote-src {
+    padding: 1rem 2rem;
+    margin: 0.5rem 0 0 100px;
+  }
+}
+@media (min-width: 1201px) {
+  .me.project ol.deck__personas li.quote-card,
+  .me.project ul.deck__personas li.quote-card {
+    flex-direction: row;
+    width: 100%;
+  }
+  .me.project ol.deck__personas li.quote-card .image img.square,
+  .me.project ul.deck__personas li.quote-card .image img.square {
+    width: 350px;
+    height: 350px;
+  }
+  .me.project ol.deck__personas li.quote-card .copy,
+  .me.project ul.deck__personas li.quote-card .copy {
+    bottom: 0;
+    left: 250px;
+  }
+  .me.project ol.deck__personas li.quote-card .copy p.context,
+  .me.project ul.deck__personas li.quote-card .copy p.context {
+    padding: 0 2rem;
+    margin: 0 0 0.5rem 100px;
+  }
+  .me.project ol.deck__personas li.quote-card .copy .quote-wrapper,
+  .me.project ul.deck__personas li.quote-card .copy .quote-wrapper {
+    padding: 0 2rem 0 0;
+  }
+  .me.project ol.deck__personas li.quote-card .copy .quote-wrapper p.quote,
+  .me.project ul.deck__personas li.quote-card .copy .quote-wrapper p.quote {
+    margin: 0.5rem 1.5rem 0.5rem 0;
+  }
+  .me.project ol.deck__personas li.quote-card .copy p.quote-src,
+  .me.project ul.deck__personas li.quote-card .copy p.quote-src {
+    padding: 1rem 2rem;
+    margin: 0.5rem 0 0 100px;
+  }
+}
+.me.project ol.deck__journey-map li.card .image img.zoom,
+.me.project ol.deck__journey-map li.card .image img.square,
+.me.project ol.deck__journey-map li.card .image img.rectangle,
+.me.project ul.deck__journey-map li.card .image img.zoom,
+.me.project ul.deck__journey-map li.card .image img.square,
+.me.project ul.deck__journey-map li.card .image img.rectangle {
+  display: none;
+}
+.me.project ol.deck__journey-map li.card .copy .header .title,
+.me.project ul.deck__journey-map li.card .copy .header .title {
+  margin: 0 0 0.5rem 0;
+}
+.me.project ol.deck__journey-map li.card .copy .header .subtitle,
+.me.project ul.deck__journey-map li.card .copy .header .subtitle {
+  margin: 0.5rem 0 0 1.5rem;
+  font-size: 1rem;
+}
+.me.project ol.deck__journey-map li.card .copy .body p,
+.me.project ul.deck__journey-map li.card .copy .body p {
+  margin: 0.5rem 0;
+}
+@media (min-width: 0px) and (max-width: 376px) {
+  .me.project ol.deck__journey-map li.card,
+  .me.project ul.deck__journey-map li.card {
+    width: 100%;
+    flex-direction: column;
+  }
+  .me.project ol.deck__journey-map li.card .copy,
+  .me.project ul.deck__journey-map li.card .copy {
+    margin: 1.5rem 0;
+    padding: 0;
+  }
+}
+@media (min-width: 377px) and (max-width: 576px) {
+  .me.project ol.deck__journey-map li.card,
+  .me.project ul.deck__journey-map li.card {
+    width: 100%;
+    flex-direction: column;
+  }
+  .me.project ol.deck__journey-map li.card .copy,
+  .me.project ul.deck__journey-map li.card .copy {
+    margin: 1.5rem 0;
+    padding: 0;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  .me.project ol.deck__journey-map li.card,
+  .me.project ul.deck__journey-map li.card {
+    width: 100%;
+    flex-direction: column;
+  }
+  .me.project ol.deck__journey-map li.card .copy,
+  .me.project ul.deck__journey-map li.card .copy {
+    margin: 1.5rem 0;
+    padding: 0;
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  .me.project ol.deck__journey-map li.card,
+  .me.project ul.deck__journey-map li.card {
+    width: 50%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .me.project ol.deck__journey-map li.card:nth-child(odd) .copy,
+  .me.project ul.deck__journey-map li.card:nth-child(odd) .copy {
+    padding: 0 1rem 0 0;
+  }
+  .me.project ol.deck__journey-map li.card .copy,
+  .me.project ul.deck__journey-map li.card .copy {
+    margin: 1.5rem 0;
+    padding: 0 0 0 1rem;
+  }
+  .me.project ol.deck__journey-map li.card:last-child,
+  .me.project ul.deck__journey-map li.card:last-child {
+    margin: 0 auto 0 0;
+  }
+  .me.project ol.deck__journey-map li.card:last-child .copy,
+  .me.project ul.deck__journey-map li.card:last-child .copy {
+    padding: 0 1rem 0 0;
+  }
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  .me.project ol.deck__journey-map li.card,
+  .me.project ul.deck__journey-map li.card {
+    width: 33%;
+  }
+  .me.project ol.deck__journey-map li.card:first-child .copy,
+  .me.project ul.deck__journey-map li.card:first-child .copy {
+    padding: 0 1rem 0 0;
+  }
+  .me.project ol.deck__journey-map li.card .copy,
+  .me.project ul.deck__journey-map li.card .copy {
+    margin: 1rem 0;
+    padding: 0 1rem;
+  }
+  .me.project ol.deck__journey-map li.card:nth-child(3) .copy,
+  .me.project ul.deck__journey-map li.card:nth-child(3) .copy {
+    padding: 0 0 0 1rem;
+  }
+  .me.project ol.deck__journey-map li.card:nth-child(4) .copy,
+  .me.project ul.deck__journey-map li.card:nth-child(4) .copy {
+    padding: 0 1rem 0 0;
+  }
+  .me.project ol.deck__journey-map li.card:last-child,
+  .me.project ul.deck__journey-map li.card:last-child {
+    margin: 0 auto 0 0;
+  }
+  .me.project ol.deck__journey-map li.card:last-child .copy,
+  .me.project ul.deck__journey-map li.card:last-child .copy {
+    padding: 0 1rem;
+  }
+}
+@media (min-width: 1201px) {
+  .me.project ol.deck__journey-map li.card,
+  .me.project ul.deck__journey-map li.card {
+    width: 33%;
+  }
+  .me.project ol.deck__journey-map li.card:first-child .copy,
+  .me.project ul.deck__journey-map li.card:first-child .copy {
+    padding: 0 1rem 0 0;
+  }
+  .me.project ol.deck__journey-map li.card .copy,
+  .me.project ul.deck__journey-map li.card .copy {
+    margin: 1rem 0;
+    padding: 0 1rem;
+  }
+  .me.project ol.deck__journey-map li.card:nth-child(3) .copy,
+  .me.project ul.deck__journey-map li.card:nth-child(3) .copy {
+    padding: 0 0 0 1rem;
+  }
+  .me.project ol.deck__journey-map li.card:nth-child(4) .copy,
+  .me.project ul.deck__journey-map li.card:nth-child(4) .copy {
+    padding: 0 1rem 0 0;
+  }
+  .me.project ol.deck__journey-map li.card:last-child,
+  .me.project ul.deck__journey-map li.card:last-child {
+    margin: 0 auto 0 0;
+  }
+  .me.project ol.deck__journey-map li.card:last-child .copy,
+  .me.project ul.deck__journey-map li.card:last-child .copy {
+    padding: 0 1rem;
+  }
+}
+@media (min-width: 0px) and (max-width: 376px) {
+  .me.project ol.deck__journey-map,
+  .me.project ul.deck__journey-map {
+    flex-direction: column;
+  }
+}
+@media (min-width: 377px) and (max-width: 576px) {
+  .me.project ol.deck__journey-map,
+  .me.project ul.deck__journey-map {
+    flex-direction: column;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  .me.project ol.deck__journey-map,
+  .me.project ul.deck__journey-map {
+    flex-direction: column;
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  .me.project ol.deck__journey-map,
+  .me.project ul.deck__journey-map {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  .me.project ol.deck__journey-map,
+  .me.project ul.deck__journey-map {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 1201px) {
+  .me.project ol.deck__journey-map,
+  .me.project ul.deck__journey-map {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+.me.project ol.deck__product-themes-ideas,
+.me.project ul.deck__product-themes-ideas {
+  padding: 1.5rem 0 0 0;
+}
+.me.project ol.deck__product-themes-ideas li.card,
+.me.project ul.deck__product-themes-ideas li.card {
+  display: flex;
+  list-style: none;
+}
+.me.project ol.deck__product-themes-ideas li.card .image,
+.me.project ul.deck__product-themes-ideas li.card .image {
+  display: none;
+}
+.me.project ol.deck__product-themes-ideas li.card .image img,
+.me.project ol.deck__product-themes-ideas li.card .image img.zoom,
+.me.project ol.deck__product-themes-ideas li.card .image img.square,
+.me.project ol.deck__product-themes-ideas li.card .image img.rectangle,
+.me.project ul.deck__product-themes-ideas li.card .image img,
+.me.project ul.deck__product-themes-ideas li.card .image img.zoom,
+.me.project ul.deck__product-themes-ideas li.card .image img.square,
+.me.project ul.deck__product-themes-ideas li.card .image img.rectangle {
+  display: none;
+}
+.me.project ol.deck__product-themes-ideas li.card .copy .header,
+.me.project ul.deck__product-themes-ideas li.card .copy .header {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0.5rem 0;
+}
+.me.project ol.deck__product-themes-ideas li.card .copy .header .title,
+.me.project ul.deck__product-themes-ideas li.card .copy .header .title {
+  display: flex;
+  font-weight: 350;
+  font-size: 1.35rem;
+}
+.me.project ol.deck__product-themes-ideas li.card .copy .header ol.tags,
+.me.project ol.deck__product-themes-ideas li.card .copy .header ul.tags,
+.me.project ul.deck__product-themes-ideas li.card .copy .header ol.tags,
+.me.project ul.deck__product-themes-ideas li.card .copy .header ul.tags {
+  margin: 0.5rem auto 0 0;
+  padding: 0;
+}
+.me.project ol.deck__product-themes-ideas li.card .copy .header ol.tags li.tag,
+.me.project ol.deck__product-themes-ideas li.card .copy .header ul.tags li.tag,
+.me.project ul.deck__product-themes-ideas li.card .copy .header ol.tags li.tag,
+.me.project ul.deck__product-themes-ideas li.card .copy .header ul.tags li.tag {
+  display: inline-flex;
+  padding: 0.15rem 0.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.me.project ol.deck__product-themes-ideas li.card .copy .body,
+.me.project ul.deck__product-themes-ideas li.card .copy .body {
+  margin: 0.5rem 0 auto 0;
+}
+.me.project ol.deck__product-themes-ideas li.card .copy .body p,
+.me.project ul.deck__product-themes-ideas li.card .copy .body p {
+  margin: 0 0 auto 0;
+}
+@media (min-width: 0px) and (max-width: 376px) {
+  .me.project ol.deck__product-themes-ideas li.card,
+  .me.project ul.deck__product-themes-ideas li.card {
+    width: 100%;
+    flex-direction: column;
+  }
+  .me.project ol.deck__product-themes-ideas li.card .copy,
+  .me.project ul.deck__product-themes-ideas li.card .copy {
+    margin: 0 0 3rem 0;
+    padding: 0;
+  }
+}
+@media (min-width: 377px) and (max-width: 576px) {
+  .me.project ol.deck__product-themes-ideas li.card,
+  .me.project ul.deck__product-themes-ideas li.card {
+    width: 100%;
+    flex-direction: column;
+  }
+  .me.project ol.deck__product-themes-ideas li.card .copy,
+  .me.project ul.deck__product-themes-ideas li.card .copy {
+    margin: 0 0 3rem 0;
+    padding: 0;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  .me.project ol.deck__product-themes-ideas li.card,
+  .me.project ul.deck__product-themes-ideas li.card {
+    width: 100%;
+    flex-direction: column;
+  }
+  .me.project ol.deck__product-themes-ideas li.card .copy,
+  .me.project ul.deck__product-themes-ideas li.card .copy {
+    margin: 0 0 3rem 0;
+    padding: 0;
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  .me.project ol.deck__product-themes-ideas li.card,
+  .me.project ul.deck__product-themes-ideas li.card {
+    width: 50%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .me.project ol.deck__product-themes-ideas li.card:nth-child(odd) .copy,
+  .me.project ul.deck__product-themes-ideas li.card:nth-child(odd) .copy {
+    padding: 0 1rem 0 0;
+  }
+  .me.project ol.deck__product-themes-ideas li.card .copy,
+  .me.project ul.deck__product-themes-ideas li.card .copy {
+    margin: 0 0 3rem 0;
+    padding: 0 0 0 1rem;
+  }
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  .me.project ol.deck__product-themes-ideas li.card,
+  .me.project ul.deck__product-themes-ideas li.card {
+    width: 50%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .me.project ol.deck__product-themes-ideas li.card:nth-child(odd) .copy,
+  .me.project ul.deck__product-themes-ideas li.card:nth-child(odd) .copy {
+    padding: 0 1rem 0 0;
+  }
+  .me.project ol.deck__product-themes-ideas li.card .copy,
+  .me.project ul.deck__product-themes-ideas li.card .copy {
+    margin: 0 0 3rem 0;
+    padding: 0 0 0 1rem;
+  }
+}
+@media (min-width: 1201px) {
+  .me.project ol.deck__product-themes-ideas li.card,
+  .me.project ul.deck__product-themes-ideas li.card {
+    width: 50%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .me.project ol.deck__product-themes-ideas li.card:nth-child(odd) .copy,
+  .me.project ul.deck__product-themes-ideas li.card:nth-child(odd) .copy {
+    padding: 0 1rem 0 0;
+  }
+  .me.project ol.deck__product-themes-ideas li.card .copy,
+  .me.project ul.deck__product-themes-ideas li.card .copy {
+    margin: 0 0 3rem 0;
+    padding: 0 0 0 1rem;
+  }
+}
+.me.project ol.deck__product-themes-ideas li.card.last,
+.me.project ul.deck__product-themes-ideas li.card.last {
+  margin: 0 auto 0 0;
+}
+@media (min-width: 0px) and (max-width: 376px) {
+  .me.project ol.deck__product-themes-ideas,
+  .me.project ul.deck__product-themes-ideas {
+    flex-direction: column;
+  }
+}
+@media (min-width: 377px) and (max-width: 576px) {
+  .me.project ol.deck__product-themes-ideas,
+  .me.project ul.deck__product-themes-ideas {
+    flex-direction: column;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  .me.project ol.deck__product-themes-ideas,
+  .me.project ul.deck__product-themes-ideas {
+    flex-direction: column;
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  .me.project ol.deck__product-themes-ideas,
+  .me.project ul.deck__product-themes-ideas {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  .me.project ol.deck__product-themes-ideas,
+  .me.project ul.deck__product-themes-ideas {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 1201px) {
+  .me.project ol.deck__product-themes-ideas,
+  .me.project ul.deck__product-themes-ideas {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+.me.project ol.deck__prototypes,
+.me.project ul.deck__prototypes {
+  display: flex;
+}
+.me.project ol.deck__prototypes li.card,
+.me.project ul.deck__prototypes li.card {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.me.project ol.deck__prototypes li.card .image,
+.me.project ul.deck__prototypes li.card .image {
+  display: flex;
+  overflow: clip;
+  display: flex;
+  overflow: clip;
+  /*
+  @include xs  {
+      img.teaser.rectangle { display: none; }
+      img.teaser.square { display: block; }
+  }
+  @include sm  {
+      img.teaser.rectangle { display: none; }
+      img.teaser.square { display: block; }
+  }
+  @include md  {
+      img.teaser.rectangle { display: block;}
+      img.teaser.square { display: none; }
+  }
+  @include lg  {
+      img.teaser.rectangle { display: none; }
+      img.teaser.square { display: block; }
+  }
+  @include xl  {
+      img.teaser.rectangle { display: block; }
+      img.teaser.square { display: none; }
+  }
+  @include xxl {
+      img.teaser.rectangle { display: block; }
+      img.teaser.square { display: none; }
+  }
+  */
+}
+.me.project ol.deck__prototypes li.card .image img.zoom,
+.me.project ol.deck__prototypes li.card .image img.rectangle,
+.me.project ul.deck__prototypes li.card .image img.zoom,
+.me.project ul.deck__prototypes li.card .image img.rectangle {
+  display: none;
+}
+.me.project ol.deck__prototypes li.card .image img.rectangle,
+.me.project ul.deck__prototypes li.card .image img.rectangle {
+  z-index: 10;
+  width: 405px;
+  height: 250px;
+}
+.me.project ol.deck__prototypes li.card .image img.square,
+.me.project ul.deck__prototypes li.card .image img.square {
+  z-index: 10;
+  width: 250px;
+  height: 250px;
+}
+.me.project ol.deck__prototypes li.card .image img.zoom,
+.me.project ul.deck__prototypes li.card .image img.zoom {
+  z-index: 11;
+  display: none;
+}
+.me.project ol.deck__prototypes li.card .copy,
+.me.project ul.deck__prototypes li.card .copy {
+  display: flex;
+  /*
+  @include xs  {
+      // square
+      width: calc(250px - 2rem);
+  }
+  @include sm  {
+      // square
+      width: calc(250px - 2rem);
+  }
+  @include md  {
+      // rectangle
+      width: calc(405px - 2rem);
+  }
+  @include lg  {
+      // square
+      width: calc(100% - 2rem);
+  }
+  @include xl  {
+      // rectangle
+      width: calc(100% - 2rem);
+  }
+  @include xxl {
+      // rectangle
+      width: calc(405px - 2rem);
+      height: calc(100% - 2rem);
+  }
+  */
+}
+.me.project ol.deck__prototypes li.card .copy .header,
+.me.project ul.deck__prototypes li.card .copy .header {
+  display: flex;
+  flex-direction: column;
+}
+.me.project ol.deck__prototypes li.card .copy .header .title,
+.me.project ul.deck__prototypes li.card .copy .header .title {
+  display: flex;
+  font-weight: 350;
+  font-size: 1.35rem;
+}
+.me.project ol.deck__prototypes li.card .copy .header .subtitle,
+.me.project ul.deck__prototypes li.card .copy .header .subtitle {
+  display: flex;
+  font-weight: 200;
+  font-size: 1rem;
+}
+.me.project ol.deck__prototypes li.card .copy .body,
+.me.project ul.deck__prototypes li.card .copy .body {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+}
+.me.project ol.deck__prototypes li.card .copy .body ul, .me.project ol.deck__prototypes li.card .copy .body ol,
+.me.project ul.deck__prototypes li.card .copy .body ul,
+.me.project ul.deck__prototypes li.card .copy .body ol {
+  list-style: none;
+  padding: 0;
+}
+.me.project ol.deck__prototypes li.card:hover img.square,
+.me.project ul.deck__prototypes li.card:hover img.square {
+  display: none;
+}
+@keyframes project-ani {
+  from {
+    transform: scale(1.58);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.me.project ol.deck__prototypes li.card:hover img.zoom,
+.me.project ul.deck__prototypes li.card:hover img.zoom {
+  display: flex;
+  animation: project-ani 0.8s ease-in-out;
+  margin: 0 auto;
+}
+@media (min-width: 0px) and (max-width: 376px) {
+  .me.project ol.deck__prototypes li.card:hover img.zoom,
+  .me.project ul.deck__prototypes li.card:hover img.zoom {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (min-width: 377px) and (max-width: 576px) {
+  .me.project ol.deck__prototypes li.card:hover img.zoom,
+  .me.project ul.deck__prototypes li.card:hover img.zoom {
+    width: auto;
+    height: 375px;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  .me.project ol.deck__prototypes li.card:hover img.zoom,
+  .me.project ul.deck__prototypes li.card:hover img.zoom {
+    width: auto;
+    height: 350px;
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  .me.project ol.deck__prototypes li.card:hover img.zoom,
+  .me.project ul.deck__prototypes li.card:hover img.zoom {
+    width: auto;
+    height: 300px;
+  }
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  .me.project ol.deck__prototypes li.card:hover img.zoom,
+  .me.project ul.deck__prototypes li.card:hover img.zoom {
+    width: auto;
+    height: 350px;
+  }
+}
+@media (min-width: 1201px) {
+  .me.project ol.deck__prototypes li.card:hover img.zoom,
+  .me.project ul.deck__prototypes li.card:hover img.zoom {
+    width: auto;
+    height: 400px;
+  }
+}
+@media (min-width: 0px) and (max-width: 376px) {
+  .me.project ol.deck__prototypes li.card,
+  .me.project ul.deck__prototypes li.card {
+    flex-direction: column;
+    width: 100%;
+  }
+  .me.project ol.deck__prototypes li.card .image,
+  .me.project ul.deck__prototypes li.card .image {
+    width: 100%;
+    margin: 0;
+  }
+  .me.project ol.deck__prototypes li.card .image img,
+  .me.project ul.deck__prototypes li.card .image img {
+    width: 100%;
+  }
+  .me.project ol.deck__prototypes li.card .image img.square,
+  .me.project ul.deck__prototypes li.card .image img.square {
+    width: 100%;
+    height: auto;
+  }
+  .me.project ol.deck__prototypes li.card .copy,
+  .me.project ul.deck__prototypes li.card .copy {
+    flex-wrap: wrap;
+    width: calc(100% - 3rem);
+    padding: 1.5rem 1.5rem 3rem 1.5rem;
+    margin: 0;
+  }
+  .me.project ol.deck__prototypes li.card .copy .header,
+  .me.project ul.deck__prototypes li.card .copy .header {
+    margin: 0 0 0.5rem 0;
+  }
+  .me.project ol.deck__prototypes li.card .copy .body,
+  .me.project ul.deck__prototypes li.card .copy .body {
+    margin: 0.5rem 0 0 0;
+  }
+  .me.project ol.deck__prototypes li.card .copy .body ul, .me.project ol.deck__prototypes li.card .copy .body ol,
+  .me.project ul.deck__prototypes li.card .copy .body ul,
+  .me.project ul.deck__prototypes li.card .copy .body ol {
+    margin: 0;
+    padding: 0;
+  }
+}
+@media (min-width: 377px) and (max-width: 576px) {
+  .me.project ol.deck__prototypes li.card,
+  .me.project ul.deck__prototypes li.card {
+    flex-direction: column;
+    width: 100%;
+  }
+  .me.project ol.deck__prototypes li.card .image,
+  .me.project ul.deck__prototypes li.card .image {
+    width: 375px;
+    margin: 0 auto;
+  }
+  .me.project ol.deck__prototypes li.card .image img,
+  .me.project ul.deck__prototypes li.card .image img {
+    width: 375px;
+  }
+  .me.project ol.deck__prototypes li.card .image img.square,
+  .me.project ul.deck__prototypes li.card .image img.square {
+    width: 375px;
+    height: 375px;
+  }
+  .me.project ol.deck__prototypes li.card .copy,
+  .me.project ul.deck__prototypes li.card .copy {
+    flex-wrap: wrap;
+    width: 375px;
+    padding: 1.5rem 0 3rem 0;
+    margin: 0 auto;
+  }
+  .me.project ol.deck__prototypes li.card .copy .header,
+  .me.project ul.deck__prototypes li.card .copy .header {
+    margin: 0 0 0.5rem 0;
+  }
+  .me.project ol.deck__prototypes li.card .copy .body,
+  .me.project ul.deck__prototypes li.card .copy .body {
+    margin: 0.5rem 0 0 0;
+  }
+  .me.project ol.deck__prototypes li.card .copy .body ul, .me.project ol.deck__prototypes li.card .copy .body ol,
+  .me.project ul.deck__prototypes li.card .copy .body ul,
+  .me.project ul.deck__prototypes li.card .copy .body ol {
+    width: calc(100% - 3rem);
+    margin: 0;
+    padding: 0;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  .me.project ol.deck__prototypes li.card,
+  .me.project ul.deck__prototypes li.card {
+    flex-direction: column;
+    width: 100%;
+  }
+  .me.project ol.deck__prototypes li.card .image,
+  .me.project ul.deck__prototypes li.card .image {
+    width: 350px;
+    margin: 0 auto;
+  }
+  .me.project ol.deck__prototypes li.card .image img,
+  .me.project ul.deck__prototypes li.card .image img {
+    width: 350px;
+  }
+  .me.project ol.deck__prototypes li.card .image img.square,
+  .me.project ul.deck__prototypes li.card .image img.square {
+    width: 350px;
+    height: 350px;
+  }
+  .me.project ol.deck__prototypes li.card .copy,
+  .me.project ul.deck__prototypes li.card .copy {
+    width: 350px;
+    padding: 1.5rem 0 3rem 0;
+    margin: 0 auto;
+  }
+  .me.project ol.deck__prototypes li.card .copy .header,
+  .me.project ul.deck__prototypes li.card .copy .header {
+    margin: 0 0 0.5rem 0;
+  }
+  .me.project ol.deck__prototypes li.card .copy .body,
+  .me.project ul.deck__prototypes li.card .copy .body {
+    margin: 0.5rem 0 0 0;
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  .me.project ol.deck__prototypes li.card,
+  .me.project ul.deck__prototypes li.card {
+    flex-direction: row;
+    width: 100%;
+  }
+  .me.project ol.deck__prototypes li.card .image,
+  .me.project ul.deck__prototypes li.card .image {
+    width: 300px;
+  }
+  .me.project ol.deck__prototypes li.card .image img.square,
+  .me.project ul.deck__prototypes li.card .image img.square {
+    width: 300px;
+    height: 300px;
+  }
+  .me.project ol.deck__prototypes li.card .copy,
+  .me.project ul.deck__prototypes li.card .copy {
+    margin: auto 1.5rem;
+  }
+  .me.project ol.deck__prototypes li.card .copy p,
+  .me.project ul.deck__prototypes li.card .copy p {
+    margin: 0.5rem 0 auto 0;
+  }
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  .me.project ol.deck__prototypes li.card,
+  .me.project ul.deck__prototypes li.card {
+    flex-direction: row;
+    width: 100%;
+  }
+  .me.project ol.deck__prototypes li.card .image,
+  .me.project ul.deck__prototypes li.card .image {
+    width: 350px;
+  }
+  .me.project ol.deck__prototypes li.card .image img.square,
+  .me.project ul.deck__prototypes li.card .image img.square {
+    width: 350px;
+    height: 350px;
+  }
+  .me.project ol.deck__prototypes li.card .copy,
+  .me.project ul.deck__prototypes li.card .copy {
+    margin: auto 1.5rem;
+  }
+}
+@media (min-width: 1201px) {
+  .me.project ol.deck__prototypes li.card,
+  .me.project ul.deck__prototypes li.card {
+    flex-direction: row;
+    width: 100%;
+  }
+  .me.project ol.deck__prototypes li.card .image,
+  .me.project ul.deck__prototypes li.card .image {
+    width: 400px;
+  }
+  .me.project ol.deck__prototypes li.card .image img.square,
+  .me.project ul.deck__prototypes li.card .image img.square {
+    width: 400px;
+    height: 400px;
+  }
+  .me.project ol.deck__prototypes li.card .copy,
+  .me.project ul.deck__prototypes li.card .copy {
+    margin: auto 1.5rem;
+  }
+  .me.project ol.deck__prototypes li.card .copy .header,
+  .me.project ul.deck__prototypes li.card .copy .header {
+    margin: auto 0 0.5rem 0;
+  }
+  .me.project ol.deck__prototypes li.card .copy .body,
+  .me.project ul.deck__prototypes li.card .copy .body {
+    margin: 0.5rem 0 auto 0;
+  }
+}
+@media (min-width: 0px) and (max-width: 376px) {
+  .me.project ol.deck__prototypes,
+  .me.project ul.deck__prototypes {
+    flex-direction: column;
+    align-items: center;
+  }
+  .me.project ol.deck__prototypes li.card.last,
+  .me.project ul.deck__prototypes li.card.last {
+    margin: 0 auto;
+  }
+}
+@media (min-width: 377px) and (max-width: 576px) {
+  .me.project ol.deck__prototypes,
+  .me.project ul.deck__prototypes {
+    flex-direction: column;
+    align-items: center;
+  }
+  .me.project ol.deck__prototypes li.card.last,
+  .me.project ul.deck__prototypes li.card.last {
+    margin: 0 auto;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  .me.project ol.deck__prototypes,
+  .me.project ul.deck__prototypes {
+    flex-direction: column;
+    align-items: center;
+  }
+  .me.project ol.deck__prototypes li.card.last,
+  .me.project ul.deck__prototypes li.card.last {
+    margin: 0 auto;
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  .me.project ol.deck__prototypes,
+  .me.project ul.deck__prototypes {
+    flex-direction: column;
+  }
+  .me.project ol.deck__prototypes li.card.last,
+  .me.project ul.deck__prototypes li.card.last {
+    margin: 0 auto 0 0;
+  }
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  .me.project ol.deck__prototypes,
+  .me.project ul.deck__prototypes {
+    flex-direction: column;
+  }
+  .me.project ol.deck__prototypes li.card.last,
+  .me.project ul.deck__prototypes li.card.last {
+    margin: 0 auto 0 0;
+  }
+}
+@media (min-width: 1201px) {
+  .me.project ol.deck__prototypes,
+  .me.project ul.deck__prototypes {
+    flex-direction: column;
+  }
+  .me.project ol.deck__prototypes li.card.last,
+  .me.project ul.deck__prototypes li.card.last {
+    margin: 0 auto 0 0;
+  }
+}/*# sourceMappingURL=project.css.map */

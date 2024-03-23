@@ -1,0 +1,170 @@
+/* 
+ * Colors
+ * ==========
+ * base/colors
+ */
+@import "../abstracts/variables";
+
+.red { background-color: $red; }
+// Monochromic
+.white { background-color: $white; }
+.black { background-color: $black; }
+
+// Mono - Neutral Density Grey
+.mono {
+   background-color: $mono;
+   // white
+   &_s10,
+   &_s100 { background-color: $white }
+   // shades
+   &_s095 { background-color: lighten( $mono, 45% ); }
+   &_s09,
+   &_s090 { background-color: lighten( $mono, 40% ); }
+   &_s090a85 { background-color: rgba(230, 230, 230, .85); }
+   &_s085 { background-color: lighten( $mono, 35% ); }
+   &_s08,
+   &_s080 { background-color: lighten( $mono, 30% ); }
+   &_s075 { background-color: lighten( $mono, 25% ); }
+   &_s07,
+   &_s070 { background-color: lighten( $mono, 20% ); }
+   &_s065 { background-color: lighten( $mono, 15% ); }
+   &_s06,
+   &_s060 { background-color: lighten( $mono, 10% ); }
+   &_s055 { background-color: lighten( $mono, 05% ); }
+   &_s05,
+   &_s050 { background-color: $mono; } // 50%
+   &_s045 { background-color: darken( $mono, 05% ); }
+   &_s04,
+   &_s040 { background-color: darken( $mono, 10% ); }
+   &_s035 { background-color: darken( $mono, 15% ); }
+   &_s03,
+   &_s030 { background-color: darken( $mono, 20% ); }
+   &_s025 { background-color: darken( $mono, 25% ); }
+   &_s02,
+   &_s020 { background-color: darken( $mono, 30% ); }
+   &_s015 { background-color: darken( $mono, 35% ); }
+   &_s01,
+   &_s010 { background-color: darken( $mono, 40% ); }
+   &_s005 { background-color: darken( $mono, 45% ); }
+   // black
+   &_s00,
+   &_s000 { background-color: $black; }
+}
+// Dirt - a Monochromic alternative
+.dirt {
+   background-color: $dirt;
+   // white
+   &_s10,
+   &_s100 { background-color: $white }
+   // shades
+   &_s095 { background-color: lighten( $dirt, 45% ); }
+   &_s09,
+   &_s090 { background-color: lighten( $dirt, 40% ); }
+   &_s090a85 { background-color: rgba(230, 230, 230, .85); }
+   &_s085 { background-color: lighten( $dirt, 35% ); }
+   &_s08,
+   &_s080 { background-color: lighten( $dirt, 30% ); }
+   &_s075 { background-color: lighten( $dirt, 25% ); }
+   &_s07,
+   &_s070 { background-color: lighten( $dirt, 20% ); }
+   &_s065 { background-color: lighten( $dirt, 15% ); }
+   &_s06,
+   &_s060 { background-color: lighten( $dirt, 10% ); }
+   &_s055 { background-color: lighten( $dirt, 05% ); }
+   &_s05,
+   &_s050 { background-color: $dirt; } // 50%
+   &_s045 { background-color: darken( $dirt, 05% ); }
+   &_s04,
+   &_s040 { background-color: darken( $dirt, 10% ); }
+   &_s035 { background-color: darken( $dirt, 15% ); }
+   &_s03,
+   &_s030 { background-color: darken( $dirt, 20% ); }
+   &_s025 { background-color: darken( $dirt, 25% ); }
+   &_s02,
+   &_s020 { background-color: darken( $dirt, 30% ); }
+   &_s015 { background-color: darken( $dirt, 35% ); }
+   &_s01,
+   &_s010 { background-color: darken( $dirt, 40% ); }
+   &_s005 { background-color: darken( $dirt, 45% ); }
+   // black
+   &_s00,
+   &_s000 { background-color: $black; }
+}
+// Squid - a cooler Monochromic alternative
+.squid {
+   background-color: $squid;
+   // white
+   &_s10,
+   &_s100 { background-color: $white }
+   // shades
+   &_s095 { background-color: lighten( $squid, 45% ); }
+   &_s09,
+   &_s090 { background-color: lighten( $squid, 40% ); }
+   &_s085 { background-color: lighten( $squid, 35% ); }
+   &_s08,
+   &_s080 { background-color: lighten( $squid, 30% ); }
+   &_s075 { background-color: lighten( $squid, 25% ); }
+   &_s07,
+   &_s070 { background-color: lighten( $squid, 20% ); }
+   &_s065 { background-color: lighten( $squid, 15% ); }
+   &_s06,
+   &_s060 { background-color: lighten( $squid, 10% ); }
+   &_s055 { background-color: lighten( $squid, 05% ); }
+   &_s05,
+   &_s050 { background-color: $squid; } // 50%
+   &_s045 { background-color: darken( $squid, 05% ); }
+   &_s04,
+   &_s040 { background-color: darken( $squid, 10% ); }
+   &_s035 { background-color: darken( $squid, 15% ); }
+   &_s03,
+   &_s030 { background-color: darken( $squid, 20% ); }
+   &_s025 { background-color: darken( $squid, 25% ); }
+   &_s02,
+   &_s020 { background-color: darken( $squid, 30% ); }
+   &_s015 { background-color: darken( $squid, 35% ); }
+   &_s01,
+   &_s010 { background-color: darken( $squid, 40% ); }
+   &_s005 { background-color: darken( $squid, 45% ); }
+   // black
+   &_s00,
+   &_s000 { background-color: $black; }
+}
+// Sepia - a warmer Monochromic alternative
+.sepia {
+   background-color: $sepia;
+   // white
+   &_s10,
+   &_s100 { background-color: $white }
+   // shades
+   &_s095 { background-color: lighten( $sepia, 45% ); }
+   &_s09,
+   &_s090 { background-color: lighten( $sepia, 40% ); }
+   &_s085 { background-color: lighten( $sepia, 35% ); }
+   &_s08,
+   &_s080 { background-color: lighten( $sepia, 30% ); }
+   &_s075 { background-color: lighten( $sepia, 25% ); }
+   &_s07,
+   &_s070 { background-color: lighten( $sepia, 20% ); }
+   &_s065 { background-color: lighten( $sepia, 15% ); }
+   &_s06,
+   &_s060 { background-color: lighten( $sepia, 10% ); }
+   &_s055 { background-color: lighten( $sepia, 05% ); }
+   &_s05,
+   &_s050 { background-color: $sepia; } // 50%
+   &_s045 { background-color: darken( $sepia, 05% ); }
+   &_s04,
+   &_s040 { background-color: darken( $sepia, 10% ); }
+   &_s035 { background-color: darken( $sepia, 15% ); }
+   &_s03,
+   &_s030 { background-color: darken( $sepia, 20% ); }
+   &_s025 { background-color: darken( $sepia, 25% ); }
+   &_s02,
+   &_s020 { background-color: darken( $sepia, 30% ); }
+   &_s015 { background-color: darken( $sepia, 35% ); }
+   &_s01,
+   &_s010 { background-color: darken( $sepia, 40% ); }
+   &_s005 { background-color: darken( $sepia, 45% ); }
+   // black
+   &_s00,
+   &_s000 { background-color: $black; }
+}

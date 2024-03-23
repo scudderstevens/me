@@ -1,620 +1,4 @@
 @charset "UTF-8";
-/*
- * Author: Scudder Stevens
- * Author URI: https://scudderstevens.me
- * Description: Efficient and Elegant Styles for your web projects.
- * Version: latest
- * License: MIT
- * License URI: https://github.com/scudderstevens/me/tree/7e4edc984a09651dcaf0a0a6c83a3f6b77eaf02b/css/LICENSE
- * Tags:
- */
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
-/* Document
-   ========================================================================== */
-/**
- * 1. Correct the line height in all browsers.
- * 2. Prevent adjustments of font size after orientation changes in iOS.
- */
-html {
-  line-height: 1.15; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
-}
-
-/* Sections
-   ========================================================================== */
-/**
- * Remove the margin in all browsers.
- */
-body {
-  margin: 0;
-}
-
-/**
- * Render the `main` element consistently in IE.
- */
-main {
-  display: block;
-}
-
-/**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
- */
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
-/* Grouping content
-   ========================================================================== */
-/**
- * 1. Add the correct box sizing in Firefox.
- * 2. Show the overflow in Edge and IE.
- */
-hr {
-  box-sizing: content-box; /* 1 */
-  height: 0; /* 1 */
-  overflow: visible; /* 2 */
-}
-
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-pre {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
-}
-
-/* Text-level semantics
-   ========================================================================== */
-/**
- * Remove the gray background on active links in IE 10.
- */
-a {
-  background-color: transparent;
-}
-
-/**
- * 1. Remove the bottom border in Chrome 57-
- * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
- */
-abbr[title] {
-  border-bottom: none; /* 1 */
-  text-decoration: underline; /* 2 */
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted; /* 2 */
-}
-
-/**
- * Add the correct font weight in Chrome, Edge, and Safari.
- */
-b,
-strong {
-  font-weight: bolder;
-}
-
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
-code,
-kbd,
-samp {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
-}
-
-/**
- * Add the correct font size in all browsers.
- */
-small {
-  font-size: 80%;
-}
-
-/**
- * Prevent `sub` and `sup` elements from affecting the line height in
- * all browsers.
- */
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-sup {
-  top: -0.5em;
-}
-
-/* Embedded content
-   ========================================================================== */
-/**
- * Remove the border on images inside links in IE 10.
- */
-img {
-  border-style: none;
-}
-
-/* Forms
-   ========================================================================== */
-/**
- * 1. Change the font styles in all browsers.
- * 2. Remove the margin in Firefox and Safari.
- */
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: inherit; /* 1 */
-  font-size: 100%; /* 1 */
-  line-height: 1.15; /* 1 */
-  margin: 0; /* 2 */
-}
-
-/**
- * Show the overflow in IE.
- * 1. Show the overflow in Edge.
- */
-button,
-input { /* 1 */
-  overflow: visible;
-}
-
-/**
- * Remove the inheritance of text transform in Edge, Firefox, and IE.
- * 1. Remove the inheritance of text transform in Firefox.
- */
-button,
-select { /* 1 */
-  text-transform: none;
-}
-
-/**
- * Correct the inability to style clickable types in iOS and Safari.
- */
-button,
-[type=button],
-[type=reset],
-[type=submit] {
-  -webkit-appearance: button;
-}
-
-/**
- * Remove the inner border and padding in Firefox.
- */
-button::-moz-focus-inner,
-[type=button]::-moz-focus-inner,
-[type=reset]::-moz-focus-inner,
-[type=submit]::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-/**
- * Restore the focus styles unset by the previous rule.
- */
-button:-moz-focusring,
-[type=button]:-moz-focusring,
-[type=reset]:-moz-focusring,
-[type=submit]:-moz-focusring {
-  outline: 1px dotted ButtonText;
-}
-
-/**
- * Correct the padding in Firefox.
- */
-fieldset {
-  padding: 0.35em 0.75em 0.625em;
-}
-
-/**
- * 1. Correct the text wrapping in Edge and IE.
- * 2. Correct the color inheritance from `fieldset` elements in IE.
- * 3. Remove the padding so developers are not caught out when they zero out
- *    `fieldset` elements in all browsers.
- */
-legend {
-  box-sizing: border-box; /* 1 */
-  color: inherit; /* 2 */
-  display: table; /* 1 */
-  max-width: 100%; /* 1 */
-  padding: 0; /* 3 */
-  white-space: normal; /* 1 */
-}
-
-/**
- * Add the correct vertical alignment in Chrome, Firefox, and Opera.
- */
-progress {
-  vertical-align: baseline;
-}
-
-/**
- * Remove the default vertical scrollbar in IE 10+.
- */
-textarea {
-  overflow: auto;
-}
-
-/**
- * 1. Add the correct box sizing in IE 10.
- * 2. Remove the padding in IE 10.
- */
-[type=checkbox],
-[type=radio] {
-  box-sizing: border-box; /* 1 */
-  padding: 0; /* 2 */
-}
-
-/**
- * Correct the cursor style of increment and decrement buttons in Chrome.
- */
-[type=number]::-webkit-inner-spin-button,
-[type=number]::-webkit-outer-spin-button {
-  height: auto;
-}
-
-/**
- * 1. Correct the odd appearance in Chrome and Safari.
- * 2. Correct the outline style in Safari.
- */
-[type=search] {
-  -webkit-appearance: textfield; /* 1 */
-  outline-offset: -2px; /* 2 */
-}
-
-/**
- * Remove the inner padding in Chrome and Safari on macOS.
- */
-[type=search]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-/**
- * 1. Correct the inability to style clickable types in iOS and Safari.
- * 2. Change font properties to `inherit` in Safari.
- */
-::-webkit-file-upload-button {
-  -webkit-appearance: button; /* 1 */
-  font: inherit; /* 2 */
-}
-
-/* Interactive
-   ========================================================================== */
-/*
- * Add the correct display in Edge, IE 10+, and Firefox.
- */
-details {
-  display: block;
-}
-
-/*
- * Add the correct display in all browsers.
- */
-summary {
-  display: list-item;
-}
-
-/* Misc
-   ========================================================================== */
-/**
- * Add the correct display in IE 10+.
- */
-template {
-  display: none;
-}
-
-/**
- * Add the correct display in IE 10.
- */
-[hidden] {
-  display: none;
-}
-
-/* 
- * Colors
- * ==========
- * base/colors
- */
-/*
- * Variables
- * =================
- * abstracts/variables
- */
-/* Monochromic */
-.red {
-  background-color: red;
-}
-
-.white {
-  background-color: #ffffff;
-}
-
-.black {
-  background-color: #000000;
-}
-
-.mono {
-  background-color: #808080;
-}
-.mono_s10, .mono_s100 {
-  background-color: #ffffff;
-}
-.mono_s095 {
-  background-color: #f3f3f3;
-}
-.mono_s09, .mono_s090 {
-  background-color: #e6e6e6;
-}
-.mono_s090a85 {
-  background-color: rgba(230, 230, 230, 0.85);
-}
-.mono_s085 {
-  background-color: #d9d9d9;
-}
-.mono_s08, .mono_s080 {
-  background-color: #cdcdcd;
-}
-.mono_s075 {
-  background-color: silver;
-}
-.mono_s07, .mono_s070 {
-  background-color: #b3b3b3;
-}
-.mono_s065 {
-  background-color: #a6a6a6;
-}
-.mono_s06, .mono_s060 {
-  background-color: #9a9a9a;
-}
-.mono_s055 {
-  background-color: #8d8d8d;
-}
-.mono_s05, .mono_s050 {
-  background-color: #808080;
-}
-.mono_s045 {
-  background-color: #737373;
-}
-.mono_s04, .mono_s040 {
-  background-color: #676767;
-}
-.mono_s035 {
-  background-color: #5a5a5a;
-}
-.mono_s03, .mono_s030 {
-  background-color: #4d4d4d;
-}
-.mono_s025 {
-  background-color: #404040;
-}
-.mono_s02, .mono_s020 {
-  background-color: #343434;
-}
-.mono_s015 {
-  background-color: #272727;
-}
-.mono_s01, .mono_s010 {
-  background-color: #1a1a1a;
-}
-.mono_s005 {
-  background-color: #0d0d0d;
-}
-.mono_s00, .mono_s000 {
-  background-color: #000000;
-}
-
-.dirt {
-  background-color: #887c70;
-}
-.dirt_s10, .dirt_s100 {
-  background-color: #ffffff;
-}
-.dirt_s095 {
-  background-color: #f0efed;
-}
-.dirt_s09, .dirt_s090 {
-  background-color: #e5e2df;
-}
-.dirt_s090a85 {
-  background-color: rgba(230, 230, 230, 0.85);
-}
-.dirt_s085 {
-  background-color: #d9d5d1;
-}
-.dirt_s08, .dirt_s080 {
-  background-color: #cec9c3;
-}
-.dirt_s075 {
-  background-color: #c2bcb5;
-}
-.dirt_s07, .dirt_s070 {
-  background-color: #b7afa7;
-}
-.dirt_s065 {
-  background-color: #aba299;
-}
-.dirt_s06, .dirt_s060 {
-  background-color: #a0968b;
-}
-.dirt_s055 {
-  background-color: #94897d;
-}
-.dirt_s05, .dirt_s050 {
-  background-color: #887c70;
-}
-.dirt_s045 {
-  background-color: #7a6f64;
-}
-.dirt_s04, .dirt_s040 {
-  background-color: #6c6359;
-}
-.dirt_s035 {
-  background-color: #5e564d;
-}
-.dirt_s03, .dirt_s030 {
-  background-color: #504942;
-}
-.dirt_s025 {
-  background-color: #423c36;
-}
-.dirt_s02, .dirt_s020 {
-  background-color: #34302b;
-}
-.dirt_s015 {
-  background-color: #26231f;
-}
-.dirt_s01, .dirt_s010 {
-  background-color: #181614;
-}
-.dirt_s005 {
-  background-color: #0a0908;
-}
-.dirt_s00, .dirt_s000 {
-  background-color: #000000;
-}
-
-.squid {
-  background-color: #726580;
-}
-.squid_s10, .squid_s100 {
-  background-color: #ffffff;
-}
-.squid_s095 {
-  background-color: #e5e2e8;
-}
-.squid_s09, .squid_s090 {
-  background-color: #d8d4dd;
-}
-.squid_s085 {
-  background-color: #ccc6d2;
-}
-.squid_s08, .squid_s080 {
-  background-color: #bfb7c7;
-}
-.squid_s075 {
-  background-color: #b2a9bb;
-}
-.squid_s07, .squid_s070 {
-  background-color: #a59bb0;
-}
-.squid_s065 {
-  background-color: #988da5;
-}
-.squid_s06, .squid_s060 {
-  background-color: #8b7e9a;
-}
-.squid_s055 {
-  background-color: #7f708e;
-}
-.squid_s05, .squid_s050 {
-  background-color: #726580;
-}
-.squid_s045 {
-  background-color: #655a72;
-}
-.squid_s04, .squid_s040 {
-  background-color: #594f63;
-}
-.squid_s035 {
-  background-color: #4c4355;
-}
-.squid_s03, .squid_s030 {
-  background-color: #3f3847;
-}
-.squid_s025 {
-  background-color: #332d39;
-}
-.squid_s02, .squid_s020 {
-  background-color: #26222a;
-}
-.squid_s015 {
-  background-color: #19161c;
-}
-.squid_s01, .squid_s010 {
-  background-color: #0c0b0e;
-}
-.squid_s005 {
-  background-color: black;
-}
-.squid_s00, .squid_s000 {
-  background-color: #000000;
-}
-
-.sepia {
-  background-color: #806b61;
-}
-.sepia_s10, .sepia_s100 {
-  background-color: #ffffff;
-}
-.sepia_s095 {
-  background-color: #e7e2df;
-}
-.sepia_s09, .sepia_s090 {
-  background-color: #dcd5d1;
-}
-.sepia_s085 {
-  background-color: #d1c7c2;
-}
-.sepia_s08, .sepia_s080 {
-  background-color: #c6bab4;
-}
-.sepia_s075 {
-  background-color: #bbaca5;
-}
-.sepia_s07, .sepia_s070 {
-  background-color: #b09f97;
-}
-.sepia_s065 {
-  background-color: #a59288;
-}
-.sepia_s06, .sepia_s060 {
-  background-color: #9a847a;
-}
-.sepia_s055 {
-  background-color: #8f776c;
-}
-.sepia_s05, .sepia_s050 {
-  background-color: #806b61;
-}
-.sepia_s045 {
-  background-color: #715f56;
-}
-.sepia_s04, .sepia_s040 {
-  background-color: #63534b;
-}
-.sepia_s035 {
-  background-color: #544740;
-}
-.sepia_s03, .sepia_s030 {
-  background-color: #463a35;
-}
-.sepia_s025 {
-  background-color: #372e2a;
-}
-.sepia_s02, .sepia_s020 {
-  background-color: #29221f;
-}
-.sepia_s015 {
-  background-color: #1a1614;
-}
-.sepia_s01, .sepia_s010 {
-  background-color: #0c0a09;
-}
-.sepia_s005 {
-  background-color: black;
-}
-.sepia_s00, .sepia_s000 {
-  background-color: #000000;
-}
-
 /* 
  * Grid
  * ==========
@@ -683,7 +67,7 @@ template {
   height: 100vh;
 }
 
-@media (min-width: 0px) and (max-width: 376px) {
+@media (max-width: 376px) {
   .grid-15-16, .grid-14-16, .grid-13-16, .grid-12-16,
   .grid-14-15, .grid-13-15, .grid-12-15, .grid-11-15,
   .grid-13-14, .grid-12-14, .grid-11-14, .grid-10-14,
@@ -719,17 +103,20 @@ template {
   .grid-container-col {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
   }
   .grid-container-row {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
   }
   .grid__fixed-width {
-    width: calc(100% - 4rem);
+    width: calc( 100% - 4rem);
     margin: 0;
     padding: 0 2rem;
   }
 }
+
 @media (min-width: 377px) and (max-width: 576px) {
   .grid-1-5 {
     width: 20%;
@@ -759,10 +146,10 @@ template {
     width: 100%;
   }
   .grid-1-3 {
-    width: 33.3333333333%;
+    width: 33.33333%;
   }
   .grid-2-3 {
-    width: 66.6666666667%;
+    width: 66.66667%;
   }
   .grid-3-3 {
     width: 100%;
@@ -787,11 +174,12 @@ template {
     flex-wrap: wrap;
   }
   .grid__fixed-width {
-    width: calc(100% - 4rem);
+    width: calc( 100% - 4rem);
     margin: 0;
     padding: 0 2rem;
   }
 }
+
 @media (min-width: 577px) and (max-width: 768px) {
   .grid-4-16 {
     width: 25%;
@@ -1067,28 +455,28 @@ template {
     width: 100%;
   }
   .grid-1-9 {
-    width: 11.1111111111%;
+    width: 11.11111%;
   }
   .grid-2-9 {
-    width: 22.2222222222%;
+    width: 22.22222%;
   }
   .grid-3-9 {
-    width: 33.3333333333%;
+    width: 33.33333%;
   }
   .grid-4-9 {
-    width: 44.4444444444%;
+    width: 44.44444%;
   }
   .grid-5-9 {
-    width: 55.5555555556%;
+    width: 55.55556%;
   }
   .grid-6-9 {
-    width: 66.6666666667%;
+    width: 66.66667%;
   }
   .grid-7-9 {
-    width: 77.7777777778%;
+    width: 77.77778%;
   }
   .grid-8-9 {
-    width: 88.8888888889%;
+    width: 88.88889%;
   }
   .grid-9-9 {
     width: 100%;
@@ -1118,40 +506,40 @@ template {
     width: 100%;
   }
   .grid-1-7 {
-    width: 14.2857142857%;
+    width: 14.28571%;
   }
   .grid-2-7 {
-    width: 28.5714285714%;
+    width: 28.57143%;
   }
   .grid-3-7 {
-    width: 42.8571428571%;
+    width: 42.85714%;
   }
   .grid-4-7 {
-    width: 57.1428571429%;
+    width: 57.14286%;
   }
   .grid-5-7 {
-    width: 71.4285714286%;
+    width: 71.42857%;
   }
   .grid-6-7 {
-    width: 85.7142857143%;
+    width: 85.71429%;
   }
   .grid-7-7 {
     width: 100%;
   }
   .grid-1-6 {
-    width: 16.6666666667%;
+    width: 16.66667%;
   }
   .grid-2-6 {
-    width: 33.3333333333%;
+    width: 33.33333%;
   }
   .grid-3-6 {
     width: 50%;
   }
   .grid-4-6 {
-    width: 66.6666666667%;
+    width: 66.66667%;
   }
   .grid-5-6 {
-    width: 83.3333333333%;
+    width: 83.33333%;
   }
   .grid-6-6 {
     width: 100%;
@@ -1184,10 +572,10 @@ template {
     width: 100%;
   }
   .grid-1-3 {
-    width: 33.3333333333%;
+    width: 33.33333%;
   }
   .grid-2-3 {
-    width: 66.6666666667%;
+    width: 66.66667%;
   }
   .grid-3-3 {
     width: 100%;
@@ -1212,11 +600,12 @@ template {
     flex-wrap: wrap;
   }
   .grid__fixed-width {
-    width: calc(100% - 4rem);
+    width: calc( 100% - 4rem);
     margin: 0 1rem;
     padding: 0 1rem;
   }
 }
+
 @media (min-width: 769px) and (max-width: 992px) {
   .grid-4-16 {
     width: 25%;
@@ -1393,70 +782,70 @@ template {
     width: 92.30769%;
   }
   .grid-1-12 {
-    width: 8.3333333333%;
+    width: 8.33333%;
   }
   .grid-2-12 {
-    width: 16.6666666667%;
+    width: 16.66667%;
   }
   .grid-3-12 {
     width: 25%;
   }
   .grid-4-12 {
-    width: 33.3333333333%;
+    width: 33.33333%;
   }
   .grid-5-12 {
-    width: 41.6666666667%;
+    width: 41.66667%;
   }
   .grid-6-12 {
     width: 50%;
   }
   .grid-7-12 {
-    width: 58.3333333333%;
+    width: 58.33333%;
   }
   .grid-8-12 {
-    width: 66.6666666667%;
+    width: 66.66667%;
   }
   .grid-9-12 {
     width: 75%;
   }
   .grid-10-12 {
-    width: 83.3333333333%;
+    width: 83.33333%;
   }
   .grid-11-12 {
-    width: 91.6666666667%;
+    width: 91.66667%;
   }
   .grid-12-12 {
     width: 100%;
   }
   .grid-1-11 {
-    width: 9.0909090909%;
+    width: 9.09091%;
   }
   .grid-2-11 {
-    width: 18.1818181818%;
+    width: 18.18182%;
   }
   .grid-3-11 {
-    width: 27.2727272727%;
+    width: 27.27273%;
   }
   .grid-4-11 {
-    width: 36.3636363636%;
+    width: 36.36364%;
   }
   .grid-5-11 {
-    width: 45.4545454545%;
+    width: 45.45455%;
   }
   .grid-6-11 {
-    width: 54.5454545455%;
+    width: 54.54545%;
   }
   .grid-7-11 {
-    width: 63.6363636364%;
+    width: 63.63636%;
   }
   .grid-8-11 {
-    width: 72.7272727273%;
+    width: 72.72727%;
   }
   .grid-9-11 {
-    width: 81.8181818182%;
+    width: 81.81818%;
   }
   .grid-10-11 {
-    width: 90.9090909091%;
+    width: 90.90909%;
   }
   .grid-11-11 {
     width: 100%;
@@ -1492,28 +881,28 @@ template {
     width: 100%;
   }
   .grid-1-9 {
-    width: 11.1111111111%;
+    width: 11.11111%;
   }
   .grid-2-9 {
-    width: 22.2222222222%;
+    width: 22.22222%;
   }
   .grid-3-9 {
-    width: 33.3333333333%;
+    width: 33.33333%;
   }
   .grid-4-9 {
-    width: 44.4444444444%;
+    width: 44.44444%;
   }
   .grid-5-9 {
-    width: 55.5555555556%;
+    width: 55.55556%;
   }
   .grid-6-9 {
-    width: 66.6666666667%;
+    width: 66.66667%;
   }
   .grid-7-9 {
-    width: 77.7777777778%;
+    width: 77.77778%;
   }
   .grid-8-9 {
-    width: 88.8888888889%;
+    width: 88.88889%;
   }
   .grid-9-9 {
     width: 100%;
@@ -1543,40 +932,40 @@ template {
     width: 100%;
   }
   .grid-1-7 {
-    width: 14.2857142857%;
+    width: 14.28571%;
   }
   .grid-2-7 {
-    width: 28.5714285714%;
+    width: 28.57143%;
   }
   .grid-3-7 {
-    width: 42.8571428571%;
+    width: 42.85714%;
   }
   .grid-4-7 {
-    width: 57.1428571429%;
+    width: 57.14286%;
   }
   .grid-5-7 {
-    width: 71.4285714286%;
+    width: 71.42857%;
   }
   .grid-6-7 {
-    width: 85.7142857143%;
+    width: 85.71429%;
   }
   .grid-7-7 {
     width: 100%;
   }
   .grid-1-6 {
-    width: 16.6666666667%;
+    width: 16.66667%;
   }
   .grid-2-6 {
-    width: 33.3333333333%;
+    width: 33.33333%;
   }
   .grid-3-6 {
     width: 50%;
   }
   .grid-4-6 {
-    width: 66.6666666667%;
+    width: 66.66667%;
   }
   .grid-5-6 {
-    width: 83.3333333333%;
+    width: 83.33333%;
   }
   .grid-6-6 {
     width: 100%;
@@ -1609,10 +998,10 @@ template {
     width: 100%;
   }
   .grid-1-3 {
-    width: 33.3333333333%;
+    width: 33.33333%;
   }
   .grid-2-3 {
-    width: 66.6666666667%;
+    width: 66.66667%;
   }
   .grid-3-3 {
     width: 100%;
@@ -1637,11 +1026,12 @@ template {
     flex-wrap: nowrap;
   }
   .grid__fixed-width {
-    width: calc(100% - 4rem);
+    width: calc( 100% - 4rem);
     margin: 0 auto;
     padding: 0 2rem;
   }
 }
+
 @media (min-width: 993px) and (max-width: 1200px) {
   .grid-4-16 {
     width: 25%;
@@ -1657,23 +1047,23 @@ template {
   }
   .grid-1-16 {
     min-width: 6.25%;
-    max-width: 7.1428571429%;
+    max-width: 7.14286%;
   }
   .grid-2-16 {
     min-width: 12.5%;
-    max-width: 14.2857142857%;
+    max-width: 14.28571%;
   }
   .grid-3-16 {
     min-width: 18.75%;
-    max-width: 21.4285714286%;
+    max-width: 21.42857%;
   }
   .grid-5-16 {
     min-width: 31.25%;
-    max-width: 35.7142857143%;
+    max-width: 35.71429%;
   }
   .grid-6-16 {
     min-width: 37.5%;
-    max-width: 42.8571428571%;
+    max-width: 42.85714%;
   }
   .grid-7-16 {
     min-width: 43.75%;
@@ -1681,19 +1071,19 @@ template {
   }
   .grid-9-16 {
     min-width: 56.25%;
-    max-width: 64.2857142857%;
+    max-width: 64.28571%;
   }
   .grid-10-16 {
     min-width: 62.5%;
-    max-width: 71.4285714286%;
+    max-width: 71.42857%;
   }
   .grid-11-16 {
     min-width: 68.75%;
-    max-width: 78.5714285714%;
+    max-width: 78.57143%;
   }
   .grid-13-16 {
     min-width: 81.25%;
-    max-width: 92.8571428571%;
+    max-width: 92.85714%;
   }
   .grid-14-16 {
     min-width: 87.5%;
@@ -1725,183 +1115,183 @@ template {
     width: 100%;
   }
   .grid-1-15 {
-    min-width: 6.6666666667%;
-    max-width: 7.6923076923%;
+    min-width: 6.66667%;
+    max-width: 7.69231%;
   }
   .grid-2-15 {
-    min-width: 13.3333333333%;
-    max-width: 15.3846153846%;
+    min-width: 13.33333%;
+    max-width: 15.38462%;
   }
   .grid-4-15 {
-    min-width: 26.6666666667%;
-    max-width: 30.7692307692%;
+    min-width: 26.66667%;
+    max-width: 30.76923%;
   }
   .grid-7-15 {
-    min-width: 46.6666666667%;
-    max-width: 53.8461538462%;
+    min-width: 46.66667%;
+    max-width: 53.84615%;
   }
   .grid-8-15 {
-    min-width: 53.3333333333%;
-    max-width: 61.5384615385%;
+    min-width: 53.33333%;
+    max-width: 61.53846%;
   }
   .grid-11-15 {
-    min-width: 73.3333333333%;
-    max-width: 84.6153846154%;
+    min-width: 73.33333%;
+    max-width: 84.61538%;
   }
   .grid-13-15 {
-    min-width: 86.6666666667%;
+    min-width: 86.66667%;
     max-width: 100%;
   }
   .grid-14-15 {
-    min-width: 93.3333333333%;
+    min-width: 93.33333%;
     max-width: 100%;
   }
   .grid-1-14 {
-    width: 7.1428571429%;
+    width: 7.14286%;
   }
   .grid-2-14 {
-    width: 14.2857142857%;
+    width: 14.28571%;
   }
   .grid-3-14 {
-    width: 21.4285714286%;
+    width: 21.42857%;
   }
   .grid-4-14 {
-    width: 28.5714285714%;
+    width: 28.57143%;
   }
   .grid-5-14 {
-    width: 35.7142857143%;
+    width: 35.71429%;
   }
   .grid-6-14 {
-    width: 42.8571428571%;
+    width: 42.85714%;
   }
   .grid-7-14 {
     width: 50%;
   }
   .grid-8-14 {
-    width: 57.1428571429%;
+    width: 57.14286%;
   }
   .grid-9-14 {
-    width: 64.2857142857%;
+    width: 64.28571%;
   }
   .grid-10-14 {
-    width: 71.4285714286%;
+    width: 71.42857%;
   }
   .grid-11-14 {
-    width: 78.5714285714%;
+    width: 78.57143%;
   }
   .grid-12-14 {
-    width: 85.7142857143%;
+    width: 85.71429%;
   }
   .grid-13-14 {
-    width: 92.8571428571%;
+    width: 92.85714%;
   }
   .grid-14-14 {
     width: 100%;
   }
   .grid-1-13 {
-    width: 7.6923076923%;
+    width: 7.69231%;
   }
   .grid-2-13 {
-    width: 15.3846153846%;
+    width: 15.38462%;
   }
   .grid-3-13 {
-    width: 23.0769230769%;
+    width: 23.07692%;
   }
   .grid-4-13 {
-    width: 30.7692307692%;
+    width: 30.76923%;
   }
   .grid-5-13 {
-    width: 38.4615384615%;
+    width: 38.46154%;
   }
   .grid-6-13 {
-    width: 46.1538461538%;
+    width: 46.15385%;
   }
   .grid-7-13 {
-    width: 53.8461538462%;
+    width: 53.84615%;
   }
   .grid-8-13 {
-    width: 61.5384615385%;
+    width: 61.53846%;
   }
   .grid-9-13 {
-    width: 69.2307692308%;
+    width: 69.23077%;
   }
   .grid-10-13 {
-    width: 76.9230769231%;
+    width: 76.92308%;
   }
   .grid-11-13 {
-    width: 84.6153846154%;
+    width: 84.61538%;
   }
   .grid-12-13 {
-    width: 92.3076923077%;
+    width: 92.30769%;
   }
   .grid-13-13 {
     width: 100%;
   }
   .grid-1-12 {
-    width: 8.3333333333%;
+    width: 8.33333%;
   }
   .grid-2-12 {
-    width: 16.6666666667%;
+    width: 16.66667%;
   }
   .grid-3-12 {
     width: 25%;
   }
   .grid-4-12 {
-    width: 33.3333333333%;
+    width: 33.33333%;
   }
   .grid-5-12 {
-    width: 41.6666666667%;
+    width: 41.66667%;
   }
   .grid-6-12 {
     width: 50%;
   }
   .grid-7-12 {
-    width: 58.3333333333%;
+    width: 58.33333%;
   }
   .grid-8-12 {
-    width: 66.6666666667%;
+    width: 66.66667%;
   }
   .grid-9-12 {
     width: 75%;
   }
   .grid-10-12 {
-    width: 83.3333333333%;
+    width: 83.33333%;
   }
   .grid-11-12 {
-    width: 91.6666666667%;
+    width: 91.66667%;
   }
   .grid-12-12 {
     width: 100%;
   }
   .grid-1-11 {
-    width: 9.0909090909%;
+    width: 9.09091%;
   }
   .grid-2-11 {
-    width: 18.1818181818%;
+    width: 18.18182%;
   }
   .grid-3-11 {
-    width: 27.2727272727%;
+    width: 27.27273%;
   }
   .grid-4-11 {
-    width: 36.3636363636%;
+    width: 36.36364%;
   }
   .grid-5-11 {
-    width: 45.4545454545%;
+    width: 45.45455%;
   }
   .grid-6-11 {
-    width: 54.5454545455%;
+    width: 54.54545%;
   }
   .grid-7-11 {
-    width: 63.6363636364%;
+    width: 63.63636%;
   }
   .grid-8-11 {
-    width: 72.7272727273%;
+    width: 72.72727%;
   }
   .grid-9-11 {
-    width: 81.8181818182%;
+    width: 81.81818%;
   }
   .grid-10-11 {
-    width: 90.9090909091%;
+    width: 90.90909%;
   }
   .grid-11-11 {
     width: 100%;
@@ -1937,28 +1327,28 @@ template {
     width: 100%;
   }
   .grid-1-9 {
-    width: 11.1111111111%;
+    width: 11.11111%;
   }
   .grid-2-9 {
-    width: 22.2222222222%;
+    width: 22.22222%;
   }
   .grid-3-9 {
-    width: 33.3333333333%;
+    width: 33.33333%;
   }
   .grid-4-9 {
-    width: 44.4444444444%;
+    width: 44.44444%;
   }
   .grid-5-9 {
-    width: 55.5555555556%;
+    width: 55.55556%;
   }
   .grid-6-9 {
-    width: 66.6666666667%;
+    width: 66.66667%;
   }
   .grid-7-9 {
-    width: 77.7777777778%;
+    width: 77.77778%;
   }
   .grid-8-9 {
-    width: 88.8888888889%;
+    width: 88.88889%;
   }
   .grid-9-9 {
     width: 100%;
@@ -1988,40 +1378,40 @@ template {
     width: 100%;
   }
   .grid-1-7 {
-    width: 14.2857142857%;
+    width: 14.28571%;
   }
   .grid-2-7 {
-    width: 28.5714285714%;
+    width: 28.57143%;
   }
   .grid-3-7 {
-    width: 42.8571428571%;
+    width: 42.85714%;
   }
   .grid-4-7 {
-    width: 57.1428571429%;
+    width: 57.14286%;
   }
   .grid-5-7 {
-    width: 71.4285714286%;
+    width: 71.42857%;
   }
   .grid-6-7 {
-    width: 85.7142857143%;
+    width: 85.71429%;
   }
   .grid-7-7 {
     width: 100%;
   }
   .grid-1-6 {
-    width: 16.6666666667%;
+    width: 16.66667%;
   }
   .grid-2-6 {
-    width: 33.3333333333%;
+    width: 33.33333%;
   }
   .grid-3-6 {
     width: 50%;
   }
   .grid-4-6 {
-    width: 66.6666666667%;
+    width: 66.66667%;
   }
   .grid-5-6 {
-    width: 83.3333333333%;
+    width: 83.33333%;
   }
   .grid-6-6 {
     width: 100%;
@@ -2054,10 +1444,10 @@ template {
     width: 100%;
   }
   .grid-1-3 {
-    width: 33.3333333333%;
+    width: 33.33333%;
   }
   .grid-2-3 {
-    width: 66.6666666667%;
+    width: 66.66667%;
   }
   .grid-3-3 {
     width: 100%;
@@ -2082,11 +1472,12 @@ template {
     flex-wrap: nowrap;
   }
   .grid__fixed-width {
-    width: calc(100% - 4rem);
+    width: calc( 100% - 4rem);
     margin: 0 auto;
     padding: 0 2rem;
   }
 }
+
 @media (min-width: 1201px) {
   .grid-1-16 {
     width: 6.25%;
@@ -2137,196 +1528,196 @@ template {
     width: 100%;
   }
   .grid-1-15 {
-    width: 6.6666666667%;
+    width: 6.66667%;
   }
   .grid-2-15 {
-    width: 13.3333333333%;
+    width: 13.33333%;
   }
   .grid-3-15 {
     width: 20%;
   }
   .grid-4-15 {
-    width: 26.6666666667%;
+    width: 26.66667%;
   }
   .grid-5-15 {
-    width: 33.3333333333%;
+    width: 33.33333%;
   }
   .grid-6-15 {
     width: 40%;
   }
   .grid-7-15 {
-    width: 46.6666666667%;
+    width: 46.66667%;
   }
   .grid-8-15 {
-    width: 53.3333333333%;
+    width: 53.33333%;
   }
   .grid-9-15 {
     width: 60%;
   }
   .grid-10-15 {
-    width: 66.6666666667%;
+    width: 66.66667%;
   }
   .grid-11-15 {
-    width: 73.3333333333%;
+    width: 73.33333%;
   }
   .grid-12-15 {
     width: 80%;
   }
   .grid-13-15 {
-    width: 86.6666666667%;
+    width: 86.66667%;
   }
   .grid-14-15 {
-    width: 93.3333333333%;
+    width: 93.33333%;
   }
   .grid-15-15 {
     width: 100%;
   }
   .grid-1-14 {
-    width: 7.1428571429%;
+    width: 7.14286%;
   }
   .grid-2-14 {
-    width: 14.2857142857%;
+    width: 14.28571%;
   }
   .grid-3-14 {
-    width: 21.4285714286%;
+    width: 21.42857%;
   }
   .grid-4-14 {
-    width: 28.5714285714%;
+    width: 28.57143%;
   }
   .grid-5-14 {
-    width: 35.7142857143%;
+    width: 35.71429%;
   }
   .grid-6-14 {
-    width: 42.8571428571%;
+    width: 42.85714%;
   }
   .grid-7-14 {
     width: 50%;
   }
   .grid-8-14 {
-    width: 57.1428571429%;
+    width: 57.14286%;
   }
   .grid-9-14 {
-    width: 64.2857142857%;
+    width: 64.28571%;
   }
   .grid-10-14 {
-    width: 71.4285714286%;
+    width: 71.42857%;
   }
   .grid-11-14 {
-    width: 78.5714285714%;
+    width: 78.57143%;
   }
   .grid-12-14 {
-    width: 85.7142857143%;
+    width: 85.71429%;
   }
   .grid-13-14 {
-    width: 92.8571428571%;
+    width: 92.85714%;
   }
   .grid-14-14 {
     width: 100%;
   }
   .grid-1-13 {
-    width: 7.6923076923%;
+    width: 7.69231%;
   }
   .grid-2-13 {
-    width: 15.3846153846%;
+    width: 15.38462%;
   }
   .grid-3-13 {
-    width: 23.0769230769%;
+    width: 23.07692%;
   }
   .grid-4-13 {
-    width: 30.7692307692%;
+    width: 30.76923%;
   }
   .grid-5-13 {
-    width: 38.4615384615%;
+    width: 38.46154%;
   }
   .grid-6-13 {
-    width: 46.1538461538%;
+    width: 46.15385%;
   }
   .grid-7-13 {
-    width: 53.8461538462%;
+    width: 53.84615%;
   }
   .grid-8-13 {
-    width: 61.5384615385%;
+    width: 61.53846%;
   }
   .grid-9-13 {
-    width: 69.2307692308%;
+    width: 69.23077%;
   }
   .grid-10-13 {
-    width: 76.9230769231%;
+    width: 76.92308%;
   }
   .grid-11-13 {
-    width: 84.6153846154%;
+    width: 84.61538%;
   }
   .grid-12-13 {
-    width: 92.3076923077%;
+    width: 92.30769%;
   }
   .grid-13-13 {
     width: 100%;
   }
   .grid-1-12 {
-    width: 8.3333333333%;
+    width: 8.33333%;
   }
   .grid-2-12 {
-    width: 16.6666666667%;
+    width: 16.66667%;
   }
   .grid-3-12 {
     width: 25%;
   }
   .grid-4-12 {
-    width: 33.3333333333%;
+    width: 33.33333%;
   }
   .grid-5-12 {
-    width: 41.6666666667%;
+    width: 41.66667%;
   }
   .grid-6-12 {
     width: 50%;
   }
   .grid-7-12 {
-    width: 58.3333333333%;
+    width: 58.33333%;
   }
   .grid-8-12 {
-    width: 66.6666666667%;
+    width: 66.66667%;
   }
   .grid-9-12 {
     width: 75%;
   }
   .grid-10-12 {
-    width: 83.3333333333%;
+    width: 83.33333%;
   }
   .grid-11-12 {
-    width: 91.6666666667%;
+    width: 91.66667%;
   }
   .grid-12-12 {
     width: 100%;
   }
   .grid-1-11 {
-    width: 9.0909090909%;
+    width: 9.09091%;
   }
   .grid-2-11 {
-    width: 18.1818181818%;
+    width: 18.18182%;
   }
   .grid-3-11 {
-    width: 27.2727272727%;
+    width: 27.27273%;
   }
   .grid-4-11 {
-    width: 36.3636363636%;
+    width: 36.36364%;
   }
   .grid-5-11 {
-    width: 45.4545454545%;
+    width: 45.45455%;
   }
   .grid-6-11 {
-    width: 54.5454545455%;
+    width: 54.54545%;
   }
   .grid-7-11 {
-    width: 63.6363636364%;
+    width: 63.63636%;
   }
   .grid-8-11 {
-    width: 72.7272727273%;
+    width: 72.72727%;
   }
   .grid-9-11 {
-    width: 81.8181818182%;
+    width: 81.81818%;
   }
   .grid-10-11 {
-    width: 90.9090909091%;
+    width: 90.90909%;
   }
   .grid-11-11 {
     width: 100%;
@@ -2362,28 +1753,28 @@ template {
     width: 100%;
   }
   .grid-1-9 {
-    width: 11.1111111111%;
+    width: 11.11111%;
   }
   .grid-2-9 {
-    width: 22.2222222222%;
+    width: 22.22222%;
   }
   .grid-3-9 {
-    width: 33.3333333333%;
+    width: 33.33333%;
   }
   .grid-4-9 {
-    width: 44.4444444444%;
+    width: 44.44444%;
   }
   .grid-5-9 {
-    width: 55.5555555556%;
+    width: 55.55556%;
   }
   .grid-6-9 {
-    width: 66.6666666667%;
+    width: 66.66667%;
   }
   .grid-7-9 {
-    width: 77.7777777778%;
+    width: 77.77778%;
   }
   .grid-8-9 {
-    width: 88.8888888889%;
+    width: 88.88889%;
   }
   .grid-9-9 {
     width: 100%;
@@ -2413,40 +1804,40 @@ template {
     width: 100%;
   }
   .grid-1-7 {
-    width: 14.2857142857%;
+    width: 14.28571%;
   }
   .grid-2-7 {
-    width: 28.5714285714%;
+    width: 28.57143%;
   }
   .grid-3-7 {
-    width: 42.8571428571%;
+    width: 42.85714%;
   }
   .grid-4-7 {
-    width: 57.1428571429%;
+    width: 57.14286%;
   }
   .grid-5-7 {
-    width: 71.4285714286%;
+    width: 71.42857%;
   }
   .grid-6-7 {
-    width: 85.7142857143%;
+    width: 85.71429%;
   }
   .grid-7-7 {
     width: 100%;
   }
   .grid-1-6 {
-    width: 16.6666666667%;
+    width: 16.66667%;
   }
   .grid-2-6 {
-    width: 33.3333333333%;
+    width: 33.33333%;
   }
   .grid-3-6 {
     width: 50%;
   }
   .grid-4-6 {
-    width: 66.6666666667%;
+    width: 66.66667%;
   }
   .grid-5-6 {
-    width: 83.3333333333%;
+    width: 83.33333%;
   }
   .grid-6-6 {
     width: 100%;
@@ -2479,10 +1870,10 @@ template {
     width: 100%;
   }
   .grid-1-3 {
-    width: 33.3333333333%;
+    width: 33.33333%;
   }
   .grid-2-3 {
-    width: 66.6666666667%;
+    width: 66.66667%;
   }
   .grid-3-3 {
     width: 100%;
@@ -2507,51 +1898,43 @@ template {
     flex-wrap: nowrap;
   }
   .grid__fixed-width {
-    width: calc(100% - 4rem);
+    width: calc( 100% - 4rem);
     max-width: 1180px;
     margin: 0 auto;
     padding: 0 2rem;
   }
 }
+
 .grid {
   display: flex;
 }
+
 .grid-align-center, .grid-vert-center {
   margin: auto 0;
   align-content: center;
 }
+
 .grid-justify-center, .grid-hori-center {
   margin: 0 auto;
   justify-content: center;
 }
+
 .grid-justify-right, .grid-hori-right {
   margin-right: 0;
   margin-left: auto;
   justify-content: right;
 }
+
 .grid-justify-left, .grid-hori-left {
   margin-right: auto;
   margin-left: 0;
   justify-content: right;
 }
+
 .grid-wrap {
   flex-wrap: wrap;
 }
+
 .grid-nowrap {
   flex-wrap: nowrap;
 }
-
-/* 
- * Containers
- * ==========
- * layout/containers
- */
-body {
-  margin: 0;
-}
-
-.main {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-}/*# sourceMappingURL=main.css.map */
