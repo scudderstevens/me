@@ -1,0 +1,3 @@
+@function percentage-width($span, $columns) {
+    @return calc($span / $columns) * 100%;
+}

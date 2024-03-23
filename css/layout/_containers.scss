@@ -1,0 +1,19 @@
+/* 
+ * Containers
+ * ==========
+ * layout/containers
+ */
+ // @import "../abstracts/mixins";
+ 
+ body { margin: 0; }
+
+ .main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+ }
+
+// header {}
+// cta {}
+// footer {}

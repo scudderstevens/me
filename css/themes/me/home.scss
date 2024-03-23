@@ -1,0 +1,360 @@
+// themes/me/home.scss
+@import "../../abstracts/mixins";
+@import "../../abstracts/variables";
+
+// @import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400;500;600;700&display=swap');
+
+// color vars
+$alt: #ffa600;
+$primary: #07ffde;
+$secondary: adjust-hue( $primary, 260 );
+$accent: adjust-hue( $secondary, 180 );
+ 
+.me.home {
+
+    // intro duo card
+    .intro-duo {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+    }
+    .intro-duo__profile {
+        display: flex;
+        flex-direction: column;
+        .profile-img {
+            background-image: url("https://ik.imagekit.io/mp2mjn7fgdt/ss/me/v2/content/tr:h-500/Scudder-Trixie_profile-1000w668h_vH0LFPYDJ.jpg");
+            background-repeat: no-repeat;
+            background-position-x: 70%;
+            background-position-y: center;
+            background-size: cover;
+            height: 500px;
+            width: 500px;
+        }
+        .intro-duo__title {
+            display: block;
+            margin: 0 2rem auto;
+        }
+
+    }
+    .intro-duo__copy {
+
+        display: flex;
+        flex-direction: column;
+        width: calc(100% - 500px);
+
+        margin: 1rem;
+        padding: 1rem 2rem;
+
+        align-content: center;
+
+        .intro-duo__title {
+            display: none;
+        }
+
+    }
+    @include xs {
+        .intro-duo {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        .intro-duo__profile {
+            .profile-img {
+                background-image: url("https://ik.imagekit.io/mp2mjn7fgdt/ss/me/v2/content/tr:h-300/Scudder-Trixie_profile-550w367h_Wc6Uusp7U.jpg");
+                background-position-x: center;
+                height: 250px;
+                width: 100%;
+            }
+            .intro-duo__title {
+                display: none;
+            }
+        }
+        .intro-duo__copy {
+
+            display: flex;
+            width: 100%;
+
+            width: calc( 100% - 4rem );
+            margin: 1rem 0;
+            padding: 0 2rem 2rem;
+
+            .intro-duo__title {
+                display: block;
+            }
+
+        }
+    }
+    @include sm {
+        .intro-duo {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        .intro-duo__profile {
+            .profile-img {
+                background-image: url("https://ik.imagekit.io/mp2mjn7fgdt/ss/me/v2/content/tr:h-300/Scudder-Trixie_profile-550w367h_Wc6Uusp7U.jpg");
+                background-position-x: center;
+                height: 300px;
+                width: 100%;
+            }
+            .intro-duo__title {
+                display: none;
+            }
+        }
+        .intro-duo__copy {
+
+            width: calc( 100% - 4rem );
+            margin: 1rem 0;
+            padding: 0 2rem 2rem;
+
+            .intro-duo__title {
+                display: block;
+            }
+
+        }
+    }
+    @include md {
+        .intro-duo {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        .intro-duo__profile {
+            .profile-img {
+                background-image: url("https://ik.imagekit.io/mp2mjn7fgdt/ss/me/v2/content/tr:h-500/Scudder-Trixie_profile-1000w668h_vH0LFPYDJ.jpg");
+                background-position-x: center;
+                height: 500px;
+                width: 100%;
+            }
+            .intro-duo__title {
+                display: none;
+            }
+        }
+        .intro-duo__copy {
+            width: calc( 100% - 6rem );
+            margin: 1rem;
+            padding: 0 2rem 2rem;
+            align-content: top;
+
+            .intro-duo__title {
+                display: block;
+            }
+
+        }
+    }
+    @include lg {
+        .intro-duo__copy.white { margin: 1rem 0;}
+        .intro-duo__profile {
+            margin-bottom: 0;
+            .profile-img {
+                //https://ik.imagekit.io/mp2mjn7fgdt/me/v2/content/Scudder-Trixie_profile-1000w668h_vH0LFPYDJ.jpg //Scudder-Trixie_profile-550w367h_Wc6Uusp7U.jpg
+                background-image: url("https://ik.imagekit.io/mp2mjn7fgdt/ss/me/v2/content/tr:h-250/Scudder-Trixie_profile-550w367h_Wc6Uusp7U.jpg");
+                height: 250px;
+                width: 250px;
+            }
+
+            .intro-duo__title {
+                display: none;
+            }
+
+        }
+        .intro-duo__copy {
+
+            display: flex;
+            flex-direction: column;
+            width: calc( 100% - 4rem );
+            margin: 0;
+            padding: 0 2rem;
+
+            .intro-duo__title {
+                display: block;
+            }
+
+        }
+    }
+
+    /*
+     * Carousel
+     */
+    // container
+    ol.carousel__viewport,
+    li.carousel__project-slide,
+    li.carousel__more-slide  {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .carousel__viewport {
+        display: flex;
+        height: 650px;
+        overflow-x: scroll;
+        counter-reset: item;
+        scroll-behavior: smooth;
+        scroll-snap-type: x mandatory;
+        overflow: hidden;
+        //overflow-y: hidden; /* Hide vertical scrollbar */
+    }
+    // image
+    .carousel__project-slide {
+
+        flex: 0 0 100%;
+        width: 100%;
+        height: 650px;
+
+        counter-increment: item;
+
+        position: relative;
+
+        // ____ Figma Thumbnail ____
+        // left & right margin  150 px
+        // left & right padding 160 px
+        // top & bottom padding 130 px
+        img.slide {
+
+            display: flex;
+
+            margin: -60px auto 0; // header bar
+
+            position: relative;
+            z-index: 10;
+
+        }
+        // max 1052x650px
+        img.slide.rectangle {
+
+            min-width: 900px;
+            min-height: 556px;
+
+            max-width: 1052px;
+            max-height: 650px;
+
+        }
+        // max 650x650px
+        img.slide.square {
+
+            min-width: 556px;
+            min-height: 556px;
+
+            max-width: 650px;
+            max-height: 650px;
+
+        }
+
+    }
+    // menu
+    .carousel__project-slide_header {
+
+        height: 60px;
+        top: 33.333%;
+        bottom: 66.666%;
+
+        position: relative; 
+        z-index: 100;
+
+        .grid__fixed-width {
+
+            max-width: 1050px;
+            
+            h3 {
+                margin: auto 0;
+            }
+
+        }
+
+    }
+    .carousel__snapper,
+    .carousel__jumper {
+
+        display: flex;
+        flex-direction: row;
+        width: 120px;
+
+        position: relative;
+
+    }
+    .carousel__snapper { padding: 0 0 0 2rem; }
+    .carousel__jumper  { padding: 0 2rem 0 0; }
+    .carousel__btn-prev,
+    .carousel__btn-next,
+    .carousel__btn-details {
+
+        height: 60px;
+        width: 60px;
+
+        cursor: pointer;
+        
+        svg {
+
+            width: 60px;
+            height: 60px;
+
+            ellipse#circle,
+            ellipse#ring { fill: lighten( $mono, 35% ); }
+            path#arrow,
+            ellipse#dot { fill: $white; }
+            
+            &:hover {
+
+                ellipse#circle { fill: $white; }
+                ellipse#ring { fill: url(#svgHover) #00f3ff; }
+                path#arrow,
+                ellipse#dot  { fill: url(#svgHover) #00f3ff; }
+
+            }
+
+        }
+
+    }
+    @media (hover: hover) {
+        .carousel__snapper {
+            animation-name: tonext, snap;
+            animation-timing-function: ease;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+        .carousel__slide:last-child .carousel__snapper {
+            animation-name: tostart, snap;
+        }
+    }
+    @media (prefers-reduced-motion: reduce) {
+        .carousel__snapper {
+            animation-name: none;
+        }
+    }
+    .carousel:hover .carousel__snapper,
+    .carousel:focus-within .carousel__snapper {
+        animation-name: none;
+    }
+    // responsive
+    @include xs  {
+        .carousel-wrapper { display: none; }
+    }
+    @include sm  {
+        .carousel-wrapper { display: none; }
+    }
+    @include md  {
+        .carousel__project-slide {
+            .carousel__jumper { padding: 0 0 0 2rem; }
+            img.slide.square { display: block; height: 100%; width: auto; }
+            img.slide.rectangle { display: none; }
+        }
+    }
+    @include lg  {
+        .carousel__project-slide {
+            img.slide.square { display: block; height: 100%; width: auto; }
+            img.slide.rectangle { display: none; }
+        }
+    }
+    @include xl  {
+        .carousel__project-slide {
+            img.slide.square { display: none; }
+        }
+    }
+    @include xxl {
+        .carousel__project-slide {
+            img.slide.square { display: none; }
+        }
+    }
+
+} // END

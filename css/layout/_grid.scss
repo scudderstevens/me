@@ -1,0 +1,641 @@
+/* 
+ * Grid
+ * ==========
+ * layout/grid
+ * responsive grid widths and containers
+ *
+ * Breakpoints
+ * -----------
+ * size     description             : name               width    orientation
+ * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ * 'xs'  __ Supports  2 column grid : Extra Small        <576px   Vertical (by default)
+ * 'sm'  __ Supports  5 column grid : Small              ≥576px   Vertical & Horizontal
+ * 'md'  __ Supports 10 column grid : Medium             ≥768px   Vertical & Horizontal
+ * 'lg'  __ Supports 12 column grid : Large              ≥992px   Vertical & Horizontal
+ * 'xl'  __ Supports 14 column grid : Extra Large        ≥1200px  Extra Large, Vertical & Horizontal
+ * 'xxl' __ Supports 16 column grid : Extra Extra Large  ≥1400px  Horizontal (only)
+ */
+
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+@import "../abstracts/functions";
+
+.full-width { width: 100%; }
+.full-height { height: 100vh; }
+
+// xs – supports up to 2 columns
+// 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 are rounded
+@include xs {
+    // (100%) > 66.666%
+    .grid-15-16, .grid-14-16, .grid-13-16, .grid-12-16,
+    .grid-14-15, .grid-13-15, .grid-12-15, .grid-11-15,
+    .grid-13-14, .grid-12-14, .grid-11-14, .grid-10-14,
+    .grid-12-13, .grid-11-13, .grid-10-13, .grid-9-13,
+    .grid-11-12, .grid-10-12, .grid-9-12,
+    .grid-10-11, .grid-9-11, .grid-8-11,
+    .grid-9-10, .grid-8-10, .grid-7-10,
+    .grid-8-9, .grid-7-9,
+    .grid-7-8, .grid-6-8,
+    .grid-6-7, .grid-5-7,
+    .grid-5-6,
+    .grid-4-5,
+    .grid-3-4 {
+        width: 100%;
+    }
+    // (50%) ≤ 66.666%
+    .grid-11-16, .grid-10-16, .grid-9-16, .grid-8-16, .grid-7-16, .grid-6-16, .grid-5-16, .grid-4-16, .grid-3-16, .grid-2-16, .grid-1-16,
+    .grid-10-15, .grid-9-15, .grid-8-15, .grid-7-15, .grid-6-15, .grid-5-15, .grid-4-15, .grid-3-15, .grid-2-15, .grid-1-15,
+    .grid-9-14, .grid-8-14, .grid-7-14, .grid-6-14, .grid-5-14, .grid-4-14, .grid-3-14, .grid-2-14, .grid-1-14,
+    .grid-8-13, .grid-7-13, .grid-6-13, .grid-5-13, .grid-4-13, .grid-3-13, .grid-2-13, .grid-1-13,
+    .grid-8-12, .grid-7-12, .grid-6-12, .grid-5-12, .grid-4-12, .grid-3-12, .grid-2-12, .grid-1-12,
+    .grid-7-11, .grid-6-11, .grid-5-11, .grid-4-11, .grid-3-11, .grid-2-11, .grid-1-11,
+    .grid-6-10, .grid-5-10, .grid-4-10, .grid-3-10, .grid-2-10, .grid-1-10,
+    .grid-6-9, .grid-5-9, .grid-4-9, .grid-3-9, .grid-2-9, .grid-1-9,
+    .grid-5-8, .grid-4-8, .grid-3-8, .grid-2-8, .grid-1-8,
+    .grid-4-7, .grid-3-7, .grid-2-7, .grid-1-7,
+    .grid-4-6, .grid-3-6, .grid-2-6, .grid-1-6,
+    .grid-3-5, .grid-2-5, .grid-1-5,
+    .grid-2-4, .grid-1-4,
+    .grid-2-3, .grid-1-3,
+    .grid-1-2 {
+        width: 50%;
+    }
+    .grid {
+        &-container {
+            &-col {
+                display: flex;
+                flex-direction: column;
+                //flex-wrap: wrap;
+            }
+            &-row {
+                display: flex;
+                flex-direction: row;
+                //flex-wrap: wrap;
+            }
+        }
+        &__fixed-width {
+            width: calc( 100% - 4rem );
+            margin: 0;
+            padding: 0 2rem;
+        }
+    }
+}
+
+// sm – supports up to 5 columns
+// 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 are rounded
+@include sm {
+
+    // rounded HERE
+
+    $grid-columns: 5;
+    $col: $grid-columns - 1;
+    @for $i from 0 through $col {
+        $current: $grid-columns - $i;
+        @for $j from 1 through $current {
+            .grid-#{$j}-#{$current} { width: percentage-width($j, $current); }
+        }
+    }
+    .grid {
+        &-container {
+            &-col {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+            }
+            &-row {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+        }
+        &__fixed-width {
+            width: calc( 100% - 4rem );
+            margin: 0;
+            padding: 0 2rem;
+        }
+    }
+}
+
+// md – supports up to 10 columns
+// 11, 12, 13, 14, 15, 16 are rounded
+@include md {
+    // 16
+    .grid-4-16  { width: 25%;    }
+    .grid-8-16  { width: 50%;    }
+    .grid-12-16 { width: 75%;    }
+    .grid-16-16 { width: 100%;   }
+    // rounded to closest even colmn. (10) width
+    .grid-1-16  { width: 6.25%;  } // -10, 6.25%
+    .grid-2-16  { width: 12.5%;  } // -10, 12.5%
+    .grid-3-16  { width: 18.75%; } // -10, 18.75%
+    .grid-5-16  { width: 31.25%; } // -10, 31.25%
+    .grid-6-16  { width: 37.5%;  } // -10, 37.5%
+    .grid-7-16  { width: 43.75%; } // -10, 43.75%
+    .grid-9-16  { width: 56.25%; } // -10, 56.25%
+    .grid-10-16 { width: 62.5%;  } // -10, 62.5%
+    .grid-11-16 { width: 68.75%; } // -10, 68.75%
+    .grid-13-16 { width: 81.25%; } // -10, 81.25%
+    .grid-14-16 { width: 87.5%;  } // -10, 87.5%
+    .grid-15-16 { width: 93.75%; } // -10, 93.75%
+
+    // 15
+    .grid-3-15  { width: 20%;       }
+    .grid-5-15  { width: 33.33333%; }
+    .grid-6-15  { width: 40%;       }
+    .grid-9-15  { width: 60%;       }
+    .grid-10-15 { width: 66.66667%; }
+    .grid-12-15 { width: 80%;       }
+    .grid-15-15 { width: 100%;      }
+    // rounded to closest odd colmn. (9) width
+    .grid-1-15  { width: 6.66667%;  } // -11, 6.66667%
+    .grid-2-15  { width: 13.33333%; } // -11, 13.33333%
+    .grid-4-15  { width: 26.66667%; } // -11, 26.66667%
+    .grid-7-15  { width: 46.66667%; } // -11, 46.66667%
+    .grid-8-15  { width: 53.33333%; } // -11, 53.33333%
+    .grid-11-15 { width: 73.33333%; } // -11, 73.33333%
+    .grid-13-15 { width: 86.66667%; } // -11, 86.66667%
+    .grid-14-15 { width: 93.33333%; } // -11, 93.33333%
+
+    // 14
+    .grid-7-14  { width: 50%;       }
+    .grid-14-14 { width: 100%;      }
+    // rounded to closest even colmn. (10) width
+    .grid-1-14  { width: 7.14286%;  } // -12, 7.14286%
+    .grid-2-14  { width: 14.28571%; } // -12, 14.28571%
+    .grid-3-14  { width: 21.42857%; } // -12, 21.42857%
+    .grid-4-14  { width: 28.57143%; } // -12, 28.57143%
+    .grid-5-14  { width: 35.71429%; } // -12, 35.71429%
+    .grid-6-14  { width: 42.85714%; } // -12, 42.85714%
+    .grid-8-14  { width: 57.14286%; } // -12, 57.14286%
+    .grid-9-14  { width: 64.28571%; } // -12, 64.28571%
+    .grid-10-14 { width: 71.42857%; } // -12, 71.42857%
+    .grid-11-14 { width: 78.57143%; } // -12, 78.57143%
+    .grid-12-14 { width: 85.71429%; } // -12, 85.71429%
+    .grid-13-14 { width: 92.85714%; } // -12, 92.85714%
+
+    // 13
+    .grid-13-13 { width: 100%;      }
+    // rounded to closest odd colmn. (9) width
+    .grid-1-13  { width: 7.69231%;  } // -11, 7.69231%
+    .grid-2-13  { width: 15.38462%; } // -11, 15.38462%
+    .grid-3-13  { width: 23.07692%; } // -11, 23.07692%
+    .grid-4-13  { width: 30.76923%; } // -11, 30.76923%
+    .grid-5-13  { width: 38.46154%; } // -11, 38.46154%
+    .grid-6-13  { width: 46.15385%; } // -11, 46.15385%
+    .grid-7-13  { width: 53.84615%; } // -11, 53.84615%
+    .grid-8-13  { width: 61.53846%; } // -11, 61.53846%
+    .grid-9-13  { width: 69.23077%; } // -11, 69.23077%
+    .grid-10-13 { width: 76.92308%; } // -11, 76.92308%
+    .grid-11-13 { width: 84.61538%; } // -11, 84.61538%
+    .grid-12-13 { width: 92.30769%; } // -11, 92.30769%
+
+    // 12
+    .grid-3-12  { width: 25%;       }
+    .grid-4-12  { width: 33.33333%; }
+    .grid-6-12  { width: 50%;       }
+    .grid-8-12  { width: 66.66667%; }
+    .grid-9-12  { width: 75%;       }
+    .grid-12-12 { width: 100%;      } 
+    // rounded closest even colmn. (10) width
+    .grid-1-12  { width: 8.33333%;  } // -10, 8.33333%
+    .grid-2-12  { width: 16.66667%; } // -10, 16.66667%
+    .grid-5-12  { width: 41.66667%; } // -10, 41.66667%
+    .grid-7-12  { width: 58.33333%; } // -10, 58.33333%
+    .grid-10-12 { width: 83.33333%; } // -10, 83.33333%
+    .grid-11-12 { width: 91.66667%; } // -10, 91.66667%
+
+    // 11
+    .grid-11-11 { width: 100%;      }
+    // rounded closest odd colmn. (9) width
+    .grid-1-11  { width: 9.09091%;  } // -9, 9.09091%
+    .grid-2-11  { width: 18.18182%; } // -9, 18.18182%
+    .grid-3-11  { width: 27.27273%; } // -9, 27.27273%
+    .grid-4-11  { width: 36.36364%; } // -9, 36.36364%
+    .grid-5-11  { width: 45.45455%; } // -9, 45.45455%
+    .grid-6-11  { width: 54.54545%; } // -9, 54.54545%
+    .grid-7-11  { width: 63.63636%; } // -9, 63.63636%
+    .grid-8-11  { width: 72.72727%; } // -9, 72.72727%
+    .grid-9-11  { width: 81.81818%; } // -9, 81.81818%
+    .grid-10-11 { width: 90.90909%; } // -9, 90.90909%
+
+    $grid-columns: 10;
+    $col: $grid-columns - 1;
+    @for $i from 0 through $col {
+        $current: $grid-columns - $i;
+        @for $j from 1 through $current {
+            .grid-#{$j}-#{$current} { width: percentage-width($j, $current); }
+        }
+    }
+    .grid {
+        &-container {
+            &-col {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+            }
+            &-row {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+        }
+        &__fixed-width {
+            width: calc( 100% - 4rem );
+            margin: 0 1rem;
+            padding: 0 1rem;
+        }
+    }
+}
+
+// lg – supports up to 12 columns
+// 13, 14, 15, 16 are rounded
+@include lg {
+    // 16
+    // natively supported
+    .grid-4-16  { width: 25%;    }
+    .grid-8-16  { width: 50%;    }
+    .grid-12-16 { width: 75%;    }
+    .grid-16-16 { width: 100%;   }
+    // rounded to closest even colmn. (12) width
+    .grid-1-16  {
+        width: 6.25%;
+    }
+    .grid-2-16  {
+        width: 12.5%;
+    }
+    .grid-3-16  {
+        width: 18.75%;
+    }
+    .grid-5-16  {
+        width: 31.25%;
+    }
+    .grid-6-16  {
+        width: 37.5%;
+    }
+    .grid-7-16  {
+        width: 43.75%;
+    }
+    .grid-9-16  {
+        width: 56.25%;
+    }
+    .grid-10-16 {
+        width: 62.5%;
+    }
+    .grid-11-16 {
+        width: 68.75%;
+    }
+    .grid-13-16 {
+        width: 81.25%;
+    }
+    .grid-14-16 {
+        width: 87.5%;
+    }
+    .grid-15-16 {
+        width: 93.75%;
+    }
+
+    // 15
+    // natively supported
+    .grid-3-15  { width: 20%;       }
+    .grid-5-15  { width: 33.33333%; }
+    .grid-6-15  { width: 40%;       }
+    .grid-9-15  { width: 60%;       }
+    .grid-10-15 { width: 66.66667%; }
+    .grid-12-15 { width: 80%;       }
+    .grid-15-15 { width: 100%;      }
+    // rounded to closest odd colmn. (11) width
+    .grid-1-15  {
+        width: 6.66667%; 
+    }
+    .grid-2-15  {
+        width: 13.33333%;
+    }
+    .grid-4-15  {
+        width: 26.66667%;
+    }
+    .grid-7-15  {
+        width: 46.66667%;
+    }
+    .grid-8-15  {
+        width: 53.33333%;
+    }
+    .grid-11-15 {
+        width: 73.33333%;
+    }
+    .grid-13-15 {
+        width: 86.66667%;
+    }
+    .grid-14-15 {
+        width: 93.33333%;
+    }
+
+    // 14
+    // natively supported
+    .grid-7-14  { width: 50%;  }
+    .grid-14-14 { width: 100%; }
+    // rounded to closest even colmn. (12) width
+    .grid-1-14  {
+        width: 7.14286%;
+    }
+    .grid-2-14  {
+        width: 14.28571%;
+    }
+    .grid-3-14  {
+        width: 21.42857%;
+    }
+    .grid-4-14  {
+        width: 28.57143%;
+    }
+    .grid-5-14  {
+        width: 35.71429%;
+    }
+    .grid-6-14  {
+        width: 42.85714%;
+    }
+    .grid-8-14  {
+        width: 57.14286%;
+    }
+    .grid-9-14  {
+        width: 64.28571%;
+    }
+    .grid-10-14 {
+        width: 71.42857%;
+    }
+    .grid-11-14 {
+        width: 78.57143%;
+    }
+    .grid-12-14 {
+        width: 85.71429%;
+    }
+    .grid-13-14 {
+        width: 92.85714%;
+    }
+
+    // 13
+    // natively supported
+    .grid-13-13 { width: 100%; }
+    // rounded to closest odd colmn. (11) width
+    .grid-1-13  {
+        width: 7.69231%; 
+    }
+    .grid-2-13  {
+        width: 15.38462%;
+    }
+    .grid-3-13  {
+        width: 23.07692%;
+    }
+    .grid-4-13  {
+        width: 30.76923%;
+    }
+    .grid-5-13  {
+        width: 38.46154%;
+    }
+    .grid-6-13  {
+        width: 46.15385%;
+    }
+    .grid-7-13  {
+        width: 53.84615%;
+    }
+    .grid-8-13  {
+        width: 61.53846%;
+    }
+    .grid-9-13  {
+        width: 69.23077%;
+    }
+    .grid-10-13 { 
+        width: 76.92308%;
+    }
+    .grid-11-13 {
+        width: 84.61538%;
+    }
+    .grid-12-13 {
+        width: 92.30769%;
+    }
+
+    $grid-columns: 12;
+    $col: $grid-columns - 1;
+    @for $i from 0 through $col {
+        $current: $grid-columns - $i;
+        @for $j from 1 through $current {
+            .grid-#{$j}-#{$current} { width: percentage-width($j, $current); }
+        }
+    }
+    .grid {
+        &-container {
+            &-col {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+            }
+            &-row {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+            }
+        }
+        &__fixed-width {
+            width: calc( 100% - 4rem );
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+    }
+}
+
+// xl, supports 14 columns
+// 15, 16 are rounded
+@include xl {
+    // 16
+    // natively supported
+    .grid-4-16  { width: 25%;  }
+    .grid-8-16  { width: 50%;  }
+    .grid-12-16 { width: 75%;  }
+    .grid-16-16 { width: 100%; }
+    // rounded to closest even colmn. (14) width
+    .grid-1-16  {
+        min-width: percentage-width(1, 16);
+        max-width: percentage-width(1, 14);
+    }
+    .grid-2-16  {
+        min-width: percentage-width(2, 16);
+        max-width: percentage-width(2, 14);
+    }
+    .grid-3-16  {
+        min-width: percentage-width(3, 16);
+        max-width: percentage-width(3, 14);
+    }
+    .grid-5-16  {
+        min-width: percentage-width(5, 16);
+        max-width: percentage-width(5, 14);
+    }
+    .grid-6-16  {
+        min-width: percentage-width(6, 16);
+        max-width: percentage-width(6, 14);
+    }
+    .grid-7-16  {
+        min-width: percentage-width(7, 16);
+        max-width: percentage-width(7, 14);
+    }
+    .grid-9-16  {
+        min-width: percentage-width(9, 16);
+        max-width: percentage-width(9, 14);
+    }
+    .grid-10-16 {
+        min-width: percentage-width(10, 16);
+        max-width: percentage-width(10, 14);
+    }
+    .grid-11-16 {
+        min-width: percentage-width(11, 16);
+        max-width: percentage-width(11, 14);
+    }
+    .grid-13-16 {
+        min-width: percentage-width(13, 16);
+        max-width: percentage-width(13, 14);
+    }
+    .grid-14-16 {
+        min-width: percentage-width(14, 16);
+        max-width: percentage-width(14, 14);
+    }
+    .grid-15-16 {
+        min-width: percentage-width(15, 16);
+        max-width: percentage-width(14, 14);
+    }
+
+    // 15
+    // natively supported
+    .grid-3-15  { width: 20%;       }
+    .grid-5-15  { width: 33.33333%; }
+    .grid-6-15  { width: 40%;       }
+    .grid-9-15  { width: 60%;       }
+    .grid-10-15 { width: 66.66667%; }
+    .grid-12-15 { width: 80%;       }
+    .grid-15-15 { width: 100%;      }
+    // rounded to closes odd colmn. (13) width
+    .grid-1-15  {
+        min-width: percentage-width(1, 15);
+        max-width: percentage-width(1, 13);
+    }
+    .grid-2-15  {
+        min-width: percentage-width(2, 15);
+        max-width: percentage-width(2, 13);
+    }
+    .grid-4-15  {
+        min-width: percentage-width(4, 15);
+        max-width: percentage-width(4, 13);
+    }
+    .grid-7-15  {
+        min-width: percentage-width(7, 15);
+        max-width: percentage-width(7, 13);
+    }
+    .grid-8-15  {
+        min-width: percentage-width(8, 15);
+        max-width: percentage-width(8, 13);
+    }
+    .grid-11-15 {
+        min-width: percentage-width(11, 15);
+        max-width: percentage-width(11, 13);
+    }
+    .grid-13-15 {
+        min-width: percentage-width(13, 15);; 
+        max-width: percentage-width(13, 13);;
+    }
+    .grid-14-15 {
+        min-width: percentage-width(14, 15);
+        max-width: percentage-width(13, 13);
+    }
+
+    $grid-columns: 14;
+    $col: $grid-columns - 1;
+    @for $i from 0 through $col {
+        $current: $grid-columns - $i;
+        @for $j from 1 through $current {
+            .grid-#{$j}-#{$current} { width: percentage-width($j, $current); }
+        }
+    }
+    .grid {
+        &-container {
+            &-col {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+            }
+            &-row {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+            }
+        }
+        &__fixed-width {
+            width: calc( 100% - 4rem );
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+    }
+}
+
+// xxl – supports up to 16 columns
+@include xxl {
+    $grid-columns: 16;
+    $col: $grid-columns - 1;
+    @for $i from 0 through $col {
+        $current: $grid-columns - $i;
+        @for $j from 1 through $current {
+            .grid-#{$j}-#{$current} { width: percentage-width($j, $current); }
+        }
+    }
+    .grid {
+        &-container {
+            &-col {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+            }
+            &-row {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+            }
+        }
+        &__fixed-width {
+            width: calc( 100% - 4rem );
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+    }
+}
+
+// responsive containers
+.grid {
+    display: flex;
+    &-align,
+    &-vert {
+        &-center {
+            margin: auto 0;
+            align-content: center;
+        }
+    }
+    &-justify,
+    &-hori {
+        &-center {
+            margin: 0 auto;
+            justify-content: center;
+        }
+        &-right {
+            margin-right: 0;
+            margin-left: auto;
+            justify-content: right;
+        }
+        &-left {
+            margin-right: auto;
+            margin-left: 0;
+            justify-content: right;
+        }
+    }
+    &-wrap {
+        flex-wrap: wrap;
+    }
+    &-nowrap {
+        flex-wrap: nowrap;
+    }
+}
+ 
