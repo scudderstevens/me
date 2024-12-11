@@ -46,6 +46,16 @@
    * Carousel
    */
 }
+.me.home #projects.stack a.grid-container-row img.slide.teaser.rectangle {
+  height: 80vh;
+  width: auto;
+}
+.me.home #projects.stack a.grid-container-row .project-teaser-right {
+  height: auto;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .me.home .intro-duo {
   display: flex;
   flex-direction: row;
@@ -56,7 +66,7 @@
   flex-direction: column;
 }
 .me.home .intro-duo__profile .profile-img {
-  background-image: url("https://ik.imagekit.io/mp2mjn7fgdt/ss/me/v2/content/tr:h-500/Scudder-Trixie_profile-1000w668h_vH0LFPYDJ.jpg");
+  background-image: url("https://ik.imagekit.io/mp2mjn7fgdt/ss/me/v3/tr:h-500/Scudder-Stevens__flannel-sq.jpg");
   background-repeat: no-repeat;
   background-position-x: 70%;
   background-position-y: center;
@@ -86,10 +96,10 @@
     height: 100%;
   }
   .me.home .intro-duo__profile .profile-img {
-    background-image: url("https://ik.imagekit.io/mp2mjn7fgdt/ss/me/v2/content/tr:h-300/Scudder-Trixie_profile-550w367h_Wc6Uusp7U.jpg");
+    background-image: url("https://ik.imagekit.io/mp2mjn7fgdt/ss/me/v3/tr:h-300/Scudder-Stevens__flannel-sq.jpg");
     background-position-x: center;
     height: 250px;
-    width: 100%;
+    width: 250px;
   }
   .me.home .intro-duo__profile .intro-duo__title {
     display: none;
@@ -112,10 +122,10 @@
     height: 100%;
   }
   .me.home .intro-duo__profile .profile-img {
-    background-image: url("https://ik.imagekit.io/mp2mjn7fgdt/ss/me/v2/content/tr:h-300/Scudder-Trixie_profile-550w367h_Wc6Uusp7U.jpg");
+    background-image: url("https://ik.imagekit.io/mp2mjn7fgdt/ss/me/v3/tr:h-300/Scudder-Stevens__flannel-sq.jpg");
     background-position-x: center;
     height: 300px;
-    width: 100%;
+    width: 300px;
   }
   .me.home .intro-duo__profile .intro-duo__title {
     display: none;
@@ -136,10 +146,10 @@
     height: 100%;
   }
   .me.home .intro-duo__profile .profile-img {
-    background-image: url("https://ik.imagekit.io/mp2mjn7fgdt/ss/me/v2/content/tr:h-500/Scudder-Trixie_profile-1000w668h_vH0LFPYDJ.jpg");
+    background-image: url("https://ik.imagekit.io/mp2mjn7fgdt/ss/me/v3/tr:h-500/Scudder-Stevens__flannel-sq.jpg");
     background-position-x: center;
     height: 500px;
-    width: 100%;
+    width: 500px;
   }
   .me.home .intro-duo__profile .intro-duo__title {
     display: none;
@@ -162,7 +172,7 @@
     margin-bottom: 0;
   }
   .me.home .intro-duo__profile .profile-img {
-    background-image: url("https://ik.imagekit.io/mp2mjn7fgdt/ss/me/v2/content/tr:h-250/Scudder-Trixie_profile-550w367h_Wc6Uusp7U.jpg");
+    background-image: url("https://ik.imagekit.io/mp2mjn7fgdt/ss/me/v3/tr:h-250/Scudder-Stevens__flannel-sq.jpg");
     height: 250px;
     width: 250px;
   }
