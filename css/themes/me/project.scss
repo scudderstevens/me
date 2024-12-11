@@ -13,6 +13,27 @@ $accent: adjust-hue( $secondary, 180 );
 
 .me.project {
 
+    img.header.rectangle {
+        height: auto;
+        width: 100%;
+    }
+    
+    .project-teaser-right {
+        height: auto;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    img.slide.rectangle {
+        height: auto;
+        //width: calc(100% - 4rem);
+        width: 100%;
+        max-width: 1180px;
+        margin: 0 auto;
+        //padding: 0 2rem;
+    }
+
     .tabbed-header {
         margin: 0 auto 0 0;
         padding: 0 2rem;
@@ -474,7 +495,7 @@ $accent: adjust-hue( $secondary, 180 );
             }
             .body {
                 display: flex;
-                p { font-size: 1.15rem; }
+                flex-direction: column;
             }
 
         }
@@ -641,7 +662,6 @@ $accent: adjust-hue( $secondary, 180 );
         }
         &__jobs-to-be-done,
         &__how-might-we {
-
             li.card {
 
                 display: flex;
@@ -784,7 +804,230 @@ $accent: adjust-hue( $secondary, 180 );
                 }
             }
         }
-        &__personas {
+        &__content-criteria {
+            li.card {
+                .copy {
+                    .header {
+                        margin: 0 0 .5rem 0;
+                        ol.tags,
+                        ul.tags {
+                            list-style: none;
+                            margin: .5rem auto 0 0;
+                            padding: 0;
+                            li.tag {
+                                margin: .25rem auto 0 0;
+                                padding: .15rem .5rem;
+                                font-size: 1rem;
+                                font-weight: 400;
+                            }
+                        }
+                    }
+                    .body {
+                        margin: .5rem 0 auto 0;
+                        p { margin: 0 0 auto 0; }
+                    }
+                }
+                // responsive
+                @include xs  {
+                    width: 100%;
+                    flex-direction: column;
+                    .copy { margin: 0 0 3rem 0; padding: 0; }
+                }
+                @include sm  {
+                    width: 100%;
+                    flex-direction: column;
+                    .copy { margin: 0 0 3rem 0; padding: 0; }
+                }
+                @include md  {
+                    width: 100%;
+                    flex-direction: column;
+                    .copy { margin: 0 0 3rem 0; padding: 0; }
+                }
+                @include lg  {
+                    width: 50%;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    &:nth-child(odd) { .copy { padding: 0 1rem 0 0; } }
+                    .copy { margin: 0 0 3rem 0; padding: 0 0 0 1rem; }
+                }
+                @include xl  {
+                    width: 50%;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    &:nth-child(odd) { .copy { padding: 0 1rem 0 0; } }
+                    .copy { margin: 0 0 3rem 0; padding: 0 0 0 1rem; }
+                }
+                @include xxl {
+                    width: 50%;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    &:nth-child(odd) { .copy { padding: 0 1rem 0 0; } }
+                    .copy { margin: 0 0 3rem 0; padding: 0 0 0 1rem; }
+                }
+            }
+            // responsive
+            @include xs  {
+                flex-direction: column;
+            }
+            @include sm  {
+                flex-direction: column;
+            }
+            @include md  {
+                flex-direction: column;
+            }
+            @include lg  {
+                flex-direction: row;
+                justify-content: space-around;
+                flex-wrap: wrap;
+            }
+            @include xl  {
+                flex-direction: row;
+                justify-content: space-around;
+                flex-wrap: wrap;
+            }
+            @include xxl {
+                flex-direction: row;
+                justify-content: space-around;
+                flex-wrap: wrap;
+            }
+        }
+        &__content-snapshot,
+        &__scope-axis,
+        &__scope-snapshot {
+            li.card {
+
+                display: flex;
+                list-style: none;
+
+                .image {
+
+                    display: none;
+
+                    img,
+                    img.zoom,
+                    img.square,
+                    img.rectangle { display: none; }
+                
+                }
+                .copy {
+                    .header {
+                        display: flex;
+                        flex-direction: column;
+                        .title {
+                            display: flex;
+                            font-weight: 350;
+                            font-size: 1.35rem;
+                        }
+                        ol.tags,
+                        ul.tags { 
+                            padding: 0;
+                            li.tag {
+                                display: inline-flex;
+                                font-size: 1rem;
+                                font-weight: 400;
+                            }
+                        }
+                    }
+                }
+                // responsive
+                @include xs  {
+                    width: 100%;
+                    flex-direction: column;
+                    .copy { margin: 0 0 3rem 0; padding: 0; }
+                }
+                @include sm  {
+                    width: 100%;
+                    flex-direction: column;
+                    .copy { margin: 0 0 3rem 0; padding: 0; }
+                }
+                @include md  {
+                    width: 50%;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    &:nth-child(odd) { .copy { padding: 0 1rem 0 0; } }
+                    .copy { margin: 0 0 3rem 0; padding: 0 0 0 1rem; }
+                }
+                @include lg  {
+                    width: 33.333%;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    &:nth-child(1) { .copy { padding: 0 .5rem 0 0; } }
+                    &:nth-child(4) { .copy { padding: 0 .5rem 0 0; } }
+                    &:nth-child(3),
+                    &:nth-child(6) { .copy { padding: 0 0 0 .5rem; } }
+                    .copy { margin: 0 0 3rem 0; padding: 0 .5rem; }
+                }
+                @include xl  {
+                    width: 33.333%;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    &:nth-child(1) { .copy { padding: 0 .5rem 0 0; } }
+                    &:nth-child(4) { .copy { padding: 0 .5rem 0 0; } }
+                    &:nth-child(3),
+                    &:nth-child(6) { .copy { padding: 0 0 0 .5rem; } }
+                    .copy { margin: 0 0 3rem 0; padding: 0 .5rem; }
+                }
+                @include xxl {
+                    width: 33.333%;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    &:nth-child(1) { .copy { padding: 0 .5rem 0 0; } }
+                    &:nth-child(4) { .copy { padding: 0 .5rem 0 0; } }
+                    &:nth-child(3),
+                    &:nth-child(6) { .copy { padding: 0 0 0 .5rem; } }
+                    .copy { margin: 0 0 3rem 0; padding: 0 .5rem; }
+                }
+            }
+            li.card.last {
+                // responsive
+                @include xs  {
+                    .copy { margin: 0 0 3rem 0; padding: 0; }
+                }
+                @include sm  {
+                    .copy { margin: 0 0 3rem 0; padding: 0; }
+                }
+                @include md  {
+                    .copy { margin: 0 auto 3rem 0; padding: 0 1rem 0 0; }
+                }
+                @include lg  {
+                    .copy { margin: 0 auto 3rem 0; padding: 0 0 0 .5rem; }
+                }
+                @include xl  {
+                    .copy { margin: 0 auto 3rem 0; padding: 0 0 0 .5rem; }
+                }
+                @include xxl {
+                    .copy { margin: 0 auto 3rem 0; padding: 0 0 0 .5rem; }
+                }
+            }
+            // responsive
+            @include xs  {
+                flex-direction: column;
+            }
+            @include sm  {
+                flex-direction: column;
+            }
+            @include md  {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            @include lg  {
+                flex-direction: row;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+            }
+            @include xl  {
+                flex-direction: row;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+            }
+            @include xxl {
+                flex-direction: row;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+            }
+        }
+        &__personas,
+        &__archetypes {
 
             flex-wrap: wrap;
 

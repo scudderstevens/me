@@ -41,6 +41,22 @@
  * abstracts/variables
  */
 /* Monochromic */
+.me.project img.header.rectangle {
+  height: auto;
+  width: 100%;
+}
+.me.project .project-teaser-right {
+  height: auto;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.me.project img.slide.rectangle {
+  height: auto;
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+}
 .me.project .tabbed-header {
   margin: 0 auto 0 0;
   padding: 0 2rem;
@@ -551,10 +567,7 @@
 .me.project ol.deck .copy .body,
 .me.project ul.deck .copy .body {
   display: flex;
-}
-.me.project ol.deck .copy .body p,
-.me.project ul.deck .copy .body p {
-  font-size: 1.15rem;
+  flex-direction: column;
 }
 .me.project ol.deck__process-summary li.card .image img.zoom,
 .me.project ol.deck__process-summary li.card .image img.square,
@@ -1023,449 +1036,1060 @@
 .me.project ul.deck__how-might-we li.card .copy .body p {
   margin: 0 0 auto 0;
 }
-.me.project ol.deck__personas,
-.me.project ul.deck__personas {
-  flex-wrap: wrap;
+.me.project ol.deck__content-criteria li.card .copy .header,
+.me.project ul.deck__content-criteria li.card .copy .header {
+  margin: 0 0 0.5rem 0;
 }
-.me.project ol.deck__personas li.card,
-.me.project ul.deck__personas li.card {
+.me.project ol.deck__content-criteria li.card .copy .header ol.tags,
+.me.project ol.deck__content-criteria li.card .copy .header ul.tags,
+.me.project ul.deck__content-criteria li.card .copy .header ol.tags,
+.me.project ul.deck__content-criteria li.card .copy .header ul.tags {
+  list-style: none;
+  margin: 0.5rem auto 0 0;
+  padding: 0;
+}
+.me.project ol.deck__content-criteria li.card .copy .header ol.tags li.tag,
+.me.project ol.deck__content-criteria li.card .copy .header ul.tags li.tag,
+.me.project ul.deck__content-criteria li.card .copy .header ol.tags li.tag,
+.me.project ul.deck__content-criteria li.card .copy .header ul.tags li.tag {
+  margin: 0.25rem auto 0 0;
+  padding: 0.15rem 0.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.me.project ol.deck__content-criteria li.card .copy .body,
+.me.project ul.deck__content-criteria li.card .copy .body {
+  margin: 0.5rem 0 auto 0;
+}
+.me.project ol.deck__content-criteria li.card .copy .body p,
+.me.project ul.deck__content-criteria li.card .copy .body p {
+  margin: 0 0 auto 0;
+}
+@media (min-width: 0px) and (max-width: 376px) {
+  .me.project ol.deck__content-criteria li.card,
+  .me.project ul.deck__content-criteria li.card {
+    width: 100%;
+    flex-direction: column;
+  }
+  .me.project ol.deck__content-criteria li.card .copy,
+  .me.project ul.deck__content-criteria li.card .copy {
+    margin: 0 0 3rem 0;
+    padding: 0;
+  }
+}
+@media (min-width: 377px) and (max-width: 576px) {
+  .me.project ol.deck__content-criteria li.card,
+  .me.project ul.deck__content-criteria li.card {
+    width: 100%;
+    flex-direction: column;
+  }
+  .me.project ol.deck__content-criteria li.card .copy,
+  .me.project ul.deck__content-criteria li.card .copy {
+    margin: 0 0 3rem 0;
+    padding: 0;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  .me.project ol.deck__content-criteria li.card,
+  .me.project ul.deck__content-criteria li.card {
+    width: 100%;
+    flex-direction: column;
+  }
+  .me.project ol.deck__content-criteria li.card .copy,
+  .me.project ul.deck__content-criteria li.card .copy {
+    margin: 0 0 3rem 0;
+    padding: 0;
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  .me.project ol.deck__content-criteria li.card,
+  .me.project ul.deck__content-criteria li.card {
+    width: 50%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .me.project ol.deck__content-criteria li.card:nth-child(odd) .copy,
+  .me.project ul.deck__content-criteria li.card:nth-child(odd) .copy {
+    padding: 0 1rem 0 0;
+  }
+  .me.project ol.deck__content-criteria li.card .copy,
+  .me.project ul.deck__content-criteria li.card .copy {
+    margin: 0 0 3rem 0;
+    padding: 0 0 0 1rem;
+  }
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  .me.project ol.deck__content-criteria li.card,
+  .me.project ul.deck__content-criteria li.card {
+    width: 50%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .me.project ol.deck__content-criteria li.card:nth-child(odd) .copy,
+  .me.project ul.deck__content-criteria li.card:nth-child(odd) .copy {
+    padding: 0 1rem 0 0;
+  }
+  .me.project ol.deck__content-criteria li.card .copy,
+  .me.project ul.deck__content-criteria li.card .copy {
+    margin: 0 0 3rem 0;
+    padding: 0 0 0 1rem;
+  }
+}
+@media (min-width: 1201px) {
+  .me.project ol.deck__content-criteria li.card,
+  .me.project ul.deck__content-criteria li.card {
+    width: 50%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .me.project ol.deck__content-criteria li.card:nth-child(odd) .copy,
+  .me.project ul.deck__content-criteria li.card:nth-child(odd) .copy {
+    padding: 0 1rem 0 0;
+  }
+  .me.project ol.deck__content-criteria li.card .copy,
+  .me.project ul.deck__content-criteria li.card .copy {
+    margin: 0 0 3rem 0;
+    padding: 0 0 0 1rem;
+  }
+}
+@media (min-width: 0px) and (max-width: 376px) {
+  .me.project ol.deck__content-criteria,
+  .me.project ul.deck__content-criteria {
+    flex-direction: column;
+  }
+}
+@media (min-width: 377px) and (max-width: 576px) {
+  .me.project ol.deck__content-criteria,
+  .me.project ul.deck__content-criteria {
+    flex-direction: column;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  .me.project ol.deck__content-criteria,
+  .me.project ul.deck__content-criteria {
+    flex-direction: column;
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  .me.project ol.deck__content-criteria,
+  .me.project ul.deck__content-criteria {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  .me.project ol.deck__content-criteria,
+  .me.project ul.deck__content-criteria {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 1201px) {
+  .me.project ol.deck__content-criteria,
+  .me.project ul.deck__content-criteria {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+.me.project ol.deck__content-snapshot li.card, .me.project ol.deck__scope-axis li.card, .me.project ol.deck__scope-snapshot li.card,
+.me.project ul.deck__content-snapshot li.card,
+.me.project ul.deck__scope-axis li.card,
+.me.project ul.deck__scope-snapshot li.card {
   display: flex;
   list-style: none;
 }
-.me.project ol.deck__personas li.card .image,
-.me.project ul.deck__personas li.card .image {
+.me.project ol.deck__content-snapshot li.card .image, .me.project ol.deck__scope-axis li.card .image, .me.project ol.deck__scope-snapshot li.card .image,
+.me.project ul.deck__content-snapshot li.card .image,
+.me.project ul.deck__scope-axis li.card .image,
+.me.project ul.deck__scope-snapshot li.card .image {
+  display: none;
+}
+.me.project ol.deck__content-snapshot li.card .image img,
+.me.project ol.deck__content-snapshot li.card .image img.zoom,
+.me.project ol.deck__content-snapshot li.card .image img.square,
+.me.project ol.deck__content-snapshot li.card .image img.rectangle, .me.project ol.deck__scope-axis li.card .image img,
+.me.project ol.deck__scope-axis li.card .image img.zoom,
+.me.project ol.deck__scope-axis li.card .image img.square,
+.me.project ol.deck__scope-axis li.card .image img.rectangle, .me.project ol.deck__scope-snapshot li.card .image img,
+.me.project ol.deck__scope-snapshot li.card .image img.zoom,
+.me.project ol.deck__scope-snapshot li.card .image img.square,
+.me.project ol.deck__scope-snapshot li.card .image img.rectangle,
+.me.project ul.deck__content-snapshot li.card .image img,
+.me.project ul.deck__content-snapshot li.card .image img.zoom,
+.me.project ul.deck__content-snapshot li.card .image img.square,
+.me.project ul.deck__content-snapshot li.card .image img.rectangle,
+.me.project ul.deck__scope-axis li.card .image img,
+.me.project ul.deck__scope-axis li.card .image img.zoom,
+.me.project ul.deck__scope-axis li.card .image img.square,
+.me.project ul.deck__scope-axis li.card .image img.rectangle,
+.me.project ul.deck__scope-snapshot li.card .image img,
+.me.project ul.deck__scope-snapshot li.card .image img.zoom,
+.me.project ul.deck__scope-snapshot li.card .image img.square,
+.me.project ul.deck__scope-snapshot li.card .image img.rectangle {
+  display: none;
+}
+.me.project ol.deck__content-snapshot li.card .copy .header, .me.project ol.deck__scope-axis li.card .copy .header, .me.project ol.deck__scope-snapshot li.card .copy .header,
+.me.project ul.deck__content-snapshot li.card .copy .header,
+.me.project ul.deck__scope-axis li.card .copy .header,
+.me.project ul.deck__scope-snapshot li.card .copy .header {
+  display: flex;
+  flex-direction: column;
+}
+.me.project ol.deck__content-snapshot li.card .copy .header .title, .me.project ol.deck__scope-axis li.card .copy .header .title, .me.project ol.deck__scope-snapshot li.card .copy .header .title,
+.me.project ul.deck__content-snapshot li.card .copy .header .title,
+.me.project ul.deck__scope-axis li.card .copy .header .title,
+.me.project ul.deck__scope-snapshot li.card .copy .header .title {
+  display: flex;
+  font-weight: 350;
+  font-size: 1.35rem;
+}
+.me.project ol.deck__content-snapshot li.card .copy .header ol.tags,
+.me.project ol.deck__content-snapshot li.card .copy .header ul.tags, .me.project ol.deck__scope-axis li.card .copy .header ol.tags,
+.me.project ol.deck__scope-axis li.card .copy .header ul.tags, .me.project ol.deck__scope-snapshot li.card .copy .header ol.tags,
+.me.project ol.deck__scope-snapshot li.card .copy .header ul.tags,
+.me.project ul.deck__content-snapshot li.card .copy .header ol.tags,
+.me.project ul.deck__content-snapshot li.card .copy .header ul.tags,
+.me.project ul.deck__scope-axis li.card .copy .header ol.tags,
+.me.project ul.deck__scope-axis li.card .copy .header ul.tags,
+.me.project ul.deck__scope-snapshot li.card .copy .header ol.tags,
+.me.project ul.deck__scope-snapshot li.card .copy .header ul.tags {
+  padding: 0;
+}
+.me.project ol.deck__content-snapshot li.card .copy .header ol.tags li.tag,
+.me.project ol.deck__content-snapshot li.card .copy .header ul.tags li.tag, .me.project ol.deck__scope-axis li.card .copy .header ol.tags li.tag,
+.me.project ol.deck__scope-axis li.card .copy .header ul.tags li.tag, .me.project ol.deck__scope-snapshot li.card .copy .header ol.tags li.tag,
+.me.project ol.deck__scope-snapshot li.card .copy .header ul.tags li.tag,
+.me.project ul.deck__content-snapshot li.card .copy .header ol.tags li.tag,
+.me.project ul.deck__content-snapshot li.card .copy .header ul.tags li.tag,
+.me.project ul.deck__scope-axis li.card .copy .header ol.tags li.tag,
+.me.project ul.deck__scope-axis li.card .copy .header ul.tags li.tag,
+.me.project ul.deck__scope-snapshot li.card .copy .header ol.tags li.tag,
+.me.project ul.deck__scope-snapshot li.card .copy .header ul.tags li.tag {
+  display: inline-flex;
+  font-size: 1rem;
+  font-weight: 400;
+}
+@media (min-width: 0px) and (max-width: 376px) {
+  .me.project ol.deck__content-snapshot li.card, .me.project ol.deck__scope-axis li.card, .me.project ol.deck__scope-snapshot li.card,
+  .me.project ul.deck__content-snapshot li.card,
+  .me.project ul.deck__scope-axis li.card,
+  .me.project ul.deck__scope-snapshot li.card {
+    width: 100%;
+    flex-direction: column;
+  }
+  .me.project ol.deck__content-snapshot li.card .copy, .me.project ol.deck__scope-axis li.card .copy, .me.project ol.deck__scope-snapshot li.card .copy,
+  .me.project ul.deck__content-snapshot li.card .copy,
+  .me.project ul.deck__scope-axis li.card .copy,
+  .me.project ul.deck__scope-snapshot li.card .copy {
+    margin: 0 0 3rem 0;
+    padding: 0;
+  }
+}
+@media (min-width: 377px) and (max-width: 576px) {
+  .me.project ol.deck__content-snapshot li.card, .me.project ol.deck__scope-axis li.card, .me.project ol.deck__scope-snapshot li.card,
+  .me.project ul.deck__content-snapshot li.card,
+  .me.project ul.deck__scope-axis li.card,
+  .me.project ul.deck__scope-snapshot li.card {
+    width: 100%;
+    flex-direction: column;
+  }
+  .me.project ol.deck__content-snapshot li.card .copy, .me.project ol.deck__scope-axis li.card .copy, .me.project ol.deck__scope-snapshot li.card .copy,
+  .me.project ul.deck__content-snapshot li.card .copy,
+  .me.project ul.deck__scope-axis li.card .copy,
+  .me.project ul.deck__scope-snapshot li.card .copy {
+    margin: 0 0 3rem 0;
+    padding: 0;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  .me.project ol.deck__content-snapshot li.card, .me.project ol.deck__scope-axis li.card, .me.project ol.deck__scope-snapshot li.card,
+  .me.project ul.deck__content-snapshot li.card,
+  .me.project ul.deck__scope-axis li.card,
+  .me.project ul.deck__scope-snapshot li.card {
+    width: 50%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .me.project ol.deck__content-snapshot li.card:nth-child(odd) .copy, .me.project ol.deck__scope-axis li.card:nth-child(odd) .copy, .me.project ol.deck__scope-snapshot li.card:nth-child(odd) .copy,
+  .me.project ul.deck__content-snapshot li.card:nth-child(odd) .copy,
+  .me.project ul.deck__scope-axis li.card:nth-child(odd) .copy,
+  .me.project ul.deck__scope-snapshot li.card:nth-child(odd) .copy {
+    padding: 0 1rem 0 0;
+  }
+  .me.project ol.deck__content-snapshot li.card .copy, .me.project ol.deck__scope-axis li.card .copy, .me.project ol.deck__scope-snapshot li.card .copy,
+  .me.project ul.deck__content-snapshot li.card .copy,
+  .me.project ul.deck__scope-axis li.card .copy,
+  .me.project ul.deck__scope-snapshot li.card .copy {
+    margin: 0 0 3rem 0;
+    padding: 0 0 0 1rem;
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  .me.project ol.deck__content-snapshot li.card, .me.project ol.deck__scope-axis li.card, .me.project ol.deck__scope-snapshot li.card,
+  .me.project ul.deck__content-snapshot li.card,
+  .me.project ul.deck__scope-axis li.card,
+  .me.project ul.deck__scope-snapshot li.card {
+    width: 33.333%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .me.project ol.deck__content-snapshot li.card:nth-child(1) .copy, .me.project ol.deck__scope-axis li.card:nth-child(1) .copy, .me.project ol.deck__scope-snapshot li.card:nth-child(1) .copy,
+  .me.project ul.deck__content-snapshot li.card:nth-child(1) .copy,
+  .me.project ul.deck__scope-axis li.card:nth-child(1) .copy,
+  .me.project ul.deck__scope-snapshot li.card:nth-child(1) .copy {
+    padding: 0 0.5rem 0 0;
+  }
+  .me.project ol.deck__content-snapshot li.card:nth-child(4) .copy, .me.project ol.deck__scope-axis li.card:nth-child(4) .copy, .me.project ol.deck__scope-snapshot li.card:nth-child(4) .copy,
+  .me.project ul.deck__content-snapshot li.card:nth-child(4) .copy,
+  .me.project ul.deck__scope-axis li.card:nth-child(4) .copy,
+  .me.project ul.deck__scope-snapshot li.card:nth-child(4) .copy {
+    padding: 0 0.5rem 0 0;
+  }
+  .me.project ol.deck__content-snapshot li.card:nth-child(3) .copy, .me.project ol.deck__content-snapshot li.card:nth-child(6) .copy, .me.project ol.deck__scope-axis li.card:nth-child(3) .copy, .me.project ol.deck__scope-axis li.card:nth-child(6) .copy, .me.project ol.deck__scope-snapshot li.card:nth-child(3) .copy, .me.project ol.deck__scope-snapshot li.card:nth-child(6) .copy,
+  .me.project ul.deck__content-snapshot li.card:nth-child(3) .copy,
+  .me.project ul.deck__content-snapshot li.card:nth-child(6) .copy,
+  .me.project ul.deck__scope-axis li.card:nth-child(3) .copy,
+  .me.project ul.deck__scope-axis li.card:nth-child(6) .copy,
+  .me.project ul.deck__scope-snapshot li.card:nth-child(3) .copy,
+  .me.project ul.deck__scope-snapshot li.card:nth-child(6) .copy {
+    padding: 0 0 0 0.5rem;
+  }
+  .me.project ol.deck__content-snapshot li.card .copy, .me.project ol.deck__scope-axis li.card .copy, .me.project ol.deck__scope-snapshot li.card .copy,
+  .me.project ul.deck__content-snapshot li.card .copy,
+  .me.project ul.deck__scope-axis li.card .copy,
+  .me.project ul.deck__scope-snapshot li.card .copy {
+    margin: 0 0 3rem 0;
+    padding: 0 0.5rem;
+  }
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  .me.project ol.deck__content-snapshot li.card, .me.project ol.deck__scope-axis li.card, .me.project ol.deck__scope-snapshot li.card,
+  .me.project ul.deck__content-snapshot li.card,
+  .me.project ul.deck__scope-axis li.card,
+  .me.project ul.deck__scope-snapshot li.card {
+    width: 33.333%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .me.project ol.deck__content-snapshot li.card:nth-child(1) .copy, .me.project ol.deck__scope-axis li.card:nth-child(1) .copy, .me.project ol.deck__scope-snapshot li.card:nth-child(1) .copy,
+  .me.project ul.deck__content-snapshot li.card:nth-child(1) .copy,
+  .me.project ul.deck__scope-axis li.card:nth-child(1) .copy,
+  .me.project ul.deck__scope-snapshot li.card:nth-child(1) .copy {
+    padding: 0 0.5rem 0 0;
+  }
+  .me.project ol.deck__content-snapshot li.card:nth-child(4) .copy, .me.project ol.deck__scope-axis li.card:nth-child(4) .copy, .me.project ol.deck__scope-snapshot li.card:nth-child(4) .copy,
+  .me.project ul.deck__content-snapshot li.card:nth-child(4) .copy,
+  .me.project ul.deck__scope-axis li.card:nth-child(4) .copy,
+  .me.project ul.deck__scope-snapshot li.card:nth-child(4) .copy {
+    padding: 0 0.5rem 0 0;
+  }
+  .me.project ol.deck__content-snapshot li.card:nth-child(3) .copy, .me.project ol.deck__content-snapshot li.card:nth-child(6) .copy, .me.project ol.deck__scope-axis li.card:nth-child(3) .copy, .me.project ol.deck__scope-axis li.card:nth-child(6) .copy, .me.project ol.deck__scope-snapshot li.card:nth-child(3) .copy, .me.project ol.deck__scope-snapshot li.card:nth-child(6) .copy,
+  .me.project ul.deck__content-snapshot li.card:nth-child(3) .copy,
+  .me.project ul.deck__content-snapshot li.card:nth-child(6) .copy,
+  .me.project ul.deck__scope-axis li.card:nth-child(3) .copy,
+  .me.project ul.deck__scope-axis li.card:nth-child(6) .copy,
+  .me.project ul.deck__scope-snapshot li.card:nth-child(3) .copy,
+  .me.project ul.deck__scope-snapshot li.card:nth-child(6) .copy {
+    padding: 0 0 0 0.5rem;
+  }
+  .me.project ol.deck__content-snapshot li.card .copy, .me.project ol.deck__scope-axis li.card .copy, .me.project ol.deck__scope-snapshot li.card .copy,
+  .me.project ul.deck__content-snapshot li.card .copy,
+  .me.project ul.deck__scope-axis li.card .copy,
+  .me.project ul.deck__scope-snapshot li.card .copy {
+    margin: 0 0 3rem 0;
+    padding: 0 0.5rem;
+  }
+}
+@media (min-width: 1201px) {
+  .me.project ol.deck__content-snapshot li.card, .me.project ol.deck__scope-axis li.card, .me.project ol.deck__scope-snapshot li.card,
+  .me.project ul.deck__content-snapshot li.card,
+  .me.project ul.deck__scope-axis li.card,
+  .me.project ul.deck__scope-snapshot li.card {
+    width: 33.333%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .me.project ol.deck__content-snapshot li.card:nth-child(1) .copy, .me.project ol.deck__scope-axis li.card:nth-child(1) .copy, .me.project ol.deck__scope-snapshot li.card:nth-child(1) .copy,
+  .me.project ul.deck__content-snapshot li.card:nth-child(1) .copy,
+  .me.project ul.deck__scope-axis li.card:nth-child(1) .copy,
+  .me.project ul.deck__scope-snapshot li.card:nth-child(1) .copy {
+    padding: 0 0.5rem 0 0;
+  }
+  .me.project ol.deck__content-snapshot li.card:nth-child(4) .copy, .me.project ol.deck__scope-axis li.card:nth-child(4) .copy, .me.project ol.deck__scope-snapshot li.card:nth-child(4) .copy,
+  .me.project ul.deck__content-snapshot li.card:nth-child(4) .copy,
+  .me.project ul.deck__scope-axis li.card:nth-child(4) .copy,
+  .me.project ul.deck__scope-snapshot li.card:nth-child(4) .copy {
+    padding: 0 0.5rem 0 0;
+  }
+  .me.project ol.deck__content-snapshot li.card:nth-child(3) .copy, .me.project ol.deck__content-snapshot li.card:nth-child(6) .copy, .me.project ol.deck__scope-axis li.card:nth-child(3) .copy, .me.project ol.deck__scope-axis li.card:nth-child(6) .copy, .me.project ol.deck__scope-snapshot li.card:nth-child(3) .copy, .me.project ol.deck__scope-snapshot li.card:nth-child(6) .copy,
+  .me.project ul.deck__content-snapshot li.card:nth-child(3) .copy,
+  .me.project ul.deck__content-snapshot li.card:nth-child(6) .copy,
+  .me.project ul.deck__scope-axis li.card:nth-child(3) .copy,
+  .me.project ul.deck__scope-axis li.card:nth-child(6) .copy,
+  .me.project ul.deck__scope-snapshot li.card:nth-child(3) .copy,
+  .me.project ul.deck__scope-snapshot li.card:nth-child(6) .copy {
+    padding: 0 0 0 0.5rem;
+  }
+  .me.project ol.deck__content-snapshot li.card .copy, .me.project ol.deck__scope-axis li.card .copy, .me.project ol.deck__scope-snapshot li.card .copy,
+  .me.project ul.deck__content-snapshot li.card .copy,
+  .me.project ul.deck__scope-axis li.card .copy,
+  .me.project ul.deck__scope-snapshot li.card .copy {
+    margin: 0 0 3rem 0;
+    padding: 0 0.5rem;
+  }
+}
+@media (min-width: 0px) and (max-width: 376px) {
+  .me.project ol.deck__content-snapshot li.card.last .copy, .me.project ol.deck__scope-axis li.card.last .copy, .me.project ol.deck__scope-snapshot li.card.last .copy,
+  .me.project ul.deck__content-snapshot li.card.last .copy,
+  .me.project ul.deck__scope-axis li.card.last .copy,
+  .me.project ul.deck__scope-snapshot li.card.last .copy {
+    margin: 0 0 3rem 0;
+    padding: 0;
+  }
+}
+@media (min-width: 377px) and (max-width: 576px) {
+  .me.project ol.deck__content-snapshot li.card.last .copy, .me.project ol.deck__scope-axis li.card.last .copy, .me.project ol.deck__scope-snapshot li.card.last .copy,
+  .me.project ul.deck__content-snapshot li.card.last .copy,
+  .me.project ul.deck__scope-axis li.card.last .copy,
+  .me.project ul.deck__scope-snapshot li.card.last .copy {
+    margin: 0 0 3rem 0;
+    padding: 0;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  .me.project ol.deck__content-snapshot li.card.last .copy, .me.project ol.deck__scope-axis li.card.last .copy, .me.project ol.deck__scope-snapshot li.card.last .copy,
+  .me.project ul.deck__content-snapshot li.card.last .copy,
+  .me.project ul.deck__scope-axis li.card.last .copy,
+  .me.project ul.deck__scope-snapshot li.card.last .copy {
+    margin: 0 auto 3rem 0;
+    padding: 0 1rem 0 0;
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  .me.project ol.deck__content-snapshot li.card.last .copy, .me.project ol.deck__scope-axis li.card.last .copy, .me.project ol.deck__scope-snapshot li.card.last .copy,
+  .me.project ul.deck__content-snapshot li.card.last .copy,
+  .me.project ul.deck__scope-axis li.card.last .copy,
+  .me.project ul.deck__scope-snapshot li.card.last .copy {
+    margin: 0 auto 3rem 0;
+    padding: 0 0 0 0.5rem;
+  }
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  .me.project ol.deck__content-snapshot li.card.last .copy, .me.project ol.deck__scope-axis li.card.last .copy, .me.project ol.deck__scope-snapshot li.card.last .copy,
+  .me.project ul.deck__content-snapshot li.card.last .copy,
+  .me.project ul.deck__scope-axis li.card.last .copy,
+  .me.project ul.deck__scope-snapshot li.card.last .copy {
+    margin: 0 auto 3rem 0;
+    padding: 0 0 0 0.5rem;
+  }
+}
+@media (min-width: 1201px) {
+  .me.project ol.deck__content-snapshot li.card.last .copy, .me.project ol.deck__scope-axis li.card.last .copy, .me.project ol.deck__scope-snapshot li.card.last .copy,
+  .me.project ul.deck__content-snapshot li.card.last .copy,
+  .me.project ul.deck__scope-axis li.card.last .copy,
+  .me.project ul.deck__scope-snapshot li.card.last .copy {
+    margin: 0 auto 3rem 0;
+    padding: 0 0 0 0.5rem;
+  }
+}
+@media (min-width: 0px) and (max-width: 376px) {
+  .me.project ol.deck__content-snapshot, .me.project ol.deck__scope-axis, .me.project ol.deck__scope-snapshot,
+  .me.project ul.deck__content-snapshot,
+  .me.project ul.deck__scope-axis,
+  .me.project ul.deck__scope-snapshot {
+    flex-direction: column;
+  }
+}
+@media (min-width: 377px) and (max-width: 576px) {
+  .me.project ol.deck__content-snapshot, .me.project ol.deck__scope-axis, .me.project ol.deck__scope-snapshot,
+  .me.project ul.deck__content-snapshot,
+  .me.project ul.deck__scope-axis,
+  .me.project ul.deck__scope-snapshot {
+    flex-direction: column;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  .me.project ol.deck__content-snapshot, .me.project ol.deck__scope-axis, .me.project ol.deck__scope-snapshot,
+  .me.project ul.deck__content-snapshot,
+  .me.project ul.deck__scope-axis,
+  .me.project ul.deck__scope-snapshot {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  .me.project ol.deck__content-snapshot, .me.project ol.deck__scope-axis, .me.project ol.deck__scope-snapshot,
+  .me.project ul.deck__content-snapshot,
+  .me.project ul.deck__scope-axis,
+  .me.project ul.deck__scope-snapshot {
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  .me.project ol.deck__content-snapshot, .me.project ol.deck__scope-axis, .me.project ol.deck__scope-snapshot,
+  .me.project ul.deck__content-snapshot,
+  .me.project ul.deck__scope-axis,
+  .me.project ul.deck__scope-snapshot {
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 1201px) {
+  .me.project ol.deck__content-snapshot, .me.project ol.deck__scope-axis, .me.project ol.deck__scope-snapshot,
+  .me.project ul.deck__content-snapshot,
+  .me.project ul.deck__scope-axis,
+  .me.project ul.deck__scope-snapshot {
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+}
+.me.project ol.deck__personas, .me.project ol.deck__archetypes,
+.me.project ul.deck__personas,
+.me.project ul.deck__archetypes {
+  flex-wrap: wrap;
+}
+.me.project ol.deck__personas li.card, .me.project ol.deck__archetypes li.card,
+.me.project ul.deck__personas li.card,
+.me.project ul.deck__archetypes li.card {
+  display: flex;
+  list-style: none;
+}
+.me.project ol.deck__personas li.card .image, .me.project ol.deck__archetypes li.card .image,
+.me.project ul.deck__personas li.card .image,
+.me.project ul.deck__archetypes li.card .image {
   display: flex;
   overflow: clip;
 }
 .me.project ol.deck__personas li.card .image img.zoom,
-.me.project ol.deck__personas li.card .image img.rectangle,
+.me.project ol.deck__personas li.card .image img.rectangle, .me.project ol.deck__archetypes li.card .image img.zoom,
+.me.project ol.deck__archetypes li.card .image img.rectangle,
 .me.project ul.deck__personas li.card .image img.zoom,
-.me.project ul.deck__personas li.card .image img.rectangle {
+.me.project ul.deck__personas li.card .image img.rectangle,
+.me.project ul.deck__archetypes li.card .image img.zoom,
+.me.project ul.deck__archetypes li.card .image img.rectangle {
   display: none;
 }
-.me.project ol.deck__personas li.card .image img,
-.me.project ul.deck__personas li.card .image img {
+.me.project ol.deck__personas li.card .image img, .me.project ol.deck__archetypes li.card .image img,
+.me.project ul.deck__personas li.card .image img,
+.me.project ul.deck__archetypes li.card .image img {
   display: flex;
 }
 @media (min-width: 0px) and (max-width: 376px) {
-  .me.project ol.deck__personas li.card,
-  .me.project ul.deck__personas li.card {
+  .me.project ol.deck__personas li.card, .me.project ol.deck__archetypes li.card,
+  .me.project ul.deck__personas li.card,
+  .me.project ul.deck__archetypes li.card {
     flex-direction: column;
     width: 100%;
   }
-  .me.project ol.deck__personas li.card .image,
-  .me.project ul.deck__personas li.card .image {
+  .me.project ol.deck__personas li.card .image, .me.project ol.deck__archetypes li.card .image,
+  .me.project ul.deck__personas li.card .image,
+  .me.project ul.deck__archetypes li.card .image {
     width: 100%;
   }
-  .me.project ol.deck__personas li.card .image img.square,
-  .me.project ul.deck__personas li.card .image img.square {
+  .me.project ol.deck__personas li.card .image img.square, .me.project ol.deck__archetypes li.card .image img.square,
+  .me.project ul.deck__personas li.card .image img.square,
+  .me.project ul.deck__archetypes li.card .image img.square {
     width: 100%;
     height: auto;
   }
-  .me.project ol.deck__personas li.card .copy,
-  .me.project ul.deck__personas li.card .copy {
+  .me.project ol.deck__personas li.card .copy, .me.project ol.deck__archetypes li.card .copy,
+  .me.project ul.deck__personas li.card .copy,
+  .me.project ul.deck__archetypes li.card .copy {
     padding: 1.5rem 1.5rem 3rem 1.5rem;
   }
-  .me.project ol.deck__personas li.card .copy .title,
-  .me.project ul.deck__personas li.card .copy .title {
+  .me.project ol.deck__personas li.card .copy .title, .me.project ol.deck__archetypes li.card .copy .title,
+  .me.project ul.deck__personas li.card .copy .title,
+  .me.project ul.deck__archetypes li.card .copy .title {
     margin: 0 auto 0.5rem auto;
   }
-  .me.project ol.deck__personas li.card .copy .body p,
-  .me.project ul.deck__personas li.card .copy .body p {
+  .me.project ol.deck__personas li.card .copy .body p, .me.project ol.deck__archetypes li.card .copy .body p,
+  .me.project ul.deck__personas li.card .copy .body p,
+  .me.project ul.deck__archetypes li.card .copy .body p {
     margin: 0.5rem 0 0 0;
   }
 }
 @media (min-width: 377px) and (max-width: 576px) {
-  .me.project ol.deck__personas li.card,
-  .me.project ul.deck__personas li.card {
+  .me.project ol.deck__personas li.card, .me.project ol.deck__archetypes li.card,
+  .me.project ul.deck__personas li.card,
+  .me.project ul.deck__archetypes li.card {
     flex-direction: column;
     width: 100%;
   }
-  .me.project ol.deck__personas li.card .image,
-  .me.project ul.deck__personas li.card .image {
+  .me.project ol.deck__personas li.card .image, .me.project ol.deck__archetypes li.card .image,
+  .me.project ul.deck__personas li.card .image,
+  .me.project ul.deck__archetypes li.card .image {
     width: 100%;
   }
-  .me.project ol.deck__personas li.card .image img,
-  .me.project ul.deck__personas li.card .image img {
+  .me.project ol.deck__personas li.card .image img, .me.project ol.deck__archetypes li.card .image img,
+  .me.project ul.deck__personas li.card .image img,
+  .me.project ul.deck__archetypes li.card .image img {
     margin: 0 auto;
   }
-  .me.project ol.deck__personas li.card .image img.square,
-  .me.project ul.deck__personas li.card .image img.square {
+  .me.project ol.deck__personas li.card .image img.square, .me.project ol.deck__archetypes li.card .image img.square,
+  .me.project ul.deck__personas li.card .image img.square,
+  .me.project ul.deck__archetypes li.card .image img.square {
     width: 375px;
     height: 375px;
   }
-  .me.project ol.deck__personas li.card .copy,
-  .me.project ul.deck__personas li.card .copy {
+  .me.project ol.deck__personas li.card .copy, .me.project ol.deck__archetypes li.card .copy,
+  .me.project ul.deck__personas li.card .copy,
+  .me.project ul.deck__archetypes li.card .copy {
     width: 375px;
     padding: 1.5rem 0 3rem 0;
     margin: 0 auto;
   }
-  .me.project ol.deck__personas li.card .copy .title,
-  .me.project ul.deck__personas li.card .copy .title {
+  .me.project ol.deck__personas li.card .copy .title, .me.project ol.deck__archetypes li.card .copy .title,
+  .me.project ul.deck__personas li.card .copy .title,
+  .me.project ul.deck__archetypes li.card .copy .title {
     margin: 0 auto 0.5rem auto;
   }
-  .me.project ol.deck__personas li.card .copy .body p,
-  .me.project ul.deck__personas li.card .copy .body p {
+  .me.project ol.deck__personas li.card .copy .body p, .me.project ol.deck__archetypes li.card .copy .body p,
+  .me.project ul.deck__personas li.card .copy .body p,
+  .me.project ul.deck__archetypes li.card .copy .body p {
     margin: 0.5rem 0 0 0;
   }
 }
 @media (min-width: 577px) and (max-width: 768px) {
-  .me.project ol.deck__personas li.card,
-  .me.project ul.deck__personas li.card {
+  .me.project ol.deck__personas li.card, .me.project ol.deck__archetypes li.card,
+  .me.project ul.deck__personas li.card,
+  .me.project ul.deck__archetypes li.card {
     flex-direction: row;
     width: 100%;
   }
-  .me.project ol.deck__personas li.card .image,
-  .me.project ul.deck__personas li.card .image {
+  .me.project ol.deck__personas li.card .image, .me.project ol.deck__archetypes li.card .image,
+  .me.project ul.deck__personas li.card .image,
+  .me.project ul.deck__archetypes li.card .image {
     width: 100%;
   }
-  .me.project ol.deck__personas li.card .image img,
-  .me.project ul.deck__personas li.card .image img {
+  .me.project ol.deck__personas li.card .image img, .me.project ol.deck__archetypes li.card .image img,
+  .me.project ul.deck__personas li.card .image img,
+  .me.project ul.deck__archetypes li.card .image img {
     margin: 0 auto;
   }
-  .me.project ol.deck__personas li.card .image img.square,
-  .me.project ul.deck__personas li.card .image img.square {
+  .me.project ol.deck__personas li.card .image img.square, .me.project ol.deck__archetypes li.card .image img.square,
+  .me.project ul.deck__personas li.card .image img.square,
+  .me.project ul.deck__archetypes li.card .image img.square {
     width: 250px;
     height: 250px;
   }
-  .me.project ol.deck__personas li.card .copy,
-  .me.project ul.deck__personas li.card .copy {
+  .me.project ol.deck__personas li.card .copy, .me.project ol.deck__archetypes li.card .copy,
+  .me.project ul.deck__personas li.card .copy,
+  .me.project ul.deck__archetypes li.card .copy {
     margin: auto 1.5rem;
   }
 }
 @media (min-width: 769px) and (max-width: 992px) {
-  .me.project ol.deck__personas li.card,
-  .me.project ul.deck__personas li.card {
+  .me.project ol.deck__personas li.card, .me.project ol.deck__archetypes li.card,
+  .me.project ul.deck__personas li.card,
+  .me.project ul.deck__archetypes li.card {
     flex-direction: row;
     width: 100%;
   }
-  .me.project ol.deck__personas li.card .image,
-  .me.project ul.deck__personas li.card .image {
+  .me.project ol.deck__personas li.card .image, .me.project ol.deck__archetypes li.card .image,
+  .me.project ul.deck__personas li.card .image,
+  .me.project ul.deck__archetypes li.card .image {
     width: 250px;
   }
-  .me.project ol.deck__personas li.card img.square,
-  .me.project ul.deck__personas li.card img.square {
+  .me.project ol.deck__personas li.card img.square, .me.project ol.deck__archetypes li.card img.square,
+  .me.project ul.deck__personas li.card img.square,
+  .me.project ul.deck__archetypes li.card img.square {
     width: 250px;
     height: 250px;
   }
-  .me.project ol.deck__personas li.card .copy,
-  .me.project ul.deck__personas li.card .copy {
+  .me.project ol.deck__personas li.card .copy, .me.project ol.deck__archetypes li.card .copy,
+  .me.project ul.deck__personas li.card .copy,
+  .me.project ul.deck__archetypes li.card .copy {
     margin: auto 1.5rem;
   }
-  .me.project ol.deck__personas li.card .copy p,
-  .me.project ul.deck__personas li.card .copy p {
+  .me.project ol.deck__personas li.card .copy p, .me.project ol.deck__archetypes li.card .copy p,
+  .me.project ul.deck__personas li.card .copy p,
+  .me.project ul.deck__archetypes li.card .copy p {
     margin: 0.5rem 0 auto 0;
   }
 }
 @media (min-width: 993px) and (max-width: 1200px) {
-  .me.project ol.deck__personas li.card,
-  .me.project ul.deck__personas li.card {
+  .me.project ol.deck__personas li.card, .me.project ol.deck__archetypes li.card,
+  .me.project ul.deck__personas li.card,
+  .me.project ul.deck__archetypes li.card {
     flex-direction: row;
     width: 100%;
   }
-  .me.project ol.deck__personas li.card .image,
-  .me.project ul.deck__personas li.card .image {
+  .me.project ol.deck__personas li.card .image, .me.project ol.deck__archetypes li.card .image,
+  .me.project ul.deck__personas li.card .image,
+  .me.project ul.deck__archetypes li.card .image {
     width: 300px;
   }
-  .me.project ol.deck__personas li.card .image img.square,
-  .me.project ul.deck__personas li.card .image img.square {
+  .me.project ol.deck__personas li.card .image img.square, .me.project ol.deck__archetypes li.card .image img.square,
+  .me.project ul.deck__personas li.card .image img.square,
+  .me.project ul.deck__archetypes li.card .image img.square {
     width: 300px;
     height: 300px;
   }
-  .me.project ol.deck__personas li.card .copy,
-  .me.project ul.deck__personas li.card .copy {
+  .me.project ol.deck__personas li.card .copy, .me.project ol.deck__archetypes li.card .copy,
+  .me.project ul.deck__personas li.card .copy,
+  .me.project ul.deck__archetypes li.card .copy {
     margin: auto 1.5rem;
   }
-  .me.project ol.deck__personas li.card .copy p,
-  .me.project ul.deck__personas li.card .copy p {
+  .me.project ol.deck__personas li.card .copy p, .me.project ol.deck__archetypes li.card .copy p,
+  .me.project ul.deck__personas li.card .copy p,
+  .me.project ul.deck__archetypes li.card .copy p {
     margin: 0.5rem 0 auto 0;
   }
 }
 @media (min-width: 1201px) {
-  .me.project ol.deck__personas li.card,
-  .me.project ul.deck__personas li.card {
+  .me.project ol.deck__personas li.card, .me.project ol.deck__archetypes li.card,
+  .me.project ul.deck__personas li.card,
+  .me.project ul.deck__archetypes li.card {
     flex-direction: row;
     width: 50%;
   }
-  .me.project ol.deck__personas li.card .image img.square,
-  .me.project ul.deck__personas li.card .image img.square {
+  .me.project ol.deck__personas li.card .image img.square, .me.project ol.deck__archetypes li.card .image img.square,
+  .me.project ul.deck__personas li.card .image img.square,
+  .me.project ul.deck__archetypes li.card .image img.square {
     width: 300px;
     height: 300px;
   }
-  .me.project ol.deck__personas li.card .copy,
-  .me.project ul.deck__personas li.card .copy {
+  .me.project ol.deck__personas li.card .copy, .me.project ol.deck__archetypes li.card .copy,
+  .me.project ul.deck__personas li.card .copy,
+  .me.project ul.deck__archetypes li.card .copy {
     margin: auto 1.5rem;
   }
-  .me.project ol.deck__personas li.card .copy p,
-  .me.project ul.deck__personas li.card .copy p {
+  .me.project ol.deck__personas li.card .copy p, .me.project ol.deck__archetypes li.card .copy p,
+  .me.project ul.deck__personas li.card .copy p,
+  .me.project ul.deck__archetypes li.card .copy p {
     margin: 0.5rem 0 auto 0;
   }
 }
-.me.project ol.deck__personas li.quote-card,
-.me.project ul.deck__personas li.quote-card {
+.me.project ol.deck__personas li.quote-card, .me.project ol.deck__archetypes li.quote-card,
+.me.project ul.deck__personas li.quote-card,
+.me.project ul.deck__archetypes li.quote-card {
   display: flex;
   list-style: none;
   position: relative;
   background-color: rgba(179, 255, 245, 0.5098039216);
 }
-.me.project ol.deck__personas li.quote-card .image,
-.me.project ul.deck__personas li.quote-card .image {
+.me.project ol.deck__personas li.quote-card .image, .me.project ol.deck__archetypes li.quote-card .image,
+.me.project ul.deck__personas li.quote-card .image,
+.me.project ul.deck__archetypes li.quote-card .image {
   display: flex;
   z-index: 10;
   overflow: clip;
 }
 .me.project ol.deck__personas li.quote-card .image img.zoom,
-.me.project ol.deck__personas li.quote-card .image img.rectangle,
+.me.project ol.deck__personas li.quote-card .image img.rectangle, .me.project ol.deck__archetypes li.quote-card .image img.zoom,
+.me.project ol.deck__archetypes li.quote-card .image img.rectangle,
 .me.project ul.deck__personas li.quote-card .image img.zoom,
-.me.project ul.deck__personas li.quote-card .image img.rectangle {
+.me.project ul.deck__personas li.quote-card .image img.rectangle,
+.me.project ul.deck__archetypes li.quote-card .image img.zoom,
+.me.project ul.deck__archetypes li.quote-card .image img.rectangle {
   display: none;
 }
-.me.project ol.deck__personas li.quote-card .image img,
-.me.project ul.deck__personas li.quote-card .image img {
+.me.project ol.deck__personas li.quote-card .image img, .me.project ol.deck__archetypes li.quote-card .image img,
+.me.project ul.deck__personas li.quote-card .image img,
+.me.project ul.deck__archetypes li.quote-card .image img {
   display: flex;
 }
-.me.project ol.deck__personas li.quote-card .copy,
-.me.project ul.deck__personas li.quote-card .copy {
+.me.project ol.deck__personas li.quote-card .copy, .me.project ol.deck__archetypes li.quote-card .copy,
+.me.project ul.deck__personas li.quote-card .copy,
+.me.project ul.deck__archetypes li.quote-card .copy {
   position: absolute;
   z-index: 20;
 }
-.me.project ol.deck__personas li.quote-card .copy p.quote,
-.me.project ul.deck__personas li.quote-card .copy p.quote {
+.me.project ol.deck__personas li.quote-card .copy p.quote, .me.project ol.deck__archetypes li.quote-card .copy p.quote,
+.me.project ul.deck__personas li.quote-card .copy p.quote,
+.me.project ul.deck__archetypes li.quote-card .copy p.quote {
   text-shadow: 1px 2px 1px #7be4d5;
   color: #000;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 65%, rgba(131, 255, 237, 0.5) 65%);
 }
-.me.project ol.deck__personas li.quote-card .copy p.quote svg path.dbl-quote,
-.me.project ul.deck__personas li.quote-card .copy p.quote svg path.dbl-quote {
+.me.project ol.deck__personas li.quote-card .copy p.quote svg path.dbl-quote, .me.project ol.deck__archetypes li.quote-card .copy p.quote svg path.dbl-quote,
+.me.project ul.deck__personas li.quote-card .copy p.quote svg path.dbl-quote,
+.me.project ul.deck__archetypes li.quote-card .copy p.quote svg path.dbl-quote {
   fill: #07ffde;
 }
-.me.project ol.deck__personas li.quote-card .copy p.quote-src,
-.me.project ul.deck__personas li.quote-card .copy p.quote-src {
+.me.project ol.deck__personas li.quote-card .copy p.quote-src, .me.project ol.deck__archetypes li.quote-card .copy p.quote-src,
+.me.project ul.deck__personas li.quote-card .copy p.quote-src,
+.me.project ul.deck__archetypes li.quote-card .copy p.quote-src {
   background: linear-gradient(180deg, #07ffde 50%, rgba(255, 255, 255, 0) 50%);
 }
-.me.project ol.deck__personas li.quote-card:nth-child(odd),
-.me.project ul.deck__personas li.quote-card:nth-child(odd) {
+.me.project ol.deck__personas li.quote-card:nth-child(odd), .me.project ol.deck__archetypes li.quote-card:nth-child(odd),
+.me.project ul.deck__personas li.quote-card:nth-child(odd),
+.me.project ul.deck__archetypes li.quote-card:nth-child(odd) {
   background-color: rgba(110, 251, 232, 0.5294117647);
 }
 @media (min-width: 0px) and (max-width: 376px) {
-  .me.project ol.deck__personas li.quote-card,
-  .me.project ul.deck__personas li.quote-card {
+  .me.project ol.deck__personas li.quote-card, .me.project ol.deck__archetypes li.quote-card,
+  .me.project ul.deck__personas li.quote-card,
+  .me.project ul.deck__archetypes li.quote-card {
     flex-direction: column;
     width: 100%;
     height: auto;
   }
-  .me.project ol.deck__personas li.quote-card .image,
-  .me.project ul.deck__personas li.quote-card .image {
+  .me.project ol.deck__personas li.quote-card .image, .me.project ol.deck__archetypes li.quote-card .image,
+  .me.project ul.deck__personas li.quote-card .image,
+  .me.project ul.deck__archetypes li.quote-card .image {
     display: none;
   }
   .me.project ol.deck__personas li.quote-card .image img,
-  .me.project ol.deck__personas li.quote-card .image img.square,
+  .me.project ol.deck__personas li.quote-card .image img.square, .me.project ol.deck__archetypes li.quote-card .image img,
+  .me.project ol.deck__archetypes li.quote-card .image img.square,
   .me.project ul.deck__personas li.quote-card .image img,
-  .me.project ul.deck__personas li.quote-card .image img.square {
+  .me.project ul.deck__personas li.quote-card .image img.square,
+  .me.project ul.deck__archetypes li.quote-card .image img,
+  .me.project ul.deck__archetypes li.quote-card .image img.square {
     display: none;
   }
-  .me.project ol.deck__personas li.quote-card .copy,
-  .me.project ul.deck__personas li.quote-card .copy {
+  .me.project ol.deck__personas li.quote-card .copy, .me.project ol.deck__archetypes li.quote-card .copy,
+  .me.project ul.deck__personas li.quote-card .copy,
+  .me.project ul.deck__archetypes li.quote-card .copy {
     position: inherit;
     z-index: auto;
   }
-  .me.project ol.deck__personas li.quote-card .copy p.context,
-  .me.project ul.deck__personas li.quote-card .copy p.context {
+  .me.project ol.deck__personas li.quote-card .copy p.context, .me.project ol.deck__archetypes li.quote-card .copy p.context,
+  .me.project ul.deck__personas li.quote-card .copy p.context,
+  .me.project ul.deck__archetypes li.quote-card .copy p.context {
     display: none;
   }
-  .me.project ol.deck__personas li.quote-card .copy .quote-wrapper,
-  .me.project ul.deck__personas li.quote-card .copy .quote-wrapper {
+  .me.project ol.deck__personas li.quote-card .copy .quote-wrapper, .me.project ol.deck__archetypes li.quote-card .copy .quote-wrapper,
+  .me.project ul.deck__personas li.quote-card .copy .quote-wrapper,
+  .me.project ul.deck__archetypes li.quote-card .copy .quote-wrapper {
     margin: auto 0;
     padding: 1.5rem;
   }
-  .me.project ol.deck__personas li.quote-card .copy .quote-wrapper p.quote,
-  .me.project ul.deck__personas li.quote-card .copy .quote-wrapper p.quote {
+  .me.project ol.deck__personas li.quote-card .copy .quote-wrapper p.quote, .me.project ol.deck__archetypes li.quote-card .copy .quote-wrapper p.quote,
+  .me.project ul.deck__personas li.quote-card .copy .quote-wrapper p.quote,
+  .me.project ul.deck__archetypes li.quote-card .copy .quote-wrapper p.quote {
     margin: 0 1.5rem 0.5rem 1.5rem;
   }
-  .me.project ol.deck__personas li.quote-card .copy p.quote-src,
-  .me.project ul.deck__personas li.quote-card .copy p.quote-src {
+  .me.project ol.deck__personas li.quote-card .copy p.quote-src, .me.project ol.deck__archetypes li.quote-card .copy p.quote-src,
+  .me.project ul.deck__personas li.quote-card .copy p.quote-src,
+  .me.project ul.deck__archetypes li.quote-card .copy p.quote-src {
     padding: 1rem 1.5rem;
     margin: 0.5rem 0 0 0;
     background: linear-gradient(180deg, #07ffde 50%, rgba(255, 255, 255, 0) 50%);
   }
 }
 @media (min-width: 377px) and (max-width: 576px) {
-  .me.project ol.deck__personas li.quote-card,
-  .me.project ul.deck__personas li.quote-card {
+  .me.project ol.deck__personas li.quote-card, .me.project ol.deck__archetypes li.quote-card,
+  .me.project ul.deck__personas li.quote-card,
+  .me.project ul.deck__archetypes li.quote-card {
     flex-direction: column;
     width: 100%;
   }
-  .me.project ol.deck__personas li.quote-card .image,
-  .me.project ul.deck__personas li.quote-card .image {
+  .me.project ol.deck__personas li.quote-card .image, .me.project ol.deck__archetypes li.quote-card .image,
+  .me.project ul.deck__personas li.quote-card .image,
+  .me.project ul.deck__archetypes li.quote-card .image {
     width: 100%;
   }
-  .me.project ol.deck__personas li.quote-card .image img,
-  .me.project ul.deck__personas li.quote-card .image img {
+  .me.project ol.deck__personas li.quote-card .image img, .me.project ol.deck__archetypes li.quote-card .image img,
+  .me.project ul.deck__personas li.quote-card .image img,
+  .me.project ul.deck__archetypes li.quote-card .image img {
     margin: 0 auto;
   }
-  .me.project ol.deck__personas li.quote-card .image img.square,
-  .me.project ul.deck__personas li.quote-card .image img.square {
+  .me.project ol.deck__personas li.quote-card .image img.square, .me.project ol.deck__archetypes li.quote-card .image img.square,
+  .me.project ul.deck__personas li.quote-card .image img.square,
+  .me.project ul.deck__archetypes li.quote-card .image img.square {
     width: 375px;
     height: 375px;
   }
-  .me.project ol.deck__personas li.quote-card .copy,
-  .me.project ul.deck__personas li.quote-card .copy {
+  .me.project ol.deck__personas li.quote-card .copy, .me.project ol.deck__archetypes li.quote-card .copy,
+  .me.project ul.deck__personas li.quote-card .copy,
+  .me.project ul.deck__archetypes li.quote-card .copy {
     bottom: 0;
   }
-  .me.project ol.deck__personas li.quote-card .copy p.context,
-  .me.project ul.deck__personas li.quote-card .copy p.context {
+  .me.project ol.deck__personas li.quote-card .copy p.context, .me.project ol.deck__archetypes li.quote-card .copy p.context,
+  .me.project ul.deck__personas li.quote-card .copy p.context,
+  .me.project ul.deck__archetypes li.quote-card .copy p.context {
     display: none;
   }
-  .me.project ol.deck__personas li.quote-card .copy .quote-wrapper,
-  .me.project ul.deck__personas li.quote-card .copy .quote-wrapper {
+  .me.project ol.deck__personas li.quote-card .copy .quote-wrapper, .me.project ol.deck__archetypes li.quote-card .copy .quote-wrapper,
+  .me.project ul.deck__personas li.quote-card .copy .quote-wrapper,
+  .me.project ul.deck__archetypes li.quote-card .copy .quote-wrapper {
     padding: 0 1.5rem;
   }
-  .me.project ol.deck__personas li.quote-card .copy .quote-wrapper p.quote,
-  .me.project ul.deck__personas li.quote-card .copy .quote-wrapper p.quote {
+  .me.project ol.deck__personas li.quote-card .copy .quote-wrapper p.quote, .me.project ol.deck__archetypes li.quote-card .copy .quote-wrapper p.quote,
+  .me.project ul.deck__personas li.quote-card .copy .quote-wrapper p.quote,
+  .me.project ul.deck__archetypes li.quote-card .copy .quote-wrapper p.quote {
     margin: 0 1.5rem 0.5rem 1.5rem;
   }
-  .me.project ol.deck__personas li.quote-card .copy p.quote-src,
-  .me.project ul.deck__personas li.quote-card .copy p.quote-src {
+  .me.project ol.deck__personas li.quote-card .copy p.quote-src, .me.project ol.deck__archetypes li.quote-card .copy p.quote-src,
+  .me.project ul.deck__personas li.quote-card .copy p.quote-src,
+  .me.project ul.deck__archetypes li.quote-card .copy p.quote-src {
     padding: 1rem 1.5rem;
     margin: 0.5rem 0 0 0;
     background: linear-gradient(180deg, #07ffde 50%, rgba(255, 255, 255, 0.5) 50%);
   }
 }
 @media (min-width: 577px) and (max-width: 768px) {
-  .me.project ol.deck__personas li.quote-card,
-  .me.project ul.deck__personas li.quote-card {
+  .me.project ol.deck__personas li.quote-card, .me.project ol.deck__archetypes li.quote-card,
+  .me.project ul.deck__personas li.quote-card,
+  .me.project ul.deck__archetypes li.quote-card {
     flex-direction: row;
     width: 100%;
   }
-  .me.project ol.deck__personas li.quote-card .image img.square,
-  .me.project ul.deck__personas li.quote-card .image img.square {
+  .me.project ol.deck__personas li.quote-card .image img.square, .me.project ol.deck__archetypes li.quote-card .image img.square,
+  .me.project ul.deck__personas li.quote-card .image img.square,
+  .me.project ul.deck__archetypes li.quote-card .image img.square {
     width: 250px;
     height: 250px;
   }
-  .me.project ol.deck__personas li.quote-card .copy,
-  .me.project ul.deck__personas li.quote-card .copy {
+  .me.project ol.deck__personas li.quote-card .copy, .me.project ol.deck__archetypes li.quote-card .copy,
+  .me.project ul.deck__personas li.quote-card .copy,
+  .me.project ul.deck__archetypes li.quote-card .copy {
     bottom: 0;
     left: 150px;
   }
-  .me.project ol.deck__personas li.quote-card .copy p.context,
-  .me.project ul.deck__personas li.quote-card .copy p.context {
+  .me.project ol.deck__personas li.quote-card .copy p.context, .me.project ol.deck__archetypes li.quote-card .copy p.context,
+  .me.project ul.deck__personas li.quote-card .copy p.context,
+  .me.project ul.deck__archetypes li.quote-card .copy p.context {
     display: none;
   }
-  .me.project ol.deck__personas li.quote-card .copy .quote-wrapper,
-  .me.project ul.deck__personas li.quote-card .copy .quote-wrapper {
+  .me.project ol.deck__personas li.quote-card .copy .quote-wrapper, .me.project ol.deck__archetypes li.quote-card .copy .quote-wrapper,
+  .me.project ul.deck__personas li.quote-card .copy .quote-wrapper,
+  .me.project ul.deck__archetypes li.quote-card .copy .quote-wrapper {
     padding: 0 1.5rem 0 0;
   }
-  .me.project ol.deck__personas li.quote-card .copy .quote-wrapper p.quote,
-  .me.project ul.deck__personas li.quote-card .copy .quote-wrapper p.quote {
+  .me.project ol.deck__personas li.quote-card .copy .quote-wrapper p.quote, .me.project ol.deck__archetypes li.quote-card .copy .quote-wrapper p.quote,
+  .me.project ul.deck__personas li.quote-card .copy .quote-wrapper p.quote,
+  .me.project ul.deck__archetypes li.quote-card .copy .quote-wrapper p.quote {
     margin: 0 1.5rem 0.5rem 0;
   }
-  .me.project ol.deck__personas li.quote-card .copy p.quote-src,
-  .me.project ul.deck__personas li.quote-card .copy p.quote-src {
+  .me.project ol.deck__personas li.quote-card .copy p.quote-src, .me.project ol.deck__archetypes li.quote-card .copy p.quote-src,
+  .me.project ul.deck__personas li.quote-card .copy p.quote-src,
+  .me.project ul.deck__archetypes li.quote-card .copy p.quote-src {
     padding: 1rem 1.5rem;
     margin: 0.5rem 0 0 100px;
   }
 }
 @media (min-width: 769px) and (max-width: 992px) {
-  .me.project ol.deck__personas li.quote-card,
-  .me.project ul.deck__personas li.quote-card {
+  .me.project ol.deck__personas li.quote-card, .me.project ol.deck__archetypes li.quote-card,
+  .me.project ul.deck__personas li.quote-card,
+  .me.project ul.deck__archetypes li.quote-card {
     flex-direction: row;
     width: 100%;
   }
-  .me.project ol.deck__personas li.quote-card .image img.square,
-  .me.project ul.deck__personas li.quote-card .image img.square {
+  .me.project ol.deck__personas li.quote-card .image img.square, .me.project ol.deck__archetypes li.quote-card .image img.square,
+  .me.project ul.deck__personas li.quote-card .image img.square,
+  .me.project ul.deck__archetypes li.quote-card .image img.square {
     width: 300px;
     height: 300px;
   }
-  .me.project ol.deck__personas li.quote-card .copy,
-  .me.project ul.deck__personas li.quote-card .copy {
+  .me.project ol.deck__personas li.quote-card .copy, .me.project ol.deck__archetypes li.quote-card .copy,
+  .me.project ul.deck__personas li.quote-card .copy,
+  .me.project ul.deck__archetypes li.quote-card .copy {
     bottom: 0;
     left: 200px;
   }
-  .me.project ol.deck__personas li.quote-card .copy p.context,
-  .me.project ul.deck__personas li.quote-card .copy p.context {
+  .me.project ol.deck__personas li.quote-card .copy p.context, .me.project ol.deck__archetypes li.quote-card .copy p.context,
+  .me.project ul.deck__personas li.quote-card .copy p.context,
+  .me.project ul.deck__archetypes li.quote-card .copy p.context {
     padding: 0 1.5rem;
     margin: 0 0 0.5rem 100px;
   }
-  .me.project ol.deck__personas li.quote-card .copy .quote-wrapper,
-  .me.project ul.deck__personas li.quote-card .copy .quote-wrapper {
+  .me.project ol.deck__personas li.quote-card .copy .quote-wrapper, .me.project ol.deck__archetypes li.quote-card .copy .quote-wrapper,
+  .me.project ul.deck__personas li.quote-card .copy .quote-wrapper,
+  .me.project ul.deck__archetypes li.quote-card .copy .quote-wrapper {
     padding: 0 1.5rem 0 0;
   }
-  .me.project ol.deck__personas li.quote-card .copy .quote-wrapper p.quote,
-  .me.project ul.deck__personas li.quote-card .copy .quote-wrapper p.quote {
+  .me.project ol.deck__personas li.quote-card .copy .quote-wrapper p.quote, .me.project ol.deck__archetypes li.quote-card .copy .quote-wrapper p.quote,
+  .me.project ul.deck__personas li.quote-card .copy .quote-wrapper p.quote,
+  .me.project ul.deck__archetypes li.quote-card .copy .quote-wrapper p.quote {
     margin: 0.5rem 1.5rem 0.5rem 0;
   }
-  .me.project ol.deck__personas li.quote-card .copy p.quote-src,
-  .me.project ul.deck__personas li.quote-card .copy p.quote-src {
+  .me.project ol.deck__personas li.quote-card .copy p.quote-src, .me.project ol.deck__archetypes li.quote-card .copy p.quote-src,
+  .me.project ul.deck__personas li.quote-card .copy p.quote-src,
+  .me.project ul.deck__archetypes li.quote-card .copy p.quote-src {
     padding: 1rem 1.5rem;
     margin: 0.5rem 0 0 100px;
   }
 }
 @media (min-width: 993px) and (max-width: 1200px) {
-  .me.project ol.deck__personas li.quote-card,
-  .me.project ul.deck__personas li.quote-card {
+  .me.project ol.deck__personas li.quote-card, .me.project ol.deck__archetypes li.quote-card,
+  .me.project ul.deck__personas li.quote-card,
+  .me.project ul.deck__archetypes li.quote-card {
     flex-direction: row;
     width: 100%;
   }
-  .me.project ol.deck__personas li.quote-card .image img.square,
-  .me.project ul.deck__personas li.quote-card .image img.square {
+  .me.project ol.deck__personas li.quote-card .image img.square, .me.project ol.deck__archetypes li.quote-card .image img.square,
+  .me.project ul.deck__personas li.quote-card .image img.square,
+  .me.project ul.deck__archetypes li.quote-card .image img.square {
     width: 300px;
     height: 300px;
   }
-  .me.project ol.deck__personas li.quote-card .copy,
-  .me.project ul.deck__personas li.quote-card .copy {
+  .me.project ol.deck__personas li.quote-card .copy, .me.project ol.deck__archetypes li.quote-card .copy,
+  .me.project ul.deck__personas li.quote-card .copy,
+  .me.project ul.deck__archetypes li.quote-card .copy {
     bottom: 0;
     left: 200px;
   }
-  .me.project ol.deck__personas li.quote-card .copy p.context,
-  .me.project ul.deck__personas li.quote-card .copy p.context {
+  .me.project ol.deck__personas li.quote-card .copy p.context, .me.project ol.deck__archetypes li.quote-card .copy p.context,
+  .me.project ul.deck__personas li.quote-card .copy p.context,
+  .me.project ul.deck__archetypes li.quote-card .copy p.context {
     padding: 0 2rem;
     margin: 0 0 0.5rem 100px;
   }
-  .me.project ol.deck__personas li.quote-card .copy .quote-wrapper,
-  .me.project ul.deck__personas li.quote-card .copy .quote-wrapper {
+  .me.project ol.deck__personas li.quote-card .copy .quote-wrapper, .me.project ol.deck__archetypes li.quote-card .copy .quote-wrapper,
+  .me.project ul.deck__personas li.quote-card .copy .quote-wrapper,
+  .me.project ul.deck__archetypes li.quote-card .copy .quote-wrapper {
     padding: 0 2rem 0 0;
   }
-  .me.project ol.deck__personas li.quote-card .copy .quote-wrapper p.quote,
-  .me.project ul.deck__personas li.quote-card .copy .quote-wrapper p.quote {
+  .me.project ol.deck__personas li.quote-card .copy .quote-wrapper p.quote, .me.project ol.deck__archetypes li.quote-card .copy .quote-wrapper p.quote,
+  .me.project ul.deck__personas li.quote-card .copy .quote-wrapper p.quote,
+  .me.project ul.deck__archetypes li.quote-card .copy .quote-wrapper p.quote {
     margin: 0.5rem 1.5rem 0.5rem 0;
   }
-  .me.project ol.deck__personas li.quote-card .copy p.quote-src,
-  .me.project ul.deck__personas li.quote-card .copy p.quote-src {
+  .me.project ol.deck__personas li.quote-card .copy p.quote-src, .me.project ol.deck__archetypes li.quote-card .copy p.quote-src,
+  .me.project ul.deck__personas li.quote-card .copy p.quote-src,
+  .me.project ul.deck__archetypes li.quote-card .copy p.quote-src {
     padding: 1rem 2rem;
     margin: 0.5rem 0 0 100px;
   }
 }
 @media (min-width: 1201px) {
-  .me.project ol.deck__personas li.quote-card,
-  .me.project ul.deck__personas li.quote-card {
+  .me.project ol.deck__personas li.quote-card, .me.project ol.deck__archetypes li.quote-card,
+  .me.project ul.deck__personas li.quote-card,
+  .me.project ul.deck__archetypes li.quote-card {
     flex-direction: row;
     width: 100%;
   }
-  .me.project ol.deck__personas li.quote-card .image img.square,
-  .me.project ul.deck__personas li.quote-card .image img.square {
+  .me.project ol.deck__personas li.quote-card .image img.square, .me.project ol.deck__archetypes li.quote-card .image img.square,
+  .me.project ul.deck__personas li.quote-card .image img.square,
+  .me.project ul.deck__archetypes li.quote-card .image img.square {
     width: 350px;
     height: 350px;
   }
-  .me.project ol.deck__personas li.quote-card .copy,
-  .me.project ul.deck__personas li.quote-card .copy {
+  .me.project ol.deck__personas li.quote-card .copy, .me.project ol.deck__archetypes li.quote-card .copy,
+  .me.project ul.deck__personas li.quote-card .copy,
+  .me.project ul.deck__archetypes li.quote-card .copy {
     bottom: 0;
     left: 250px;
   }
-  .me.project ol.deck__personas li.quote-card .copy p.context,
-  .me.project ul.deck__personas li.quote-card .copy p.context {
+  .me.project ol.deck__personas li.quote-card .copy p.context, .me.project ol.deck__archetypes li.quote-card .copy p.context,
+  .me.project ul.deck__personas li.quote-card .copy p.context,
+  .me.project ul.deck__archetypes li.quote-card .copy p.context {
     padding: 0 2rem;
     margin: 0 0 0.5rem 100px;
   }
-  .me.project ol.deck__personas li.quote-card .copy .quote-wrapper,
-  .me.project ul.deck__personas li.quote-card .copy .quote-wrapper {
+  .me.project ol.deck__personas li.quote-card .copy .quote-wrapper, .me.project ol.deck__archetypes li.quote-card .copy .quote-wrapper,
+  .me.project ul.deck__personas li.quote-card .copy .quote-wrapper,
+  .me.project ul.deck__archetypes li.quote-card .copy .quote-wrapper {
     padding: 0 2rem 0 0;
   }
-  .me.project ol.deck__personas li.quote-card .copy .quote-wrapper p.quote,
-  .me.project ul.deck__personas li.quote-card .copy .quote-wrapper p.quote {
+  .me.project ol.deck__personas li.quote-card .copy .quote-wrapper p.quote, .me.project ol.deck__archetypes li.quote-card .copy .quote-wrapper p.quote,
+  .me.project ul.deck__personas li.quote-card .copy .quote-wrapper p.quote,
+  .me.project ul.deck__archetypes li.quote-card .copy .quote-wrapper p.quote {
     margin: 0.5rem 1.5rem 0.5rem 0;
   }
-  .me.project ol.deck__personas li.quote-card .copy p.quote-src,
-  .me.project ul.deck__personas li.quote-card .copy p.quote-src {
+  .me.project ol.deck__personas li.quote-card .copy p.quote-src, .me.project ol.deck__archetypes li.quote-card .copy p.quote-src,
+  .me.project ul.deck__personas li.quote-card .copy p.quote-src,
+  .me.project ul.deck__archetypes li.quote-card .copy p.quote-src {
     padding: 1rem 2rem;
     margin: 0.5rem 0 0 100px;
   }
