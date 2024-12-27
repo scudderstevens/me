@@ -52,10 +52,14 @@
   background-repeat: no-repeat;
 }
 .me.project img.slide.rectangle {
+  transition: transform 0.2s;
   height: auto;
   width: 100%;
   max-width: 1180px;
   margin: 0 auto;
+}
+.me.project img.slide.rectangle:hover { /* IE 9 */ /* Safari 3-8 */
+  transform: scale(1.23);
 }
 .me.project .tabbed-header {
   margin: 0 auto 0 0;

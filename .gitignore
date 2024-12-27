@@ -34,7 +34,8 @@ yarn-debug.log*
 yarn-error.log*
 
 # Misc
-*.DS_Store
+.DS_Store
+**/.DS_Store
 *.pem
 *.webp
 next.html
