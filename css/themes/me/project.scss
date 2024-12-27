@@ -26,12 +26,17 @@ $accent: adjust-hue( $secondary, 180 );
     }
 
     img.slide.rectangle {
+        transition: transform .2s;
         height: auto;
-        //width: calc(100% - 4rem);
         width: 100%;
         max-width: 1180px;
         margin: 0 auto;
-        //padding: 0 2rem;
+
+        &:hover {
+            -ms-transform: scale(1.23); /* IE 9 */
+            -webkit-transform: scale(1.23); /* Safari 3-8 */
+            transform: scale(1.23);
+        }
     }
 
     .tabbed-header {
